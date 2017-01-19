@@ -1,0 +1,12 @@
+python 2.x
+python-dev
+scikit-learn
+
+scipy
+cython
+pandas 
+numpy
+
+
+sudo apt-get install libblas-dev liblapack-dev gfortran
+

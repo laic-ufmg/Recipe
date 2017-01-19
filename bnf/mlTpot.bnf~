@@ -1,0 +1,6 @@
+<Start> ::= <preprocessing> '#' <algorithm> | <algorithm>
+
+<algorithm> ::= <strong> | <weak>
+<strong> ::= <Trees> | <NaiveBayes> | <SVM>
+
+<Trees> ::= 'DecisionTreeClassifier' | 'AdaBoostClassifier' <algorithm_ada> <n_estimators> <learning_rate_ada>

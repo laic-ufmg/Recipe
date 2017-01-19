@@ -1,0 +1,2 @@
+O RandomizedPCA vai ser removido futuramente no sklearn. Será o PCA com um parametro como randomized. Modificar isso.
+O SelectFromModel na verdade só utiliza um dos parâmetros e não dois como é passado

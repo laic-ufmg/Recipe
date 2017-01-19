@@ -1,0 +1,22 @@
+<Start> ::= <preprocessing> '# ' <algorithm> | <algorithm>
+
+<preprocessing> ::=  <feature_selection> '# ' <feature_construction> | <feature_selection>
+
+<feature_selection> ::=  <supervised> | <unsupervised>
+
+<supervised> ::=    <filter_univariate> ' ' <score_function>
+<filter_univariate> ::= 'SelectKBest ' <features>
+<features> ::= '1 ' | '2 '| '3 '
+<score_function> ::= 'f_classif ' | 'chi2 '
+
+<unsupervised> ::=   'PCA ' <features>  ' whitening ' | 'PCA ' <features>
+
+<feature_construction> ::=   'PolynomialFeatures ' <degree> 'interaction-only '  | 'PolynomialFeatures '  <degree>
+<degree>  ::= '2 ' | '3 ' | '4 ' | '5 '
+
+<algorithm> ::= <NaiveBayes> | 'DecisionTreeClassifier ' <criterion> ' ' <splitter>
+
+<NaiveBayes> ::= 'GaussianNB ' | 'BernoulliNB'
+
+<criterion> ::= 'entropy ' | 'gini '
+<splitter> ::= 'best ' | 'random '

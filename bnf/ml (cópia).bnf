@@ -1,0 +1,212 @@
+<Start> ::= <preprocessing> '#' <algorithm> | <algorithm>
+
+<preprocessing> ::=  <imputation> | <bounding> | <dimensionality> | <binarizer> |
+		     <imputation> '#' <bounding> | 
+		     <imputation> '#' <binarizer>
+		     <imputation> '#' <dimensionality> |
+		     <bounding> '#' <dimensionality> | 
+		     <imputation> '#' <bounding> '#' <dimensionality>
+
+<binarizer> ::= 'Binarizer' <threshold_bin>
+<threshold_bin> ::= 'RANDFLOAT(0.000001,100)'
+
+<imputation> ::= 'Imputer' <strategy_imp>
+<strategy_imp> ::= 'mean' | 'median' | 'most_frequent'
+
+
+<bounding> ::= 'Normalizer' <norm> | <scaler>
+<scaler> ::= 'MinMaxScaler' | 'MaxAbsScaler' | <withCenteringScaler> <centering>
+<withCenteringScaler> ::= 'RobustScaler' <with_scaling> | 'StandardScaler' <with_std>
+<norm> ::= 'l1'| 'l2' | 'max'
+<centering> ::= 'True' | 'False'
+<with_scaling> ::= 'True' | 'False'
+<with_std> ::= 'True' | 'False'
+
+<dimensionality> ::= <feature_selection> | <feature_construction> | <feature_selection> '#' <feature_construction>
+
+<feature_selection> ::=  <supervised> | <unsupervised> <featuresToSelect>
+
+<supervised> ::= 'VarianceThreshold' | <filter_univariate> <score_function> | <fromModels>
+
+<filter_univariate> ::= 'SelectKBest' <features> | 'SelectPercentile' <percentile> | <alphaOptions> <alpha_value>
+<alphaOptions> ::= 'SelectFpr' | 'SelectFwe' | 'SelectFdr'
+<alpha_value> ::= 'RANDFLOAT(0.0,1.0)'
+<score_function> ::= 'f_classif' | 'chi2'
+<percentile> ::= 'RANDINT(5,95)'
+
+<fromModels> ::= <RFE> <step> | 'SelectFromModel' <threshold_sfm> <prefit>
+
+<RFE> ::= 'RFE' <featuresToSelect>  | 'RecursiveFE_CV' <cv_rfe> <scoring_rfe>
+<step> ::= 'RANDFLOAT(0.0,1.0)'
+<cv_rfe> ::= '2' | '3' | '5' | '10' 
+<scoring_rfe> ::= 'mean_absolute_error' | 'mean_squared_error' | 'median_absolute_error' | 'r2' | 'None'
+##Depend on the number of features = 1 to numbersOfFeatures-1:
+<featuresToSelect> ::= 'RANDINT(1,3)'
+
+<threshold_sfm> ::= 'None' | 'median' | 'mean' | 'RANDFLOAT(0.0,1.0)'
+<prefit> ::= 'True' | 'False'
+
+<unsupervised> ::=  <PCA> <whitening> | <random_projection> <epsilon> | <feature_agglom> | <KernelApproximation>
+
+<PCA> ::= 'IncrementalPCA' | 'TraditionalPCA' | 'RandomizedPCA' <iterated_power> | <FastICA>
+<whitening> ::= 'True' | 'False'
+<iterated_power> ::= 'RANDINT(2,20)'
+
+<FastICA> ::= 'FastICA' <algorithm_fastica> <funct> <max_iter_fastica> <tol>
+<algorithm_fastica> ::= 'parallel' | 'deflation'
+<funct> ::= 'logcosh' | 'exp' | 'cube'
+<max_iter_fastica> ::= '10' | '100' | '250' | '500' | '750' | '1000' | '1500' | '2000' | '2500' | '5000'
+
+
+<random_projection> ::= 'GaussianRandomProjection' | 'SparseRandomProjection' <density> <dense_output>
+<density> ::= 'auto' | 'RANDFLOAT(0.00001,1.0)'
+<dense_output> ::= 'True' | 'False'
+
+
+<feature_agglom> ::= 'FeatureAgglomeration' <affinity> <compute_full_tree>
+<affinity> ::= 'euclidean' <linkage_type0>| <affinity_options> <linkage_type1>
+<affinity_options> ::= 'l1' | 'l2' | 'manhattan' | 'cosine'
+<linkage_type0> ::= 'ward' | <linkage_type1>
+<linkage_type1> ::= 'complete' | 'average'
+<compute_full_tree> ::= 'True' | 'False'
+
+<KernelApproximation> ::= 'RBFSampler' <gamma_kernelApprox> | 'Nystroem' <kernel> <gamma_kernelApprox> <degree_kernel> <coef0>
+<gamma_kernelApprox> ::= 'RANDFLOAT(0.000030518,8.0)'
+
+<feature_construction> ::=   'PolynomialFeatures' <degree_construction> <interaction-only> <include-bias>
+<interaction-only> ::= 'True' | 'False'
+<include-bias> ::= 'True' | 'False'
+<degree_construction>  ::= 'RANDINT(2,10)'
+
+
+
+##Depend on the number of features = 2 to numbersOfFeatures-1:
+<features> ::= 'RANDINT(2,3)' 
+
+<algorithm> ::= <strong> | <weak>
+<strong> ::= <Trees> | <NaiveBayes> | <SVM>
+
+<Trees> ::= <TreeOptions>  <max_features>  <max_depth>  <min_weight_fraction_leaf>  <max_leaf_nodes> | 'AdaBoostClassifier' <algorithm_ada> <n_estimators> <learning_rate_ada>
+<TreeOptions> ::= <OneEstimator> | <VariousEstimators>  <n_estimators>  <warm_start>
+<OneEstimator> ::= <TreeClassifier>  <criterion>  <splitter>  <class_weight>  <presort>
+<TreeClassifier> ::= 'ExtraTreeClassifier'  | 'DecisionTreeClassifier'
+<VariousEstimators> ::=  <gradientBoostingClassifier> | <TreesEnsemble>  <criterion>  <bootstrap_and_oob> <class_weight_Trees>
+<TreesEnsemble> ::= 'RandomForestClassifier' | 'ExtraTreesClassifier'
+<gradientBoostingClassifier> ::= 'GradientBoostingClassifier' <loss_gradient>  <learning_rate_gradient>  <subsample>  <presort>
+ 
+<max_features> ::= 'RANDFLOAT(0.01,1.0)' | 'sqrt' | 'log2' | 'None'
+##Depend on the number of features:
+<max_depth> ::= 'RANDINT(1,100000)' | 'None'
+<min_weight_fraction_leaf> ::= 'RANDFLOAT(0.0,0.5)'
+##Depend on the number of features:
+<max_leaf_nodes> ::= 'RANDINT(2,100000)' | 'None'
+
+<criterion> ::= 'entropy' | 'gini'
+<splitter> ::= 'best' | 'random'
+<class_weight> ::= 'balanced' | 'None'
+<presort> ::= 'True' | 'False' | 'auto'
+
+<n_estimators> ::=  '5' | '10' | '15' | '20' | '25' | '30' | '35' | '40' | '45' | '50'
+<warm_start> ::= 'True' | 'False'
+<bootstrap_and_oob> ::= 'True' <oob_score> | 'False False'
+<oob_score> ::= 'True' | 'False'
+<class_weight_Trees> ::= 'balanced' | 'balanced_subsample' | 'None'
+
+<loss_gradient> ::= 'deviance' | 'exponential'
+<learning_rate_gradient> ::= 'RANDFLOAT(0.0000000001,1.0)'
+<subsample> ::= 'RANDFLOAT(0.0,1.0)'
+<algorithm_ada> ::= 'SAMME.R' | 'SAMME'
+<learning_rate_ada> ::= 'RANDFLOAT(0.01,2.0)'
+
+
+<NaiveBayes> ::= 'GaussianNB' | <SpecificNB> <alpha>  <fit_prior> 
+<SpecificNB> ::= 'BernoulliNB' <binarize> | 'MultinomialNB'
+<alpha> ::= 'RANDFLOAT(0.0,9.0)'
+<fit_prior> ::=  'True' | 'False'
+<binarize> ::= 'RANDFLOAT(0.0,1.0)'
+
+<SVM> ::= <SVC>  <kernel>  <degree_kernel>  <gamma>  <coef0>  <probability>  <shrinking>  <decision_function_shape>  <tol>  <max_iter>  <class_weight>
+
+##<Linear>::= 'LinearSVC' <C>  <loss>  <penalty>  <dual>  <multi_class>  <fit_intercept>  <intercept_scaling>
+<SVC> ::= 'SVC' <C> | 'NuSVC' <nu> 
+<max_iter> ::= '10' | '100' | '500' | '1000' | '2500' | '5000' | '7500' | '10000' | '15000' | '20000' | '25000' | '30000' | '50000' | '100000'
+<loss> ::= 'hinge' | 'squared_hinge' 
+<penalty> ::= 'l1' | 'l2'
+<dual> ::= 'True' | 'False'
+<multi_class> ::= 'ovr' | 'crammer_singer'
+<fit_intercept> ::= 'True' | 'False'
+<intercept_scaling> ::= 'RANDFLOAT(0.0,100.0)'
+<decision_function_shape> ::= 'ovo' | 'ovr' | 'None'
+<kernel> ::= 'linear' | 'poly' | 'rbf'| 'sigmoid'
+<degree_kernel>  ::= 'RANDINT(2,10)'
+<C> ::= 'RANDFLOAT(0.03125,32768.0)'
+<nu> ::= 'RANDFLOAT(0.0000000001, 1.0)'
+<gamma> ::= 'RANDFLOAT(0.000030518,8.0)' | 'auto'
+<coef0> ::= 'RANDFLOAT(0.0,1000.0)'
+<probability> ::= 'True' | 'False'
+<shrinking> ::= 'True' | 'False'
+<tol> ::= 'RANDFLOAT(0.0000000001,0.1)'
+
+
+<weak> ::= <nearest> | <discriminant> | <generalized>
+
+<nearest> ::= <nearest_options>  <d_metric>
+<nearest_options> ::= <neighbors>  <weights> <k_algorithm> <leaf_size>  <p> | 'CentroidClassifier' <shrinking_threshold>
+<neighbors> ::= 'KNeighborsClassifier' <k> | 'RadiusNeighborsClassifier' <radius>
+<k> ::= 'RANDINT(1,30)'
+<radius> ::= 'RANDFLOAT(1.0,30.0)'
+<weights> ::= 'uniform' | 'distance'
+<k_algorithm> ::= 'auto' | 'brute' | 'kd_tree' | 'ball_tree'
+<leaf_size> ::= 'RANDINT(5,100)'
+<shrinking_threshold> ::= 'RANDFLOAT(0.0, 30.0)' | 'None'
+<d_metric> ::= 'euclidean' |'manhattan' |'chebyshev' | 'minkowski'
+<p> ::= 'RANDINT(1,15)'
+
+
+<discriminant> ::= <discriminant_options>  <tol>  <store_covariance>
+<discriminant_options> ::= 'LinearDiscriminantAnalysis' <solver_discrim> | 'QuadraticDiscriminantAnalysis' <reg_param>
+
+<solver_discrim> ::= 'svd' | 'lsqr'
+<reg_param> ::= 'RANDFLOAT(0.0,1.0)'
+<store_covariance> ::= 'True' | 'False'
+
+
+<generalized> ::= <logistic> | <passive> | <gradient_options> | <ridge>
+
+<gradient_options> ::= <gradient>  <penalty>  <alpha>  <fit_intercept>  <n_iter>  <shuffle>  <eta0>  <class_weight>  <warm_start>
+<gradient> ::= 'Perceptron' | <sgd>
+<sgd> ::= 'SGDClassifier' <loss_sgd>  <l1_ratio>  <epsilon>  <learning_rate_sgd>  <power_t>   <average>
+<eta0> ::= 'RANDFLOAT(0.0,1.0)'
+<n_iter> ::= '5' | '10' | '25' | '50' | '100' | '250' | '500' | '750'
+<shuffle> ::= 'True' | 'False'
+<loss_sgd> ::= 'hinge'| 'log'| 'modified_huber'| 'squared_hinge'| 'perceptron'| 'squared_loss'| 'huber'| 'epsilon_insensitive'| 'squared_epsilon_insensitive'
+<average> ::= 'True' | 'False' | 'RANDINT(1,100)'
+<l1_ratio> ::= 'RANDFLOAT(0.0,1.0)'
+<epsilon> ::= 'RANDFLOAT(0.0,1.0)'
+<power_t> ::= 'RANDFLOAT(0.1, 5.0)'
+<learning_rate_sgd> ::= 'constant'| 'invscaling' | 'optimal'
+
+<passive> ::= 'PassiveAggressive ' <C>  <fit_intercept>  <n_iter>  <shuffle>   <loss_sgd>  <warm_start>  <class_weight>
+
+
+<ridge> ::= <ridge_options>  <alpha>  <class_weight>   <normalize>  <fit_intercept>
+
+<ridge_options> ::= 'RidgeClassifier' <max_iter>  <copy_X>   <solver_ridge>  <tol> | 'RidgeCCV' <cv>
+<solver_ridge> ::= 'auto' | 'svd' | 'cholesky' | 'lsqr' | 'sparse_cg' | 'sag'
+<copy_X> ::= 'True' | 'False'
+<normalize> ::= 'True' | 'False'
+<cv> ::= 'RANDINT(2,10)' | 'None'
+
+<logistic> ::= <lr_opt>  <fit_intercept>  <tol>
+<lr_opt> ::= <common_opt>  <intercept_scaling> <max_iter_lr>  <solver_lr_options>
+<common_opt> ::= 'LogisticRegression' <warm_start>  <C> | 'LogisticCV' <Cs>  <cv>  <refit>
+
+<solver_lr_options> ::= <solver_lr_opt1> <class_weight> <multi_class_lr>| <solver_lr_opt2> 'ovr'  
+<solver_lr_opt1> ::= 'newton-cg l2 False'| 'lbfgs l2 False'
+<solver_lr_opt2> ::= 'liblinear' <penalty_lr> 'None' | 'sag l2 False' <class_weight>
+<penalty_lr> ::= 'l1 False' | 'l2' <dual>
+<multi_class_lr> ::= 'ovr' | 'multinomial'
+<scoring> ::= 'accuracy_score' | 'average_precision_score' | 'f1_score' | 'precision_score' | 'recall_score' | 'roc_auc_score'
+<refit> ::= 'True' | 'False'
+<Cs> ::= 'RANDINT(1,20)'
+<max_iter_lr> ::= '10' | '100' | '150' | '300' | '350' | '400' | '450' |'500'

@@ -1,0 +1,80 @@
+<Start> ::= <preprocessing> '#' <algorithm> | <algorithm>
+
+<preprocessing> ::=  <bounding> | <dimensionality> | <binarizer> | <bounding> '#' <dimensionality> | <bounding> '#' <dimensionality>
+
+<dimensionality> ::= <feature_selection> | <feature_construction> | <feature_selection> '#' <feature_construction>
+
+<binarizer> ::= 'Binarizer' <threshold_bin>
+<threshold_bin> ::= 'RANDFLOAT(0.000001,100)'
+
+<bounding> ::= 'Normalizer' <norm> | <scaler>
+<scaler> ::= 'MinMaxScaler' | 'MaxAbsScaler' | 'RobustScaler' 'True' 'True' | 'StandardScaler' 'True' 'True'
+<norm> ::= 'l1' | 'l2' | 'max'
+
+<feature_selection> ::=  <supervised> | <unsupervised>
+
+<feature_construction> ::=   'PolynomialFeatures' '2' 'False' 'True'
+
+<supervised> ::= 'RFE' 'None' <step> | <filter_univariate> 'chi2' | 'VarianceThreshold'
+<unsupervised> ::=  <FastICA> | <feature_agglom> | <KernelApproximation> | RandomizedPCA' <iterated_power>
+
+<KernelApproximation> ::= 'RBFSampler' <gamma_kernelApprox> | 'Nystroem' <kernel> <gamma_kernelApprox> '3' '1' <components>
+
+<filter_univariate> ::= 'SelectKBest' <features> | 'SelectPercentile' <percentile> | <alphaOptions> <alpha_value>
+<alphaOptions> ::= 'SelectFwe'
+<alpha_value> ::= 'RANDFLOAT(0.0,1.0)'
+<percentile> ::= 'RANDINT(5,95)'
+<features> ::= 'RANDINT(2,3)'
+
+<components> ::= 'RANDINT(0,100)'
+<iterated_power> ::= 'RANDINT(2,20)'
+<step> ::= 'RANDFLOAT(0.0,1.0)'
+
+<gamma_kernelApprox> ::= 'RANDFLOAT(0.000030518,8.0)'
+<kernel> ::= 'linear' | 'poly' | 'rbf'| 'sigmoid'
+
+<FastICA> ::= 'FastICA' 'parallel' 'logcosh' '200' <tol> 'True' 'None'
+
+<feature_agglom> ::= 'FeatureAgglomeration' <affinity> 'True' '2'
+<affinity> ::= 'euclidean' <linkage_type0>| <affinity_options> <linkage_type1>
+<affinity_options> ::= 'l1' | 'l2' | 'manhattan' | 'cosine'
+<linkage_type0> ::= 'ward' | <linkage_type1>
+<linkage_type1> ::= 'complete' | 'average'
+
+<tol> ::= 'RANDFLOAT(0.0000000001,1.0)'
+
+<algorithm> ::= <strong> | <weak>
+<strong> ::= <Trees> | <NaiveBayes>
+
+<Trees> ::= 'DecisionTreeClassifier' 'gini' 'best' 'None' 'False' 'None' 'None' '0.0' 'None'| 'ExtraTreeClassifier' <criterion> 'best' 'None' 'False' <max_features> 'None' '0.0' 'None' |
+'RandomForestClassifier' 'gini' 'True' 'False' 'None' '10' 'False' 'auto' 'None' '0.0' 'None' | 'AdaBoostClassifier' <algorithm_ada> <n_estimators> <learning_rate_ada> | 'GradientBoostingClassifier' 'deviance' <learning_rate_gradient> '1.0' 'auto' '100' 'False' <max_features> 'None' '0.0' 'None'
+
+<criterion> ::= 'entropy' | 'gini'
+<max_features> ::= 'RANDFLOAT(0.01,1.0)' | 'sqrt' | 'log2' | 'None'
+<algorithm_ada> ::= 'SAMME.R' | 'SAMME'
+<learning_rate_ada> ::= 'RANDFLOAT(0.01,2.0)'
+<n_estimators> ::=  '5' | '10' | '15' | '20' | '25' | '30' | '35' | '40' | '45' | '50'
+<learning_rate_gradient> ::= 'RANDFLOAT(0.0000000001,1.0)'
+
+<NaiveBayes> ::= 'GaussianNB' | <SpecificNB> <alpha>  <fit_prior> 
+<SpecificNB> ::= 'BernoulliNB' <binarize> | 'MultinomialNB'
+<alpha> ::= 'RANDFLOAT(0.0,9.0)'
+<fit_prior> ::=  'True' | 'False'
+<binarize> ::= 'RANDFLOAT(0.0,1.0)'
+
+<weak> ::= 'KNeighborsClassifier' <k> <weights> 'auto' '30' '2' 'minkowski' | <generalized> 
+<k> ::= 'RANDINT(1,30)'
+<weights> ::= 'uniform' | 'distance'
+
+<generalized> ::= <logistic> | <passive>
+
+<logistic> ::= 'LogisticRegression' 'False'  <C> '1' '100'  'liblinear' <penalty> <dual> 'None' 'ovr' 'False' '0.0001'
+
+<C> ::= 'RANDFLOAT(0.03125,32768.0)'
+<penalty> ::= 'l1' | 'l2'
+<dual> ::= 'True' | 'False'
+
+<passive> ::= 'PassiveAggressive ' <C>  <fit_intercept>  '5'  'True' <loss_sgd>  'False' 'None'
+
+<fit_intercept> ::= 'True' | 'False'
+<loss_sgd> ::= 'hinge'| 'log'| 'modified_huber'| 'squared_hinge'| 'perceptron'| 'squared_loss'| 'huber'| 'epsilon_insensitive'| 'squared_epsilon_insensitive' 
