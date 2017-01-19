@@ -1,0 +1,49 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "RECIPE \n \n\n\n \n  REsilient ClassifIcation Pipeline Evolution \n\n\n\n\nRECIPE is a framework based on a grammar-based genetic programming algorithm that builds customized classification pipelines. \n\n\nThe framework is flexible enough to receive different grammars and can be easily extended to other machine learning tasks. It overcomes the drawbacks of previous evolutionary-based frameworks, such as generating invalid individuals, and organizes a high number of possible suitable data pre-processing and classification methods into a grammar.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/installation/", 
+            "text": "RECIPE \n \n\n\n \n  REsilient ClassifIcation Pipeline Evolution \n\n\n\n\nDependecies\n\n\nTo execute RECIPE is necessary to install the following packages:\n\n\npython2.x python-dev scikit-learn scipy pandas numpy\n\n\n\nOne alternative is to use Anaconda that contains the majoraty of this packages. If you use Anaconda you need to install only the following package using the linux package-manager:\n\n\npython-dev\n\n\n\nAnd update the others via conda.\n\n\nCONDA users\n\n\nIf you are using conda is necessary to change a line in the Makefile before building.\n\n\nFirst you need to discover where is your python-2.7 folder on Anaconda. You can use the command:\n\n\nuser@machine:~/Recipe$ python-config --cflags\n\n\n\nThe result will be something like:\n\n\n-I/PATH/include/python2.7 -I/PATH/include/python2.7 ...\n\n\n\nOpen the Makefile and change the line 15 with the previous result:\n\n\nIFLAGS:=-I$(INCDIR) -I/PATH/include/python2.7\n\n\n\nBuilding\n\n\nAfter all the dependencies are installed is necessary to build the algorithm. To accomplish this task, go to the root folder of the project and execute the command:\n\n\nuser@machine:~/Recipe$ make", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/installation/#dependecies", 
+            "text": "To execute RECIPE is necessary to install the following packages:  python2.x python-dev scikit-learn scipy pandas numpy  One alternative is to use Anaconda that contains the majoraty of this packages. If you use Anaconda you need to install only the following package using the linux package-manager:  python-dev  And update the others via conda.", 
+            "title": "Dependecies"
+        }, 
+        {
+            "location": "/installation/#conda-users", 
+            "text": "If you are using conda is necessary to change a line in the Makefile before building.  First you need to discover where is your python-2.7 folder on Anaconda. You can use the command:  user@machine:~/Recipe$ python-config --cflags  The result will be something like:  -I/PATH/include/python2.7 -I/PATH/include/python2.7 ...  Open the Makefile and change the line 15 with the previous result:  IFLAGS:=-I$(INCDIR) -I/PATH/include/python2.7", 
+            "title": "CONDA users"
+        }, 
+        {
+            "location": "/installation/#building", 
+            "text": "After all the dependencies are installed is necessary to build the algorithm. To accomplish this task, go to the root folder of the project and execute the command:  user@machine:~/Recipe$ make", 
+            "title": "Building"
+        }, 
+        {
+            "location": "/about/", 
+            "text": "RECIPE \n \n\n\n \n  REsilient ClassifIcation Pipeline Evolution \n\n\n\n\nHow it works?\n\n\n\n\nRECIPE receives as input a dataset and a grammar, which is used to initialize the population. Each individual is represented by a derivation-tree built from the context-free grammar (CFG), which encompasses all the knowledge gathered from specialists on how to generate an effective classification pipeline. The individuals are mapped into pipelines implemented by the SciKit-Learn library, which are executed into a data sample from the application being solved and evaluated according to a metric of accuracy. Crossover and mutation operators are applied after a tournament selection, and guarantee that the new individuals generated also respect the production rules of the grammar. Elitism is also used, and evolution goes on until a maximum number of generations is reached or the best individual does not improve after a predefined number of generations. \n\n\nRECIPE was implemented using the library Libgges.\n\n\nGrammar\n\n\nIn RECIPE, the grammar represents a set of pipelines that can be used to solve a classification problem. Previously proposed systems have divided the pipelines into three main steps: data pre-processing, data processing and data post-process. We also follow this basic framework.\n\n\n\n\nThere is a lot of options of tasks or building blocks that can be considered in this three-step approach, as the area of machine learning is in constant development.\n\n\nIn RECIPE the total number of building blocks are:\n\n\n\n\n\n\n\n\nBuilding Blocks\n\n\nQuantity\n\n\n\n\n\n\n\n\n\n\nPre-Processing\n\n\n33\n\n\n\n\n\n\nProcessing\n\n\n23\n\n\n\n\n\n\n\n\nIndividual Representation\n\n\nIndividuals represent machine learning pipelines focused on the classification task. These individuals are generated from the grammar using a set of derivation steps.", 
+            "title": "About"
+        }, 
+        {
+            "location": "/about/#how-it-works", 
+            "text": "RECIPE receives as input a dataset and a grammar, which is used to initialize the population. Each individual is represented by a derivation-tree built from the context-free grammar (CFG), which encompasses all the knowledge gathered from specialists on how to generate an effective classification pipeline. The individuals are mapped into pipelines implemented by the SciKit-Learn library, which are executed into a data sample from the application being solved and evaluated according to a metric of accuracy. Crossover and mutation operators are applied after a tournament selection, and guarantee that the new individuals generated also respect the production rules of the grammar. Elitism is also used, and evolution goes on until a maximum number of generations is reached or the best individual does not improve after a predefined number of generations.   RECIPE was implemented using the library Libgges.", 
+            "title": "How it works?"
+        }, 
+        {
+            "location": "/about/#grammar", 
+            "text": "In RECIPE, the grammar represents a set of pipelines that can be used to solve a classification problem. Previously proposed systems have divided the pipelines into three main steps: data pre-processing, data processing and data post-process. We also follow this basic framework.   There is a lot of options of tasks or building blocks that can be considered in this three-step approach, as the area of machine learning is in constant development.  In RECIPE the total number of building blocks are:     Building Blocks  Quantity      Pre-Processing  33    Processing  23", 
+            "title": "Grammar"
+        }, 
+        {
+            "location": "/about/#individual-representation", 
+            "text": "Individuals represent machine learning pipelines focused on the classification task. These individuals are generated from the grammar using a set of derivation steps.", 
+            "title": "Individual Representation"
+        }
+    ]
+}
