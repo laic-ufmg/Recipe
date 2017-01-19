@@ -1,5 +1,0 @@
-make
-./bin/automaticML ./config/gecco2015-cfggp.ini 1 iris-Training0.arff iris-Test0.arff
-
-EXECUTAVEL %CONFIGURACAO %SEED %DATASET-TREINO  %DATSET-TESTE
-

@@ -21,6 +21,8 @@ A Makefile is included to build the base library and application. A call to:
   make
 should compile the project without any problems, and the resulting binaries should appear in the bin directory.
 
+More detailed information can be found at : [Installation](https://recipeml.github.io/Recipe/installation/)
+
 Documentation
 -------------
 
