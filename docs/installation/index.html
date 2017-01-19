@@ -52,7 +52,13 @@
                         <a href="./">Installation</a>
                     </li>
                     <li >
+                        <a href="../usage/">Usage</a>
+                    </li>
+                    <li >
                         <a href="../about/">About</a>
+                    </li>
+                    <li >
+                        <a href="../authors/">Authors</a>
                     </li>
                 </ul>
 
@@ -68,7 +74,7 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../about/">
+                        <a rel="prev" href="../usage/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -80,7 +86,7 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#dependecies">Dependecies</a></li>
+        <li class="main active"><a href="#dependencies">Dependencies</a></li>
         <li class="main "><a href="#conda-users">CONDA users</a></li>
         <li class="main "><a href="#building">Building</a></li>
     </ul>
@@ -90,17 +96,16 @@
 <p><center> <h1> RECIPE </h1> </center></p>
 <p><center> <h6>  REsilient ClassifIcation Pipeline Evolution </h6></center></p>
 <hr />
-<h2 id="dependecies">Dependecies</h2>
+<h2 id="dependencies">Dependencies</h2>
 <p>To execute RECIPE is necessary to install the following packages:</p>
 <pre><code>python2.x python-dev scikit-learn scipy pandas numpy
 </code></pre>
+<h2 id="conda-users">CONDA users</h2>
 <p>One alternative is to use Anaconda that contains the majoraty of this packages. If you use Anaconda you need to install only the following package using the linux package-manager:</p>
 <pre><code>python-dev
 </code></pre>
-<p>And update the others via conda.</p>
-<h2 id="conda-users">CONDA users</h2>
-<p>If you are using conda is necessary to change a line in the Makefile before building.</p>
-<p>First you need to discover where is your python-2.7 folder on Anaconda. You can use the command:</p>
+<p>And update the others via conda. </p>
+<p>Is necessary to change a line in the Makefile before building. First you need to discover where is your python-2.7 folder on Anaconda. You can use the command:</p>
 <pre><code>user@machine:~/Recipe$ python-config --cflags
 </code></pre>
 <p>The result will be something like:</p>

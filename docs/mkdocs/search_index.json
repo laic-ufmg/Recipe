@@ -2,28 +2,53 @@
     "docs": [
         {
             "location": "/", 
-            "text": "RECIPE \n \n\n\n \n  REsilient ClassifIcation Pipeline Evolution \n\n\n\n\nRECIPE is a framework based on a grammar-based genetic programming algorithm that builds customized classification pipelines. \n\n\nThe framework is flexible enough to receive different grammars and can be easily extended to other machine learning tasks. It overcomes the drawbacks of previous evolutionary-based frameworks, such as generating invalid individuals, and organizes a high number of possible suitable data pre-processing and classification methods into a grammar.", 
+            "text": "RECIPE \n \n\n\n \n  REsilient ClassifIcation Pipeline Evolution \n\n\n\n\nRECIPE is a framework based on a grammar-based genetic programming algorithm that builds customized classification pipelines. \n\n\nThe framework is flexible enough to receive different grammars and can be easily extended to other machine learning tasks. It overcomes the drawbacks of previous evolutionary-based frameworks, such as generating invalid individuals, and organizes a high number of possible suitable data pre-processing and classification methods into a grammar.\n\n\nCode\n\n\nThe source code can be dowloand at \nsource code\n.", 
             "title": "Home"
         }, 
         {
+            "location": "/#code", 
+            "text": "The source code can be dowloand at  source code .", 
+            "title": "Code"
+        }, 
+        {
             "location": "/installation/", 
-            "text": "RECIPE \n \n\n\n \n  REsilient ClassifIcation Pipeline Evolution \n\n\n\n\nDependecies\n\n\nTo execute RECIPE is necessary to install the following packages:\n\n\npython2.x python-dev scikit-learn scipy pandas numpy\n\n\n\nOne alternative is to use Anaconda that contains the majoraty of this packages. If you use Anaconda you need to install only the following package using the linux package-manager:\n\n\npython-dev\n\n\n\nAnd update the others via conda.\n\n\nCONDA users\n\n\nIf you are using conda is necessary to change a line in the Makefile before building.\n\n\nFirst you need to discover where is your python-2.7 folder on Anaconda. You can use the command:\n\n\nuser@machine:~/Recipe$ python-config --cflags\n\n\n\nThe result will be something like:\n\n\n-I/PATH/include/python2.7 -I/PATH/include/python2.7 ...\n\n\n\nOpen the Makefile and change the line 15 with the previous result:\n\n\nIFLAGS:=-I$(INCDIR) -I/PATH/include/python2.7\n\n\n\nBuilding\n\n\nAfter all the dependencies are installed is necessary to build the algorithm. To accomplish this task, go to the root folder of the project and execute the command:\n\n\nuser@machine:~/Recipe$ make", 
+            "text": "RECIPE \n \n\n\n \n  REsilient ClassifIcation Pipeline Evolution \n\n\n\n\nDependencies\n\n\nTo execute RECIPE is necessary to install the following packages:\n\n\npython2.x python-dev scikit-learn scipy pandas numpy\n\n\n\nCONDA users\n\n\nOne alternative is to use Anaconda that contains the majoraty of this packages. If you use Anaconda you need to install only the following package using the linux package-manager:\n\n\npython-dev\n\n\n\nAnd update the others via conda. \n\n\nIs necessary to change a line in the Makefile before building. First you need to discover where is your python-2.7 folder on Anaconda. You can use the command:\n\n\nuser@machine:~/Recipe$ python-config --cflags\n\n\n\nThe result will be something like:\n\n\n-I/PATH/include/python2.7 -I/PATH/include/python2.7 ...\n\n\n\nOpen the Makefile and change the line 15 with the previous result:\n\n\nIFLAGS:=-I$(INCDIR) -I/PATH/include/python2.7\n\n\n\nBuilding\n\n\nAfter all the dependencies are installed is necessary to build the algorithm. To accomplish this task, go to the root folder of the project and execute the command:\n\n\nuser@machine:~/Recipe$ make", 
             "title": "Installation"
         }, 
         {
-            "location": "/installation/#dependecies", 
-            "text": "To execute RECIPE is necessary to install the following packages:  python2.x python-dev scikit-learn scipy pandas numpy  One alternative is to use Anaconda that contains the majoraty of this packages. If you use Anaconda you need to install only the following package using the linux package-manager:  python-dev  And update the others via conda.", 
-            "title": "Dependecies"
+            "location": "/installation/#dependencies", 
+            "text": "To execute RECIPE is necessary to install the following packages:  python2.x python-dev scikit-learn scipy pandas numpy", 
+            "title": "Dependencies"
         }, 
         {
             "location": "/installation/#conda-users", 
-            "text": "If you are using conda is necessary to change a line in the Makefile before building.  First you need to discover where is your python-2.7 folder on Anaconda. You can use the command:  user@machine:~/Recipe$ python-config --cflags  The result will be something like:  -I/PATH/include/python2.7 -I/PATH/include/python2.7 ...  Open the Makefile and change the line 15 with the previous result:  IFLAGS:=-I$(INCDIR) -I/PATH/include/python2.7", 
+            "text": "One alternative is to use Anaconda that contains the majoraty of this packages. If you use Anaconda you need to install only the following package using the linux package-manager:  python-dev  And update the others via conda.   Is necessary to change a line in the Makefile before building. First you need to discover where is your python-2.7 folder on Anaconda. You can use the command:  user@machine:~/Recipe$ python-config --cflags  The result will be something like:  -I/PATH/include/python2.7 -I/PATH/include/python2.7 ...  Open the Makefile and change the line 15 with the previous result:  IFLAGS:=-I$(INCDIR) -I/PATH/include/python2.7", 
             "title": "CONDA users"
         }, 
         {
             "location": "/installation/#building", 
             "text": "After all the dependencies are installed is necessary to build the algorithm. To accomplish this task, go to the root folder of the project and execute the command:  user@machine:~/Recipe$ make", 
             "title": "Building"
+        }, 
+        {
+            "location": "/usage/", 
+            "text": "RECIPE \n \n\n\n \n  REsilient ClassifIcation Pipeline Evolution \n\n\n\n\nRunning\n\n\nAfter the installation process is possible to run the algorithm and generate the best pipeline based on the input dataset. To run is necessary in the root folder of the source code execute the command:\n\n\n./bin/automaticML %CONFIGURATION %SEED %DATASET_TRAIN %DATSET_TEST\n\n\n\nIn the source code there is a folder named datasets. Example of how to use de algorithm for the given dataset:\n\n\n./bin/automaticML ./config/gecco2015-cfggp.ini 1 ./datasets/iris/iris-Training0.arff ./datasets/iris/iris-Test0.arff\n\n\n\nConfiguring GP\n\n\nThe program already came with a configuration file that can be changed and set the best parameters to execute the GP. The file can be found in the folder config. In this file is defined the mutation and crossover ratio values, population size, number of generations and elitism. \n\n\nResults\n\n\nThe program generate 3 files:\n\n\n\n\nEvolution-Training : data regards the evolution of individuals using the training data\n\n\nEvolution-Test : data regards the evolution of individuasl using the test data\n\n\nResults : final file cointaing the best individual found and the score of the metrics", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/usage/#running", 
+            "text": "After the installation process is possible to run the algorithm and generate the best pipeline based on the input dataset. To run is necessary in the root folder of the source code execute the command:  ./bin/automaticML %CONFIGURATION %SEED %DATASET_TRAIN %DATSET_TEST  In the source code there is a folder named datasets. Example of how to use de algorithm for the given dataset:  ./bin/automaticML ./config/gecco2015-cfggp.ini 1 ./datasets/iris/iris-Training0.arff ./datasets/iris/iris-Test0.arff", 
+            "title": "Running"
+        }, 
+        {
+            "location": "/usage/#configuring-gp", 
+            "text": "The program already came with a configuration file that can be changed and set the best parameters to execute the GP. The file can be found in the folder config. In this file is defined the mutation and crossover ratio values, population size, number of generations and elitism.", 
+            "title": "Configuring GP"
+        }, 
+        {
+            "location": "/usage/#results", 
+            "text": "The program generate 3 files:   Evolution-Training : data regards the evolution of individuals using the training data  Evolution-Test : data regards the evolution of individuasl using the test data  Results : final file cointaing the best individual found and the score of the metrics", 
+            "title": "Results"
         }, 
         {
             "location": "/about/", 
@@ -44,6 +69,11 @@
             "location": "/about/#individual-representation", 
             "text": "Individuals represent machine learning pipelines focused on the classification task. These individuals are generated from the grammar using a set of derivation steps.", 
             "title": "Individual Representation"
+        }, 
+        {
+            "location": "/authors/", 
+            "text": "RECIPE \n \n\n\n \n  REsilient ClassifIcation Pipeline Evolution \n\n\n\n\nThis project is developed and maintained by:\n\n\n\n\n\n\nWalter Jos\u00e9 : walterjgsp@dcc.ufmg.br\n\n\n\n\n\n\nAlex de S\u00e1 : alexgcsa@dcc.ufmg.br\n\n\n\n\n\n\nGisele L. Pappa : glpappa@dcc.ufmg.br", 
+            "title": "Authors"
         }
     ]
 }
