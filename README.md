@@ -26,7 +26,7 @@ Documentation
 
 Documentation for the project can be found in the following link:
 
-
+[RecipeDoc](https://recipeml.github.io/Recipe/)
 
 License
 -------
