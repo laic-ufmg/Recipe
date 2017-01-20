@@ -27,13 +27,21 @@ def main(args):
 
 if __name__ == "__main__":
 
-	parser = argparse.ArgumentParser(description = 'RECIPE - Algorithm to generate machine learning pipelines')
+	if(os.path.isfile('./bin/automaticML')):
+		
+		parser = argparse.ArgumentParser(description = 'RECIPE - Algorithm to generate machine learning pipelines')
 
-	parser.add_argument('-c', '--config', help= "configuration file of the GP", default = './config/gecco2015-cfggp.ini', required=False)
-	parser.add_argument('-s', '--seed' , help="seed value for the random functions",default=1,type=int,required=False)
-	parser.add_argument('-dTr','--dataTrain',help="file to train the algorithm",required=True)
-	parser.add_argument('-dTe','--dataTest',help="file to test the algorithm",required=True)	
+		parser.add_argument('-c', '--config', help= "configuration file of the GP", default = './config/gecco2015-cfggp.ini', required=False)
+		parser.add_argument('-s', '--seed' , help="seed value for the random functions",default=1,type=int,required=False)
+		parser.add_argument('-dTr','--dataTrain',help="file to train the algorithm",required=True)
+		parser.add_argument('-dTe','--dataTest',help="file to test the algorithm",required=True)	
 
-	args = parser.parse_args()
+		args = parser.parse_args()
 
-	main(args)
+		main(args)
+
+	else:
+
+		print "First is necessary to build the project. Run python setup.py build"
+		
+		

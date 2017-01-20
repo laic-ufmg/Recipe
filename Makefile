@@ -47,7 +47,7 @@ $(OBJDIR)/%.o : $(DEMDIR)/%.c $(wildcard $(DEMDIR)/*.h) $(INC)
 	@$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@
 
 clean:
-	@rm -rf $(OBJDIR)
+	@rm -rf $(OBJDIR) $(BINDIR)/automaticML
 
 nuke: clean
 	@rm -rf $(INCDIR) $(BINDIR) $(LIBDIR)
