@@ -24,6 +24,10 @@ import load_pipeline as load
 from sklearn.pipeline import make_pipeline
 from sklearn import cross_validation
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 def evaluate_algorithm(mlAlgorithm, dataTraining, seed, dataSeed, internalCV):
 
 	"""Evaluate a single algorithm

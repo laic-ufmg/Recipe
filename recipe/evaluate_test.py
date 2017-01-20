@@ -25,6 +25,10 @@ import random
 
 import printGeneration as printG
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed):
 
     """Evaluate the test individuals 

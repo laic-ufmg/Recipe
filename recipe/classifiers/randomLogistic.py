@@ -17,6 +17,10 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.linear_model import RandomizedLogisticRegression
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 def randomLogistic(args):
 
     """Uses scikit-learn's Randomized Logistic Regression, works by subsampling the training data and fitting a L1-penalized 

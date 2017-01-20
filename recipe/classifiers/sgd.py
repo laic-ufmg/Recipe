@@ -17,6 +17,10 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.linear_model import SGDClassifier
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 def sgd(args):
 
     """Uses scikit-learn's SGDClassifier, this estimator implements regularized linear models with stochastic gradient descent (SGD) learning: 

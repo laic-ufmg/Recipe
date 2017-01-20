@@ -17,6 +17,10 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.linear_model import RidgeClassifier
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 def ridge(args):
 
 	"""Uses scikit-learn's RidgeClassifier using Ridge regression.

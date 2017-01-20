@@ -28,6 +28,10 @@ import pandas as pd
 import evaluate_algorithm as evaluate
 import printGeneration as printG
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalCV):
     
     """Evaluate all individuals of a generation using a seed and a Training method. Uses multiprocessing 

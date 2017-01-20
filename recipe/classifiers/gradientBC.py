@@ -16,6 +16,10 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 """
 from sklearn.ensemble import GradientBoostingClassifier
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 def gradientBC(args):
 
 	"""Uses scikit-learn's GradientBoostingClassifier, GB builds an additive model in a forward stage-wise fashion; it allows for the optimization of arbitrary differentiable loss functions.

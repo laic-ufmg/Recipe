@@ -17,6 +17,10 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.naive_bayes import BernoulliNB
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 def bernoulliNB(args):
 
     """Uses scikit-learn's BernoulliNB, a naive bayes classifier for multinomial models

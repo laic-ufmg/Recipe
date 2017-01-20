@@ -17,6 +17,10 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.neighbors import KNeighborsClassifier
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 def kNeighboors(args):
 
     """Uses scikit-learn's KNeighborsClassifier, classifier implementing the k-nearest neighbors vote.
