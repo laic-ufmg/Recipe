@@ -28,6 +28,10 @@ import pandas as pd
 import load_pipeline as load
 from sklearn.pipeline import make_pipeline
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 def testAlgorithm(mlAlgorithm, dataTraining, dataTest, seed, dataSeed):
     try:
         #Load the training and test datasets:

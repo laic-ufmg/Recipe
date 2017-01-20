@@ -17,6 +17,10 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.preprocessing import Binarizer
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 def binarizer(args):
 
 	"""Uses scikit-learn's Binarizer, binarize data (set feature values to 0 or 1) according to a threshold.

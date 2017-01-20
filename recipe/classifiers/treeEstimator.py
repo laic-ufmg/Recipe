@@ -17,6 +17,10 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.tree import DecisionTreeClassifier, ExtraTreeClassifier
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 def treeEstimator(args):
 
     """Uses scikit-learn's ExtraTreeClassifier or DecisionTreeClassifier

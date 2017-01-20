@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Copyright 2016 Walter José
+Copyright 2016 Walter José and Alex de Sá
 
 This file is part of the RECIPE Algorithm.
 
@@ -16,6 +16,10 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 """
 
 from sklearn.feature_selection import f_classif, chi2, SelectFwe
+
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
 
 def selectFwe(args):
 

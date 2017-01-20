@@ -17,6 +17,10 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.neighbors import RadiusNeighborsClassifier
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 def radiusNeighboors(args):
     
     """Uses scikit-learn's RadiusNeighborsClassifier, a classifier implementing a vote among neighbors within a given radius.

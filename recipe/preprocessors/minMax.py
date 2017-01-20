@@ -17,6 +17,10 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.preprocessing import MinMaxScaler
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 def minMax(args):
 
 	"""Uses scikit-learn's MinMaxScaler, transforms features by scaling each feature to a given range.

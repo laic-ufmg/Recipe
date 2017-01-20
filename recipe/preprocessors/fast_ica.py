@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Copyright 2016 Walter José
+Copyright 2016 Walter José and Alex de Sá
 
 This file is part of the RECIPE Algorithm.
 
@@ -15,6 +15,10 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 """
 from sklearn.decomposition import FastICA
+
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
 
 def fast_ica(args):
 

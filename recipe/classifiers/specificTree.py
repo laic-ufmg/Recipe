@@ -17,6 +17,10 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.ensemble import ExtraTreesClassifier, RandomForestClassifier
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 def specificTree(args):
 
     """Uses scikit-learn's ExtraTreesClassifier or RandomForestClassifier:
