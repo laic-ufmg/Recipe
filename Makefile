@@ -12,7 +12,7 @@ OBJS:=$(subst $(SRCDIR)/,$(OBJDIR)/,$(patsubst %.c,%.o,$(wildcard $(SRCDIR)/*.c)
 DEMO_OBJS=$(OBJDIR)/mt19937ar.o $(OBJDIR)/parameters.o $(OBJDIR)/readline.o
 
 CFLAGS:=-std=gnu99 -Wall -pedantic -march=native -O2 -g
-IFLAGS:=-I$(INCDIR) -I/home/disk2/speed/walterjgsp/anaconda2/include/python2.7
+IFLAGS:=-I$(INCDIR) -I/usr/include/python2.7
 LFLAGS:=-L$(LIBDIR) -lgges -lm  -lpython2.7
 
 INC:=$(SRCDIR)/gges.h $(SRCDIR)/grammar.h $(SRCDIR)/cfggp.h $(SRCDIR)/ge.h \

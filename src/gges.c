@@ -596,6 +596,10 @@ struct gges_parameters *gges_default_parameters()
     def->dataSeed = 0;
     //Default number of folds in the internal cross-validation (training and validation sets):
     def->internalCV = 3;
+    //Default number of cores to be used on the algorithm execution
+    def->nCores = 1;
+    //Default time to execute each individual of the GP on evaluation
+    def->timeout= 300;
    
     /**
      *--------------------------------------------------------------------------*
