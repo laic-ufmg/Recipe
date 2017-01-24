@@ -4,19 +4,19 @@
 Recipe 
 ========================================================================
 
-This project was created to support the experimental component of the paper:
+This project presents a framework for automatically evolving machine learning pipelines based on the definition of grammars.
+If you use this project in your work, please reference the following paper:
 
+RECIPE: A Grammar-based Framework for Automatically Evolving Classification Pipelines, Alex G. C. de Sá, Walter José G. S. Pinto, Luiz Otavio V. B. Oliveira,  Gisele L. Pappa, EuroGP'17 
 
-If you use this project in your work, then a reference to the above work would be greatly appreciated.
-
-This work use libgges library as core for the Grammar Based GP. The library can be found in the link:
+Note that this project uses the libgges library to implement the Grammar Based GP. The library can be found in the link:
 
 [libgges](https://github.com/grantdick/libgges)
 
 Installation
 ------------
 
-This project should install on any platform supported by GCC and python 2.7. 
+This project can be installed in any platform supported by GCC and python 2.7. 
 A Makefile is included to build the base library and application. A call to:
   make
 should compile the project without any problems, and the resulting binaries should appear in the bin directory.
