@@ -39,4 +39,4 @@ Support
 -------
 
 Any questions or comments should be directed to Walter José
-(walterjgsp@dcc.ufmg.br)
+(walterjgsp@dcc.ufmg.br) or Alex de Sá (alexgcsa@dcc.ufmg.br)
