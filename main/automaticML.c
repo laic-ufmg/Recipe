@@ -18,6 +18,18 @@
 *  This code is based on the library Libgges.
 */
 
+
+typedef struct
+{
+    long seed;
+    int dataSeed; 
+    int internalCV; 
+    bool evalTest;
+    int nCores;
+    int timeout;
+    
+}ExecParams;
+
 /**
 * @brief Function to evaluate the individuals.
 * 
@@ -35,7 +47,7 @@
 * @param evalTest - a control parameter to evaluate the test set only in the end of the evolutionary process
 * @return The fitness of the individual
 */
-static char *evaluate_algorithms(int G, char *algorithms, char *dataTraining, char *dataTest, long seed, int dataSeed, int internalCV, bool evalTest){
+static char *evaluate_algorithms(int G, char *algorithms, char *dataTraining, char *dataTest, ExecParams exP){
 
     PyObject *pName, *pModule, *pDict, *pFunc, *pValue;
     char *individuals_fitness = malloc(1000);
@@ -48,8 +60,7 @@ static char *evaluate_algorithms(int G, char *algorithms, char *dataTraining, ch
     PyObject *path = PyObject_GetAttrString(sys, "path");
     PyList_Append(path, PyString_FromString("./recipe/"));
     Py_DECREF(sys);
-    Py_DECREF(path);
-    
+    Py_DECREF(path);    
 
     // Build the name object
     pName = PyString_FromString("recipe");
@@ -63,35 +74,41 @@ static char *evaluate_algorithms(int G, char *algorithms, char *dataTraining, ch
     PyObject* pArgs = NULL;
     pFunc = NULL;
 
+
+
     //Make the evaluation of the GP individuals on the training data:
-    if((dataTest == NULL) && (!evalTest)){
+    if((dataTest == NULL) && (!exP.evalTest)){
         // pFunc is also a borrowed reference
         pFunc = PyDict_GetItemString(pDict, "evaluate_inds");
-        pArgs = PyTuple_Pack(6, PyInt_FromLong(G),
+        pArgs = PyTuple_Pack(8, PyInt_FromLong(G),
                                       PyString_FromString(algorithms), 
                                       PyString_FromString(dataTraining),
-                                      PyInt_FromLong(seed),
-                                      PyInt_FromLong(dataSeed),
-                                      PyInt_FromLong(internalCV));
+                                      PyInt_FromLong(exP.seed),
+                                      PyInt_FromLong(exP.dataSeed),
+                                      PyInt_FromLong(exP.internalCV),
+                                      PyInt_FromLong(exP.nCores),
+                                      PyInt_FromLong(exP.timeout));
     //Test the resultant algorithm on the test data:
-    }else if((dataTest != NULL) && (!evalTest)){
+    }else if((dataTest != NULL) && (!exP.evalTest)){
         pFunc = PyDict_GetItemString(pDict, "evaluate_on_test");
-        pArgs = PyTuple_Pack(6, PyInt_FromLong(G),
+        pArgs = PyTuple_Pack(8, PyInt_FromLong(G),
                                       PyString_FromString(algorithms), 
                                       PyString_FromString(dataTraining),
                                       PyString_FromString(dataTest),
-                                      PyInt_FromLong(seed),
-                                      PyInt_FromLong(dataSeed));
+                                      PyInt_FromLong(exP.seed),
+                                      PyInt_FromLong(exP.dataSeed),
+                                      PyInt_FromLong(exP.nCores),
+                                      PyInt_FromLong(exP.timeout));
 
-    }if((dataTest != NULL) && (evalTest)){
+    }if((dataTest != NULL) && (exP.evalTest)){
+
         pFunc = PyDict_GetItemString(pDict, "test_algorithm");
         pArgs = PyTuple_Pack(5,       PyString_FromString(algorithms), 
                                       PyString_FromString(dataTraining), 
                                       PyString_FromString(dataTest),
-                                      PyInt_FromLong(seed),
-                                      PyInt_FromLong(dataSeed));
+                                      PyInt_FromLong(exP.seed),
+                                      PyInt_FromLong(exP.dataSeed));
     }
-
 
     pValue = NULL;
 
@@ -174,14 +191,21 @@ static  void eval(struct gges_parameters *params, int G, struct gges_individual 
     if(G % 5 == 0){
     	params->dataSeed = params->dataSeed + 1;
     }
-    
+
+    ExecParams exP;  
+    exP.seed=params->seed;
+    exP.dataSeed=params->dataSeed; 
+    exP.internalCV=params->internalCV; 
+    exP.evalTest=false;
+    exP.nCores=params->nCores;
+    exP.timeout=params->timeout;
    
     //Concatenate the individuals in a single string:
     char *individuals = concatenate(members, N);
     //Measure the fitness of the individuals calling a python program (sklearn methods):
-    char *results = evaluate_algorithms(G, individuals, params->dataTraining, NULL, params->seed, params->dataSeed,params->internalCV, false);
+    char *results = evaluate_algorithms(G, individuals, params->dataTraining, NULL, exP);
     //Call to evaluate the individuals on the test set, to see the evolutionary curve in the test set:
-    evaluate_algorithms(G, individuals, params->dataTraining, params->dataTest, params->seed, params->dataSeed,params->internalCV, false);
+    evaluate_algorithms(G, individuals, params->dataTraining, params->dataTest, exP);
     char *evaluation;
     evaluation = strtok (results,";");
     //Set the fitness of each individual according to python sklearn library:
@@ -222,6 +246,13 @@ static void report(struct gges_parameters *params, int G, bool stop_criterion,  
 
     FILE *results;
 
+    ExecParams exP;  
+    exP.seed=params->seed;
+    exP.dataSeed=params->dataSeed; 
+    exP.internalCV=params->internalCV; 
+    exP.evalTest=true;
+    exP.nCores=params->nCores;
+    exP.timeout=params->timeout;
 
     snprintf(stringSeed, 10, "%ld", params->seed);
 
@@ -247,7 +278,7 @@ static void report(struct gges_parameters *params, int G, bool stop_criterion,  
     
     //Save the reports in a file:
     if((G==params->generation_count) || (stop_criterion)){
-        strcpy(testResult, evaluate_algorithms(G, members[0]->mapping->buffer, params->dataTraining, params->dataTest, params->seed, params->dataSeed, params->internalCV, true));
+        strcpy(testResult, evaluate_algorithms(G, members[0]->mapping->buffer, params->dataTraining, params->dataTest, exP));
         fprintf(results, "%s, %ld, %s\n", testResult, params->seed, members[0]->mapping->buffer);
         printf("Final result: %ld, %s, %s\n", params->seed, members[0]->mapping->buffer, testResult);
     }
@@ -291,6 +322,8 @@ int main(int argc, char **argv){
     //includes the directory of the training and test datasets
     params->dataTraining = argv[3]; 
     params->dataTest = argv[4];
+    params->nCores = atoi(argv[5]);
+    params->timeout = atoi(argv[6]);
   
     //Load the grammar, which its grammar directory is defined by a parameter:
     G = gges_load_bnf(params->grammarDir);

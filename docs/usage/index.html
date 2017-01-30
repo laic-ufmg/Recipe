@@ -281,17 +281,21 @@
 <p><center> <h6>  REsilient ClassifIcation Pipeline Evolution </h6></center></p>
 <hr />
 <h2 id="running">Running</h2>
-<p>After the installation process is possible to run the algorithm and generate the best pipeline based on the input dataset. To run is necessary in the root folder of the source code execute the command:</p>
+<p>After the installation process is complete you can run the algorithm and generate the best pipeline based on the input dataset. To run, execute the following command from the root folder of the source code</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>python exec.py -dTr DATATRAIN -dTe DATATEST
 </pre></div>
 </td></tr></table>
 
-<p>In the source code there is a folder named datasets. Example of how to use de algorithm for the given dataset:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>python exec.py -dTr ./datasets/iris/iris-Training0.arff -dTe ./datasets/iris/iris-Test0.arff
+<p>In the project you downloaded there is a folder named datasets. An example of how to use de algorithm for the dataset iris is:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>python exec.py -dTr ./datasets/iris/iris-Training0.csv -dTe ./datasets/iris/iris-Test0.csv
 </pre></div>
 </td></tr></table>
 
-<p>RECIPE offers anothers arguments that can be set by the user.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The input data must be in .csv form regardless the extension of the file.</p>
+</div>
+<p>RECIPE offers another arguments that can be set by the user.</p>
 <table>
 <thead>
 <tr>
@@ -331,16 +335,30 @@
 <td>A string referring to a file containing the data used to test the pipeline methods</td>
 <td></td>
 </tr>
+<tr>
+<td>-nc</td>
+<td>NUMBER OF CORES</td>
+<td>Positive Integer</td>
+<td>Number of cores to be used on the algorithm execution</td>
+<td></td>
+</tr>
+<tr>
+<td>-t</td>
+<td>TIMEOUT</td>
+<td>Positive Integer</td>
+<td>Time to execute each individual of the GP on evaluation</td>
+<td></td>
+</tr>
 </tbody>
 </table>
 <h2 id="configuring-gp">Configuring GP</h2>
-<p>The program already came with a configuration file that can be changed and set the best parameters to execute the GP. The file can be found in the folder config. In this file is defined the mutation and crossover ratio values, population size, number of generations and elitism. </p>
+<p>The program comes with a configuration file (folder config) that can be used to set the best parameters to execute the GP.  This file defines the mutation and crossover ratio values, population size, number of generations and elitism.</p>
 <h2 id="results">Results</h2>
-<p>The program generate 3 files:</p>
+<p>The program generates 3 files:</p>
 <ol>
-<li>Evolution-Training : data regards the evolution of individuals using the training data</li>
-<li>Evolution-Test : data regards the evolution of individuasl using the test data</li>
-<li>Results : final file cointaing the best individual found and the score of the metrics</li>
+<li>Evolution-Training : data regarding the evolution of individuals using the training data</li>
+<li>Evolution-Test : data regarding the evolution of individuals using the test data</li>
+<li>Results : final file containing the best individual found and the values of the metrics</li>
 </ol>
               
             </article>

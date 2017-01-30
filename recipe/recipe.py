@@ -23,15 +23,14 @@ import evaluate_individuals as evaluate
 import evaluate_test as evaluateT
 import testAlgorithm as test
 
-def evaluate_inds(G, individuals, dataTraining, seed, dataSeed, internalCV):
-    
-    return evaluate.evaluate_individuals(G,individuals,dataTraining,seed,dataSeed,internalCV)
+def evaluate_inds(G, individuals, dataTraining, seed, dataSeed, internalCV,nCores,timeout):
 
- 
+    return evaluate.evaluate_individuals(G,individuals,dataTraining,seed,dataSeed,internalCV,nCores,timeout)
+
+def evaluate_on_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,timeout):
+
+	return evaluateT.evaluate_test(G,individuals,dataTraining,dataTest,seed,dataSeed,nCores,timeout)
+
 def test_algorithm(mlAlgorithm, dataTraining, dataTest, seed, dataSeed):
 
 	return test.testAlgorithm(mlAlgorithm,dataTraining,dataTest,seed,dataSeed)
-
-def evaluate_on_test(G, individuals, dataTraining, dataTest, seed, dataSeed):
-
-	return evaluateT.evaluate_test(G,individuals,dataTraining,dataTest,seed,dataSeed)

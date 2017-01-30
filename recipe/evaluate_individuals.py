@@ -32,7 +32,7 @@ import printGeneration as printG
 import warnings
 warnings.filterwarnings("ignore")
 
-def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalCV):
+def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalCV,nCores,timeOut):
     
     """Evaluate all individuals of a generation using a seed and a Training method. Uses multiprocessing 
     
@@ -66,7 +66,7 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
         algorithms =  individuals.strip().split(';')
 
         #Uses a pool with n process to evaluate the individuals:
-        pool = Pool(processes=4)
+        pool = Pool(processes=nCores)
         results = []
         output_training = []
         try:
@@ -82,7 +82,7 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
         #To control the timeout to finish the method in a proper time:
         start = time()
         #Timeout=300s for each process:
-        wait_until = start + 100
+        wait_until = start + timeOut
 
         try:
             for r in results:

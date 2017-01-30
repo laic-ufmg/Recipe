@@ -25,11 +25,13 @@ import random
 
 import printGeneration as printG
 
+import testAlgorithm as test
+
 #Ignoring the warnings:
 import warnings
 warnings.filterwarnings("ignore")
 
-def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed):
+def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,timeOut):
 
     """Evaluate the test individuals 
     
@@ -60,13 +62,13 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed):
         algorithms =  individuals.strip().split(';')
 
         #Uses a pool with n process to evaluate the individuals:
-        pool = Pool(processes=4)
+        pool = Pool(processes=nCores)
         results = []
         output = []
         try:
             for alg in algorithms:
                 #Apply the algorithm over the dataset with a multiprocess approach and get the return:
-                results.append(pool.apply_async(test_algorithm, args=(alg,dataTraining,dataTest,seed,dataSeed,)))
+                results.append(pool.apply_async(test.testAlgorithm, args=(alg,dataTraining,dataTest,seed,dataSeed)))
         except Exception as ei:
             print ei
 
@@ -76,7 +78,7 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed):
         #To control the timeout to finish the method in a proper time:
         start = time()
         #Timeout=300s for each process:
-        wait_until = start + 100
+        wait_until = start + timeOut
 
         try:
             for r in results:
