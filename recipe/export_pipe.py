@@ -52,22 +52,47 @@ def export_pipe(_filename,pipeline):
 
 		out.write("\n")
 
+		out.write("def pipeline(dataTraining,dataTest):\n\n")
+
+		out.write('''
+\t#Load the training and test datasets:
+\ttraining_df = pd.read_csv(dataTraining, header=0, delimiter=",")
+\ttest_df = pd.read_csv(dataTest, header=0, delimiter=",") 
+
+\t#Apply a filter if the data has categorical data (sklean does not accept this type of data):
+\tobjectList = list(training_df.select_dtypes(include=['object']).columns)
+\tif ('class' in objectList and len(objectList)>=1):
+\t\ttraining_df = training_df.apply(LabelEncoder().fit_transform)
+\t\ttest_df = test_df.apply(LabelEncoder().fit_transform)
+
+\t#Get the feature data and the class for training:
+\ttrain_data = training_df.ix[:,:-1].values
+\ttrain_target = training_df["class"].values    
+        
+\t# ... and test:
+\ttest_data = test_df.ix[:,:-1].values
+\ttest_target = test_df["class"].values
+
+\t#Validation -- Get a subsample of the training to get information about possible overfitting:
+\tX_train, X_validation, y_train, y_validation = train_test_split(train_data, train_target, train_size=0.7, test_size=0.3, random_state=dataSeed, stratify=train_target)\n
+''')
+
 		count = 0
 
 		methods = []
 
 		for p in pipe:
 
-			str1 = "step"+str(count)+" = "+str(p)+"\n"
+			str1 = "\tstep"+str(count)+" = "+str(p)+"\n"
 			methods.append(str1)
 			count+=1
 
 		out.write("\n".join(methods))
 
-		out.write("\nmethods = []\n")
+		out.write("\n\tmethods = []\n")
 
 		for i in range(0,count):
 
-			out.write("methods.append(step"+str(i)+")")
+			out.write("\tmethods.append(step"+str(i)+")")
 
-		out.write("\n\npipeline = make_pipeline(*methods)")
+		out.write("\n\n\tpipeline = make_pipeline(*methods)")
