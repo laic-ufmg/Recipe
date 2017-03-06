@@ -22,6 +22,7 @@ warnings.filterwarnings("ignore")
 import evaluate_individuals as evaluate
 import evaluate_test as evaluateT
 import testAlgorithm as test
+import export_pipe as export
 
 def evaluate_inds(G, individuals, dataTraining, seed, dataSeed, internalCV,nCores,timeout):
 
@@ -34,3 +35,10 @@ def evaluate_on_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCor
 def test_algorithm(mlAlgorithm, dataTraining, dataTest, seed, dataSeed):
 
 	return test.testAlgorithm(mlAlgorithm,dataTraining,dataTest,seed,dataSeed)
+
+def export_pipe(_filename,individual):
+
+	if(_filename.endswith(".py")==False):
+		_filename=_filename+'.py'
+	
+	export.export_pipe(_filename,individual)

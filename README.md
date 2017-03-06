@@ -1,7 +1,7 @@
 ![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)
 ![License](https://img.shields.io/badge/license-GPLv3-blue.svg)
 
-Recipe 
+RECIPE
 ========================================================================
 
 This project presents a framework for automatically evolving machine learning pipelines based on the definition of grammars.
@@ -39,4 +39,4 @@ Support
 -------
 
 Any questions or comments should be directed to Walter José
-(walterjgsp@dcc.ufmg.br)
+(walterjgsp@dcc.ufmg.br) or Alex de Sá (alexgcsa@dcc.ufmg.br)
