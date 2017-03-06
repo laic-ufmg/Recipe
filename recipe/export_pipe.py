@@ -96,3 +96,5 @@ def export_pipe(_filename,pipeline):
 			out.write("\tmethods.append(step"+str(i)+")")
 
 		out.write("\n\n\tpipeline = make_pipeline(*methods)")
+
+		

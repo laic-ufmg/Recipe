@@ -37,5 +37,8 @@ def test_algorithm(mlAlgorithm, dataTraining, dataTest, seed, dataSeed):
 	return test.testAlgorithm(mlAlgorithm,dataTraining,dataTest,seed,dataSeed)
 
 def export_pipe(_filename,individual):
+
+	if(_filename.endswith(".py")==False):
+		_filename=_filename+'.py'
 	
-	export.export_pipe("pipeline.py",individual)
+	export.export_pipe(_filename,individual)

@@ -18,7 +18,6 @@
 *  This code is based on the library Libgges.
 */
 
-
 typedef struct
 {
     long seed;
@@ -27,8 +26,11 @@ typedef struct
     bool evalTest;
     int nCores;
     int timeout;
+    char* export_name;
     
 }ExecParams;
+
+ExecParams exP;
 
 /**
 * @brief Function to evaluate the individuals.
@@ -204,7 +206,7 @@ static void export(char *individual){
     pDict = PyModule_GetDict(pModule);
     
     pFunc = PyDict_GetItemString(pDict, "export_pipe");
-    pArgs = PyTuple_Pack(2, PyString_FromString("pipeline.py"), 
+    pArgs = PyTuple_Pack(2, PyString_FromString(exP.export_name), 
                             PyString_FromString(individual));
    
     if (PyCallable_Check(pFunc)){
@@ -239,13 +241,13 @@ static  void eval(struct gges_parameters *params, int G, struct gges_individual 
     	params->dataSeed = params->dataSeed + 1;
     }
 
-    ExecParams exP;  
+    /*ExecParams exP;  
     exP.seed=params->seed;
     exP.dataSeed=params->dataSeed; 
     exP.internalCV=params->internalCV; 
     exP.evalTest=false;
     exP.nCores=params->nCores;
-    exP.timeout=params->timeout;
+    exP.timeout=params->timeout;*/
    
     //Concatenate the individuals in a single string:
     char *individuals = concatenate(members, N);
@@ -292,8 +294,7 @@ static void report(struct gges_parameters *params, int G, bool stop_criterion,  
     strcpy(testResult, "");
 
     FILE *results;
-
-    ExecParams exP;  
+  
     exP.seed=params->seed;
     exP.dataSeed=params->dataSeed; 
     exP.internalCV=params->internalCV; 
@@ -372,6 +373,14 @@ int main(int argc, char **argv){
     params->dataTest = argv[4];
     params->nCores = atoi(argv[5]);
     params->timeout = atoi(argv[6]);
+    
+    exP.seed=params->seed;
+    exP.dataSeed=params->dataSeed; 
+    exP.internalCV=params->internalCV; 
+    exP.evalTest=false;
+    exP.nCores=params->nCores;
+    exP.timeout=params->timeout;
+    exP.export_name = argv[7];
   
     //Load the grammar, which its grammar directory is defined by a parameter:
     G = gges_load_bnf(params->grammarDir);
