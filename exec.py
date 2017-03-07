@@ -20,6 +20,12 @@ import os
 from sys import platform
 from subprocess import call
 
+def verbosity_range(X):
+	x=int(X)
+	if x>2:
+		x=1
+	return x
+
 def main(args):
 
 	cmd = './bin/automaticML '+args.config+" "+str(args.seed)+" "+args.dataTrain+" "+args.dataTest+" "+str(args.nCores)+" "+str(args.timeout)
@@ -36,6 +42,8 @@ if __name__ == "__main__":
 		parser.add_argument('-dTe','--dataTest',help="file to test the algorithm",required=True)
 		parser.add_argument('-nc','--nCores',help="number of cores to be used on the algorithm execution",default=1,required=False, type=int)	
 		parser.add_argument('-t','--timeout',help="time to execute each individual of the GP on evaluation",default=300,required=False, type=int)
+		parser.add_argument('-en','--export_name',help="file name for the exported pipeline",default='pipeline.py',required=False)
+		parser.add_argument('-v','--verbosity',help="verbosity level of the output",default=1,required=False,type=verbosity_range)
 
 		args = parser.parse_args()
 
