@@ -18,6 +18,7 @@
 *  This code is based on the library Libgges.
 */
 
+
 typedef struct
 {
     long seed;
@@ -26,11 +27,8 @@ typedef struct
     bool evalTest;
     int nCores;
     int timeout;
-    char* export_name;
     
 }ExecParams;
-
-ExecParams exP;
 
 /**
 * @brief Function to evaluate the individuals.
@@ -181,7 +179,7 @@ static char *concatenate(struct gges_individual **indiviudals, int N){
 * @return void
 */
 
-static void export(char *individual){
+static void export(char *individual,char *export_file_name){
 
     PyObject *pName, *pModule, *pDict, *pFunc;
     
@@ -206,7 +204,7 @@ static void export(char *individual){
     pDict = PyModule_GetDict(pModule);
     
     pFunc = PyDict_GetItemString(pDict, "export_pipe");
-    pArgs = PyTuple_Pack(2, PyString_FromString(exP.export_name), 
+    pArgs = PyTuple_Pack(2, PyString_FromString(export_file_name), 
                             PyString_FromString(individual));
    
     if (PyCallable_Check(pFunc)){
@@ -238,16 +236,16 @@ static  void eval(struct gges_parameters *params, int G, struct gges_individual 
    
     //To resample the data each five generations, using the parameter dataSeed:
     if(G % 5 == 0){
-    	params->dataSeed = params->dataSeed + 1;
+        params->dataSeed = params->dataSeed + 1;
     }
 
-    /*ExecParams exP;  
+    ExecParams exP;  
     exP.seed=params->seed;
     exP.dataSeed=params->dataSeed; 
     exP.internalCV=params->internalCV; 
     exP.evalTest=false;
     exP.nCores=params->nCores;
-    exP.timeout=params->timeout;*/
+    exP.timeout=params->timeout;
    
     //Concatenate the individuals in a single string:
     char *individuals = concatenate(members, N);
@@ -263,6 +261,9 @@ static  void eval(struct gges_parameters *params, int G, struct gges_individual 
         evaluation = strtok(NULL, ";");
         i++;
     }
+
+    if(params->verbosity<2)
+        return;
     
     //Just print the current results:
     for (i = 0; i < N ; i++){
@@ -294,7 +295,8 @@ static void report(struct gges_parameters *params, int G, bool stop_criterion,  
     strcpy(testResult, "");
 
     FILE *results;
-  
+
+    ExecParams exP;  
     exP.seed=params->seed;
     exP.dataSeed=params->dataSeed; 
     exP.internalCV=params->internalCV; 
@@ -309,10 +311,8 @@ static void report(struct gges_parameters *params, int G, bool stop_criterion,  
     strcat(resultFileName, stringSeed);
     strcat(resultFileName, ".csv");
 
-
     results = fopen(resultFileName, "a+");
 
-    
     best =  members[0]->fitness;
     worst = members[N-1]->fitness;
 
@@ -321,15 +321,15 @@ static void report(struct gges_parameters *params, int G, bool stop_criterion,  
     }
     average /= N;
 
-    fprintf(stdout, "%3d %9.6f  %9.6f %9.6f [[ %s ]]\n", G, worst, average, best, members[0]->mapping->buffer);
+    fprintf(stdout, "Generation: %3d %9.6f  %9.6f %9.6f \nBest: [[ %s ]]\n", G, worst, average, best, members[0]->mapping->buffer);
     fprintf(stdout, "%s \n", "--------------------------------------------");
     
     //Save the reports in a file:
     if((G==params->generation_count) || (stop_criterion)){
         strcpy(testResult, evaluate_algorithms(G, members[0]->mapping->buffer, params->dataTraining, params->dataTest, exP));
         fprintf(results, "%s, %ld, %s\n", testResult, params->seed, members[0]->mapping->buffer);
-        printf("Final result: %ld, %s, %s\n", params->seed, members[0]->mapping->buffer, testResult);
-        export(members[0]->mapping->buffer);
+        printf("Final result: %ld\nBest Pipeline: %s \nResults: %s\n", params->seed, members[0]->mapping->buffer, testResult);
+        export(members[0]->mapping->buffer,params->export_name);
     }
 
     fclose(results);
@@ -373,14 +373,8 @@ int main(int argc, char **argv){
     params->dataTest = argv[4];
     params->nCores = atoi(argv[5]);
     params->timeout = atoi(argv[6]);
-    
-    exP.seed=params->seed;
-    exP.dataSeed=params->dataSeed; 
-    exP.internalCV=params->internalCV; 
-    exP.evalTest=false;
-    exP.nCores=params->nCores;
-    exP.timeout=params->timeout;
-    exP.export_name = argv[7];
+    params->export_name = argv[7];
+    params->verbosity = atoi(argv[8]);
   
     //Load the grammar, which its grammar directory is defined by a parameter:
     G = gges_load_bnf(params->grammarDir);
