@@ -482,7 +482,6 @@ struct gges_population *gges_run_system(struct gges_parameters *params,
 
         //Stoping when the best individual converged:
         if ((fitness1 == fitness2) && (fitness2 == fitness3) && (fitness3 == fitness4) && (fitness4 == fitness5) && (g >= 10)) {
-            printf("Stop criterion - Best Individual converged\n");
             after_gen(params, g, true, pop->members, pop->N, args);
             break;
         }

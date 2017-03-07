@@ -22,7 +22,7 @@ from subprocess import call
 
 def verbosity_range(X):
 	x=int(X)
-	if x>2:
+	if x>3:
 		x=1
 	return x
 

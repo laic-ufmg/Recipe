@@ -299,10 +299,15 @@ static  void eval(struct gges_parameters *params, int G, struct gges_individual 
         i++;
     }
 
-    if(params->verbosity<2){
+    if(params->verbosity<2)
+        return;
+    
+    fprintf(stdout, "\nGeneration %d\n",G);
+
+    if(params->verbosity<3){
         return;
     }
-    
+
     //Just print the current results:
     for (i = 0; i < N ; i++){
         fprintf(stdout, "Individual: %s-->%f \n",members[i]->mapping->buffer, members[i]->fitness);
@@ -360,10 +365,14 @@ static void report(struct gges_parameters *params, int G, bool stop_criterion,  
     average /= N;
 
     if(params->verbosity>=2){
-        fprintf(stdout, "Generation: %3d %9.6f  %9.6f %9.6f \nBest: [[ %s ]]\n", G, worst, average, best, members[0]->mapping->buffer);
+        fprintf(stdout, "Results: %3d %9.6f  %9.6f %9.6f \nBest: [[ %s ]]\n", G, worst, average, best, members[0]->mapping->buffer);
         fprintf(stdout, "%s \n", "--------------------------------------------");
     }else{
         printProgress(G,params->generation_count,best);
+    }
+
+    if(stop_criterion){
+        printf("\nStop criterion - Best Individual converged\n");
     }
     
     //Save the reports in a file:
