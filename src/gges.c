@@ -41,8 +41,6 @@ static int compare_individuals(const void *a, const void *b)
     }
 }
 
-
-
 static struct gges_population *create_population(struct gges_parameters *params)
 {
     struct gges_population *pop;
@@ -57,8 +55,6 @@ static struct gges_population *create_population(struct gges_parameters *params)
 
     return pop;
 }
-
-
 
 static void check_depth_parameters(struct gges_parameters *params,
                                    struct gges_bnf_grammar *grammar)
@@ -105,8 +101,6 @@ static void check_depth_parameters(struct gges_parameters *params,
         params->init_max_depth = min_depth;
     }
 }
-
-
 
 static void initialise_population_rhh(struct gges_parameters *params,
                                       struct gges_bnf_grammar *grammar,
@@ -156,10 +150,7 @@ static void initialise_population_rhh(struct gges_parameters *params,
      * the adjusted "sensible" values */
     params->init_min_depth = min_depth;
     params->init_max_depth = max_depth;
-
 }
-
-
 
 static void initialise_population_rnd(struct gges_parameters *params,
                                       struct gges_bnf_grammar *grammar,
@@ -187,8 +178,6 @@ static void initialise_population_rnd(struct gges_parameters *params,
     evaluator(params, current_generation, pop->members, pop->N, args);
 }
 
-
-
 /* standard implementation of tournament selection, as used by Koza
  * and most other methods of GP */
 static int tournament_selection(struct gges_population *pop, int K,
@@ -207,8 +196,6 @@ static int tournament_selection(struct gges_population *pop, int K,
 
     return a;
 }
-
-
 
 /* scans the supplied population to identify the individual with the
  * lowest fitness, starting from a random point in the population in
@@ -229,8 +216,6 @@ static int find_weakest(struct gges_population *pop, double (*rnd)(void))
 
     return pick;
 }
-
-
 
 static void generational_model(struct gges_parameters *params,
                                struct gges_bnf_grammar *grammar,
@@ -285,9 +270,7 @@ static void generational_model(struct gges_parameters *params,
     
     /*Evaluate the whole population */
     evaluator(params, current_generation, gen->members, pop->N, args);
-
 }
-
 
 static void steady_state_model(struct gges_parameters *params,
                                struct gges_bnf_grammar *grammar,
@@ -414,10 +397,6 @@ static bool random_search_model(struct gges_parameters *params,
 
     return true;
 }
-
-
-
-
 
 
 struct gges_population *gges_run_system(struct gges_parameters *params,
@@ -600,6 +579,10 @@ struct gges_parameters *gges_default_parameters()
     def->nCores = 1;
     //Default time to execute each individual of the GP on evaluation
     def->timeout= 300;
+    //Default exported pipeline name
+    def->export_name = "pipeline.py";
+    //Default verbosity level
+    def->verbosity = 1;
    
     /**
      *--------------------------------------------------------------------------*

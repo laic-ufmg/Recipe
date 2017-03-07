@@ -55,7 +55,7 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
 
     """    
 
-    print "#####TESTE##### \n"
+    #print "#####TESTE##### \n"
 
     try:
         #Generate all the algorithms to evaluate:
