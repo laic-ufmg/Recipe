@@ -169,7 +169,6 @@ static char *concatenate(struct gges_individual **indiviudals, int N){
     return result;
 }
 
-
 /**
 * @brief Function to export individual
 * 
@@ -216,7 +215,45 @@ static void export(char *individual,char *export_file_name){
     // Clean up
     Py_DECREF(pModule);
     Py_DECREF(pName);
+}
 
+static void printProgress(int gen, int total_gen, double best){
+    PyObject *pName, *pModule, *pDict, *pFunc;
+    
+    /* To append the current path to sys.path in order to be 
+     * able to load your python module (assuming it is located  
+     * in the local directory tpot/):*/
+    PyObject *sys = PyImport_ImportModule("sys");    
+    PyObject *path = PyObject_GetAttrString(sys, "path");
+    PyList_Append(path, PyString_FromString("./recipe/"));
+    Py_DECREF(sys);
+    Py_DECREF(path);    
+
+    // Build the name object
+    pName = PyString_FromString("recipe");
+
+    // Load the module object
+    pModule = PyImport_Import(pName);
+
+    PyObject* pArgs = NULL;
+
+    // pDict is a borrowed reference 
+    pDict = PyModule_GetDict(pModule);
+    
+    pFunc = PyDict_GetItemString(pDict, "print_progress");
+    pArgs = PyTuple_Pack(3, PyInt_FromLong(gen),
+                            PyInt_FromLong(total_gen), 
+                            PyFloat_FromDouble(best));
+   
+    if (PyCallable_Check(pFunc)){
+         PyObject_CallObject(pFunc, pArgs);
+    } else {
+         PyErr_Print();
+    }
+
+    // Clean up
+    Py_DECREF(pModule);
+    Py_DECREF(pName);
 }
 
 /**
@@ -262,8 +299,9 @@ static  void eval(struct gges_parameters *params, int G, struct gges_individual 
         i++;
     }
 
-    if(params->verbosity<2)
+    if(params->verbosity<2){
         return;
+    }
     
     //Just print the current results:
     for (i = 0; i < N ; i++){
@@ -321,14 +359,18 @@ static void report(struct gges_parameters *params, int G, bool stop_criterion,  
     }
     average /= N;
 
-    fprintf(stdout, "Generation: %3d %9.6f  %9.6f %9.6f \nBest: [[ %s ]]\n", G, worst, average, best, members[0]->mapping->buffer);
-    fprintf(stdout, "%s \n", "--------------------------------------------");
+    if(params->verbosity>=2){
+        fprintf(stdout, "Generation: %3d %9.6f  %9.6f %9.6f \nBest: [[ %s ]]\n", G, worst, average, best, members[0]->mapping->buffer);
+        fprintf(stdout, "%s \n", "--------------------------------------------");
+    }else{
+        printProgress(G,params->generation_count,best);
+    }
     
     //Save the reports in a file:
     if((G==params->generation_count) || (stop_criterion)){
         strcpy(testResult, evaluate_algorithms(G, members[0]->mapping->buffer, params->dataTraining, params->dataTest, exP));
         fprintf(results, "%s, %ld, %s\n", testResult, params->seed, members[0]->mapping->buffer);
-        printf("Final result: %ld\nBest Pipeline: %s \nResults: %s\n", params->seed, members[0]->mapping->buffer, testResult);
+        printf("\nFinal result: %ld\nBest Pipeline: %s \nResults: %s\n", params->seed, members[0]->mapping->buffer, testResult);
         export(members[0]->mapping->buffer,params->export_name);
     }
 

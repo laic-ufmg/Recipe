@@ -28,7 +28,7 @@ def verbosity_range(X):
 
 def main(args):
 
-	cmd = './bin/automaticML '+args.config+" "+str(args.seed)+" "+args.dataTrain+" "+args.dataTest+" "+str(args.nCores)+" "+str(args.timeout)
+	cmd = './bin/automaticML '+args.config+" "+str(args.seed)+" "+args.dataTrain+" "+args.dataTest+" "+str(args.nCores)+" "+str(args.timeout)+" "+args.export_name+" "+str(args.verbosity)
 	call(cmd,shell=True)
 
 if __name__ == "__main__":

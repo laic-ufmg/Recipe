@@ -23,6 +23,7 @@ import evaluate_individuals as evaluate
 import evaluate_test as evaluateT
 import testAlgorithm as test
 import export_pipe as export
+import progress
 
 def evaluate_inds(G, individuals, dataTraining, seed, dataSeed, internalCV,nCores,timeout):
 
@@ -42,3 +43,7 @@ def export_pipe(_filename,individual):
 		_filename=_filename+'.py'
 	
 	export.export_pipe(_filename,individual)
+
+def print_progress(generation,total,best):
+
+	progress.printProgress (generation,total, prefix = 'Processing '+str(generation)+' of '+str(total), suffix = "Best found: "+str(best))

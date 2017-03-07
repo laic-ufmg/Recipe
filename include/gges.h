@@ -88,7 +88,15 @@ extern "C" {
         int dataSeed;
         //Number of folds in the internal cross-validation (training and validation sets):
         int internalCV;
-        
+        //Number of cores to be used on the algorithm execution
+        int nCores;
+        //Time to execute each individual of the GP on evaluation
+        int timeout;
+        //Name to export the created pipeline
+        char *export_name;
+        //Verbosity level of output
+        int verbosity;
+
         
         /**
 	 *--------------------------------------------------------------------------*
