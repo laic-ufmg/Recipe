@@ -46,4 +46,4 @@ def rfe(args):
 
 	s = float(args[2])
 				
-	return RFE(estimator, n_features_to_select=nfs, step=s, estimator_params=None)
+	return RFE(estimator, n_features_to_select=nfs, step=s)
