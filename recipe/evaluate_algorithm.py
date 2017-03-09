@@ -57,15 +57,17 @@ def evaluate_algorithm(mlAlgorithm, dataTraining, seed, dataSeed, internalCV):
 			#Load the dataset:
 			df = pd.read_csv(dataTraining, header=0, delimiter=",")
 			
+			class_name = df.columns.values.tolist()[-1]
+
 			#Apply a filter if the data has categorical data (sklean does not accept this type of data):
 			objectList = list(df.select_dtypes(include=['object']).columns)
-			if ('class' in objectList and len(objectList)>=1):
+			if (class_name in objectList and len(objectList)>=1):
 				df = df.apply(LabelEncoder().fit_transform)
-
 
 			#Set the trainining data and target (classes):
 			training_data = df.ix[:,:-1].values
-			training_target = df['class'].values
+
+			training_target = df[class_name].values
 
 			pipe = load.load_pipeline(mlAlgorithm)
 

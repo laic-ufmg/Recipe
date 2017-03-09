@@ -57,8 +57,6 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
     internalCV: int
        The number of folds in the internal cross-validation procedure.
 
-    
-
     """
 
     try:
@@ -72,7 +70,7 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
         try:
             for alg in algorithms:
                 #Apply the algorithm over the dataset with a multiprocess approach and get the return:
-                results.append(pool.apply_async(evaluate.evaluate_algorithm, args=(alg,dataTraining,seed,dataSeed,internalCV,)))
+                results.append(pool.apply_async(evaluate.evaluate_algorithm, args=(alg,dataTraining,seed,dataSeed,internalCV)))
         except Exception as ei:
             print ei
 
