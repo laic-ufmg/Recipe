@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#!/usr/bin/env python -W
 
 """
 Copyright 2016 Walter José and Alex de Sá
@@ -44,6 +45,8 @@ def export_pipe(_filename,individual):
 	
 	export.export_pipe(_filename,individual)
 
-def print_progress(generation,total,best):
+def print_progress(generation,total,best,individual):
 
-	progress.printProgress (generation,total, prefix = 'Processing '+str(generation)+' of '+str(total), suffix = "Best found: "+str(best))
+	suff = '{message: <{width}}'.format(message="Best found: "+str(best)+ " -> " + individual, width=120)
+
+	progress.printProgress (generation,total, prefix = 'Processing '+str(generation)+' of '+str(total), suffix = suff)

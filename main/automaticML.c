@@ -217,7 +217,7 @@ static void export(char *individual,char *export_file_name){
     Py_DECREF(pName);
 }
 
-static void printProgress(int gen, int total_gen, double best){
+static void printProgress(int gen, int total_gen, double best,char *individual){
     PyObject *pName, *pModule, *pDict, *pFunc;
     
     /* To append the current path to sys.path in order to be 
@@ -241,9 +241,10 @@ static void printProgress(int gen, int total_gen, double best){
     pDict = PyModule_GetDict(pModule);
     
     pFunc = PyDict_GetItemString(pDict, "print_progress");
-    pArgs = PyTuple_Pack(3, PyInt_FromLong(gen),
+    pArgs = PyTuple_Pack(4, PyInt_FromLong(gen),
                             PyInt_FromLong(total_gen), 
-                            PyFloat_FromDouble(best));
+                            PyFloat_FromDouble(best),
+                            PyString_FromString(individual));
    
     if (PyCallable_Check(pFunc)){
          PyObject_CallObject(pFunc, pArgs);
@@ -368,7 +369,7 @@ static void report(struct gges_parameters *params, int G, bool stop_criterion,  
         fprintf(stdout, "Results: %3d %9.6f  %9.6f %9.6f \nBest: [[ %s ]]\n", G, worst, average, best, members[0]->mapping->buffer);
         fprintf(stdout, "%s \n", "--------------------------------------------");
     }else{
-        printProgress(G,params->generation_count,best);
+        printProgress(G,params->generation_count,best,members[0]->mapping->buffer);
     }
 
     if(stop_criterion){

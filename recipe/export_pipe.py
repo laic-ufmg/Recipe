@@ -89,11 +89,11 @@ def export_pipe(_filename,pipeline):
 
 		out.write("\n".join(methods))
 
-		out.write("\n\tmethods = []\n")
+		out.write("\n\tmethods = []")
 
 		for i in range(0,count):
 
-			out.write("\tmethods.append(step"+str(i)+")")
+			out.write("\n\tmethods.append(step"+str(i)+")")
 
 		out.write("\n\n\tpipeline = make_pipeline(*methods)")
 

@@ -15,6 +15,10 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 """
 
+#Ignoring the warnings:
+import warnings
+warnings.filterwarnings("ignore")
+
 from sklearn.preprocessing import LabelEncoder
 
 import numpy as np
@@ -23,10 +27,6 @@ import pandas as pd
 import load_pipeline as load
 from sklearn.pipeline import make_pipeline
 from sklearn import cross_validation
-
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
 
 def evaluate_algorithm(mlAlgorithm, dataTraining, seed, dataSeed, internalCV):
 
@@ -75,7 +75,7 @@ def evaluate_algorithm(mlAlgorithm, dataTraining, seed, dataSeed, internalCV):
 			try:
 				pipeline=make_pipeline(*pipe)
 			except Exception as exc:
-				print exc, "->", mlAlgorithm
+				warnings.warn(exc, "->", mlAlgorithm,UserWarning)
 				return 0.0
 
 
@@ -96,5 +96,5 @@ def evaluate_algorithm(mlAlgorithm, dataTraining, seed, dataSeed, internalCV):
 		except (KeyboardInterrupt, SystemExit):
 			return
 	except Exception as e:
-		print "WARNING: ", e, "->", mlAlgorithm
+		warnings.warn("WARNING: ", e, "->", mlAlgorithm,UserWarning)
 		return 0.0
