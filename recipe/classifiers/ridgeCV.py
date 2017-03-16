@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.linear_model import RidgeClassifierCV
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def ridgeCV(args):
 
     """Uses scikit-learn's Ridge classifier with built-in cross-validation..

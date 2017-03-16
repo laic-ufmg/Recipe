@@ -18,9 +18,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 from sklearn.feature_selection import RFE
 from sklearn.svm import SVR
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
 
 def rfe(args):
 

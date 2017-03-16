@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-#!/usr/bin/env python -W
 
 """
 Copyright 2016 Walter José and Alex de Sá
@@ -17,8 +16,15 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 """
 
 #Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
+import warnings, sys
+from time import gmtime, strftime
+
+def customwarn(message, category, filename, lineno, file=None, line=None):
+	with open("log.txt","a+") as file:
+		file.write(strftime("%Y-%m-%d %H:%M:%S", gmtime()) +" : "+  warnings.formatwarning(message, category, filename, lineno)+"\n")
+
+warnings.showwarning = customwarn
+#warnings.filterwarnings('ignore')
 
 import evaluate_individuals as evaluate
 import evaluate_test as evaluateT

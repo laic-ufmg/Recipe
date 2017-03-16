@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.preprocessing import PolynomialFeatures
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def polynomial_features(args):
 
 	"""Uses scikit-learn's PolynomialFeatures to generate a new feature matrix consisting of all polynomial combinations of the features with 

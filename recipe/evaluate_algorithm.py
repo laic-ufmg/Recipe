@@ -15,9 +15,7 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 """
 
-#Ignoring the warnings:
 import warnings
-warnings.filterwarnings("ignore")
 
 from sklearn.preprocessing import LabelEncoder
 
@@ -96,5 +94,5 @@ def evaluate_algorithm(mlAlgorithm, dataTraining, seed, dataSeed, internalCV):
 		except (KeyboardInterrupt, SystemExit):
 			return
 	except Exception as e:
-		warnings.warn("WARNING: ", e, "->", mlAlgorithm,UserWarning)
+		warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
 		return 0.0

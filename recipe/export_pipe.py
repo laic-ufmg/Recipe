@@ -19,10 +19,6 @@ from sklearn.pipeline import make_pipeline,Pipeline
 import load_imports as load
 import load_pipeline as loadp
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def export_pipe(_filename,pipeline):
 
 	pipe = loadp.load_pipeline(pipeline)

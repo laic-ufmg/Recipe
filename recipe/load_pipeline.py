@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 import load_method as load
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def load_pipeline(mlAlgorithm):
 
 	"""Uses scikit-learn's make pipeline to generate a new pipeline to be evaluated.

@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.preprocessing import Normalizer
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def normalizer(args):
 
 	"""Uses scikit-learn's Normalizer, normalize samples individually to unit norm.

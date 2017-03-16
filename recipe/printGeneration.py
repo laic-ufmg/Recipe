@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 import numpy as np
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def printGeneration(G, seed, output, file_name):
 
 	try:

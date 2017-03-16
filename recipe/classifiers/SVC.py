@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.svm import NuSVC, SVC
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def SVC(args):
 
 	"""Uses scikit-learn's SVC or NuSVC, classes capable of performing multi-class classification on a dataset.

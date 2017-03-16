@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.random_projection import GaussianRandomProjection
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def gaussianR(args):
 
 	"""Uses scikit-learn's GaussianRandomProjection to reduce dimensionality through Gaussian random projection.

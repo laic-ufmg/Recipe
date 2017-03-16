@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.neighbors import NearestCentroid
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def ncentroid(args):
 
 	"""Uses scikit-learn's KNeighborsClassifier, each class is represented by its centroid, with test samples classified to the class with the nearest centroid.

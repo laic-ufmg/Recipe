@@ -18,10 +18,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 import preprocessors as pre
 import classifiers as clas
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def load_method(algorithm_string):
 
   """Retunrn a scikit-learn's methods already configured to make the pipeline.

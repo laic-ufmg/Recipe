@@ -17,7 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 #Ignoring the warnings:
 import warnings
-warnings.filterwarnings("ignore")
 
 import load_pipeline as load
 
@@ -110,5 +109,5 @@ def testAlgorithm(mlAlgorithm, dataTraining, dataTest, seed, dataSeed):
         
         return resultMetrics
     except Exception as e:
-        warnings.warn("WARNING: ", e, "->", mlAlgorithm,UserWarning)
+        warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
         return "0.0" 

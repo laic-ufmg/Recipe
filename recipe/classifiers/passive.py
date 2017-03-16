@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.linear_model import PassiveAggressiveClassifier
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def passive(args):
 
     """Uses scikit-learn's Passive Aggressive Classifier

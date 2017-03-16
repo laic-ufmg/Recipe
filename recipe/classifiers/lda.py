@@ -17,9 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
 
 def lda(args):
 

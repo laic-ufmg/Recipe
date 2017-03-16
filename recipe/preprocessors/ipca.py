@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.decomposition import IncrementalPCA
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def ipca(args):
 
 	"""Uses scikit-learn's IncrementalPCA, a linear dimensionality reduction using Singular Value Decomposition of centered data,

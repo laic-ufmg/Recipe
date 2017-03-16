@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.preprocessing import Imputer
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def imputer(args):
 
 	"""Uses scikit-learn's Imputer, imputation transformer for completing missing values.

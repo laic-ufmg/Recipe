@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.feature_selection import f_classif, chi2, SelectFdr
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def selectFdr(args):
 
     """Uses scikit-learn's SelectFdr, select the p-values for an estimated false discovery rate.
