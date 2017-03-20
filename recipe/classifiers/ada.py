@@ -16,10 +16,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 """
 from sklearn.ensemble import AdaBoostClassifier
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def ada(args):
 
     """Uses scikit-learn's AdaBoostClassifier, an AdaBoostClassifier is a meta-estimator that begins by fitting a classifier on the original dataset and then fits additional 

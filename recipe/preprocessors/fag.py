@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.cluster import FeatureAgglomeration
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def fag(args):
 
 	"""Uses scikit-learn's FeatureAgglomeration agglomerate features.

@@ -27,10 +27,6 @@ import printGeneration as printG
 
 import testAlgorithm as test
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,timeOut):
 
     """Evaluate the test individuals 
@@ -92,7 +88,7 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
                     output.append(r.get(timeout))
                     posTimeout = posTimeout + 1
                 except TimeoutError as toe:
-                    print "WARNING: Timeout reached for the algorithm ->", algorithms[posTimeout]
+                    warnings.warn("WARNING: Timeout reached for the algorithm ->"+ algorithms[posTimeout],UserWarning)
                     posTimeout = posTimeout + 1
                     output.append(0.0)
 
@@ -115,8 +111,9 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
             else:
                 test_results.append(0.0)   
 
-
-        printG.printGeneration(G, seed, test_results, "Evolution-Test_")
+        filename = dataTraining.split("/")[-1]
+        filename = filename.replace(".csv","")
+        printG.printGeneration(G, seed, test_results, "EvoTest_"+filename)
 
         return "" 
 

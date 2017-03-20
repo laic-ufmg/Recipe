@@ -16,12 +16,12 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 """
 
 import numpy as np
-
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
+import os
 
 def printGeneration(G, seed, output, file_name):
+
+	if not os.path.exists('evolution'):
+		os.makedirs('evolution')
 
 	try:
 
@@ -31,8 +31,8 @@ def printGeneration(G, seed, output, file_name):
 		worst = output[0]
 		average = np.mean(output)
 
-		file_t = file_name+str(seed)+".csv"
-		evolution_file = open(file_t,'a+')
+		file_t = file_name+'_s'+str(seed)+".csv"
+		evolution_file = open('evolution/'+file_t,'a+')
 
 		evolution_file.write(str(G)+';'+str(worst)+';'+str(average)+';'+str(best)+'\n')
 		evolution_file.close()

@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.naive_bayes import MultinomialNB
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def multinomialNB(args):
 
     """Uses scikit-learn's MultinomialNB, a naive bayes classifier for multinomial models

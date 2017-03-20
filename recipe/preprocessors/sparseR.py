@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.random_projection import SparseRandomProjection
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def sparseR(args):
 
 	"""Uses scikit-learn's SparseRandomProjection to reduce dimensionality through sparse random projection.

@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.linear_model import LogisticRegression
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def logistic(args):
 
     """Uses scikit-learn's Logistic Regression, this class implements logistic regression using liblinear, newton-cg, sag of lbfgs optimizer.

@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.feature_selection import f_classif, chi2, SelectKBest
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def selectKBest(args):
 
     """Uses scikit-learn's SelectKBest, select features according to the k highest scores.

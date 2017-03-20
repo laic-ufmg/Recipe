@@ -16,10 +16,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 """
 from sklearn.decomposition import FastICA
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def fast_ica(args):
 
   """Uses scikit-learn's FastICA, a fast algorithm for Independent Component Analysis..

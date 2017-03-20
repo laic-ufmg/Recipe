@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.feature_selection import f_classif, chi2, SelectFwe
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def selectFwe(args):
 
     """Uses scikit-learn's SelectFWE, select the p-values corresponding to Family-wise error rate.

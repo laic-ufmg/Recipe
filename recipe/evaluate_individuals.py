@@ -15,6 +15,8 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 """
 
+import warnings
+
 from sklearn.preprocessing import LabelEncoder
 
 import multiprocessing
@@ -27,10 +29,6 @@ import pandas as pd
 
 import evaluate_algorithm as evaluate
 import printGeneration as printG
-
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
 
 def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalCV,nCores,timeOut):
     
@@ -94,7 +92,7 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
                     output_training.append(r.get(timeout))
                     posTimeout = posTimeout + 1
                 except TimeoutError as toe:
-                    print "WARNING: Timeout reached for the algorithm ->", algorithms[posTimeout]
+                    warnings.warn("WARNING: Timeout reached for the algorithm -> "+ algorithms[posTimeout],UserWarning)
                     posTimeout = posTimeout + 1
                     output_training.append(0.0)
 
@@ -114,7 +112,9 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
             if (i is not (len(algorithms)-1)):
                 evaluations += ";"
 
-        printG.printGeneration(G, seed, output_training, "Evolution-Training_")
+        filename = dataTraining.split("/")[-1]
+        filename = filename.replace(".csv","")
+        printG.printGeneration(G, seed, output_training, "EvoTraining_"+filename)
 
         #Return the evaluations separated by semicolons:
         return evaluations

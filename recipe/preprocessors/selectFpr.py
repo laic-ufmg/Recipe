@@ -17,9 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.feature_selection import f_classif, chi2, SelectFpr
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
 
 def selectFpr(args):
 

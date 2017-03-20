@@ -17,9 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.kernel_approximation import RBFSampler
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
 
 def rbf_sampler(args):
 

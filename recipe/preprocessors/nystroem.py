@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.kernel_approximation import Nystroem
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def nystroem(args):
 
 	"""Uses scikit-learn's Nystroem to constructs an approximate feature map for an arbitrary kernel using a subset of the data as basis.

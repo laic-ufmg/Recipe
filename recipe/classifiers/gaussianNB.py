@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.naive_bayes import GaussianNB
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def gaussianNB(args):
 
 	"""Uses scikit-learn's GaussianNB

@@ -17,10 +17,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 from sklearn.linear_model import Perceptron
 
-#Ignoring the warnings:
-import warnings
-warnings.filterwarnings("ignore")
-
 def perceptron(args):
 
     """Uses scikit-learn's Perceptron, a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. 
