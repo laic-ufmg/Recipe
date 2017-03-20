@@ -111,8 +111,9 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
             else:
                 test_results.append(0.0)   
 
-
-        printG.printGeneration(G, seed, test_results, "Evolution-Test_")
+        filename = dataTraining.split("/")[-1]
+        filename = filename.replace(".csv","")
+        printG.printGeneration(G, seed, test_results, "EvoTest_"+filename)
 
         return "" 
 

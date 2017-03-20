@@ -127,7 +127,6 @@ static char *evaluate_algorithms(int G, char *algorithms, char *dataTraining, ch
 
 
   return individuals_fitness;
-
 }
 
 /**
@@ -217,6 +216,18 @@ static void export(char *individual,char *export_file_name){
     Py_DECREF(pName);
 }
 
+
+/**
+* @brief Function to print algorithm progress
+* 
+* @details Function to print the algorithm progress when the verbosity level is 1
+*
+* @param gen The generation number
+* @param total_gen The total number of generations
+* @param best The fitness value for the best individual found
+* @param individual The best individual found by the algorithm
+* @return void
+*/
 static void printProgress(int gen, int total_gen, double best,char *individual){
     PyObject *pName, *pModule, *pDict, *pFunc;
     
@@ -245,6 +256,57 @@ static void printProgress(int gen, int total_gen, double best,char *individual){
                             PyInt_FromLong(total_gen), 
                             PyFloat_FromDouble(best),
                             PyString_FromString(individual));
+   
+    if (PyCallable_Check(pFunc)){
+         PyObject_CallObject(pFunc, pArgs);
+    } else {
+         PyErr_Print();
+    }
+
+    // Clean up
+    Py_DECREF(pModule);
+    Py_DECREF(pName);
+}
+
+/**
+* @brief Function export the result found by the algorithm
+* 
+* @details Function to export the found result to a file through python
+*
+* @param test_result The result of the algorithm in a string 
+* @param best The fitness value for the best individual found
+* @param individual The best individual found by the algorithm
+* @param input_file The name of the input file used to generate the result file name
+* @return void
+*/
+static void exportResult(char *test_result, double best, char *individual,char *input_file){
+    PyObject *pName, *pModule, *pDict, *pFunc;
+    
+    /* To append the current path to sys.path in order to be 
+     * able to load your python module (assuming it is located  
+     * in the local directory tpot/):*/
+    PyObject *sys = PyImport_ImportModule("sys");    
+    PyObject *path = PyObject_GetAttrString(sys, "path");
+    PyList_Append(path, PyString_FromString("./recipe/"));
+    Py_DECREF(sys);
+    Py_DECREF(path);    
+
+    // Build the name object
+    pName = PyString_FromString("recipe");
+
+    // Load the module object
+    pModule = PyImport_Import(pName);
+
+    PyObject* pArgs = NULL;
+
+    // pDict is a borrowed reference 
+    pDict = PyModule_GetDict(pModule);
+    
+    pFunc = PyDict_GetItemString(pDict, "export_result");
+    pArgs = PyTuple_Pack(4, PyString_FromString(test_result), 
+                            PyFloat_FromDouble(best),
+                            PyString_FromString(individual),
+                            PyString_FromString(input_file));
    
     if (PyCallable_Check(pFunc)){
          PyObject_CallObject(pFunc, pArgs);
@@ -379,7 +441,8 @@ static void report(struct gges_parameters *params, int G, bool stop_criterion,  
     //Save the reports in a file:
     if((G==params->generation_count) || (stop_criterion)){
         strcpy(testResult, evaluate_algorithms(G, members[0]->mapping->buffer, params->dataTraining, params->dataTest, exP));
-        fprintf(results, "%s, %ld, %s\n", testResult, params->seed, members[0]->mapping->buffer);
+        //fprintf(results, "%s, %ld, %s\n", testResult, params->seed, members[0]->mapping->buffer);
+        exportResult(testResult,params->seed,members[0]->mapping->buffer,params->dataTraining);
         printf("\nFinal result: %ld\nBest Pipeline: %s \nResults: %s\n", params->seed, members[0]->mapping->buffer, testResult);
         export(members[0]->mapping->buffer,params->export_name);
     }

@@ -112,7 +112,9 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
             if (i is not (len(algorithms)-1)):
                 evaluations += ";"
 
-        printG.printGeneration(G, seed, output_training, "Evolution-Training_")
+        filename = dataTraining.split("/")[-1]
+        filename = filename.replace(".csv","")
+        printG.printGeneration(G, seed, output_training, "EvoTraining_"+filename)
 
         #Return the evaluations separated by semicolons:
         return evaluations

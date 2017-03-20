@@ -16,7 +16,7 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 """
 
 #Ignoring the warnings:
-import warnings, sys
+import warnings, sys,os
 from time import gmtime, strftime
 
 def customwarn(message, category, filename, lineno, file=None, line=None):
@@ -56,3 +56,15 @@ def print_progress(generation,total,best,individual):
 	suff = '{message: <{width}}'.format(message="Best found: "+str(best)+ " -> " + individual, width=120)
 
 	progress.printProgress (generation,total, prefix = 'Processing '+str(generation)+' of '+str(total), suffix = suff)
+
+def export_result(test_result,seed,individual,input_file):
+	
+	if not os.path.exists('results'):
+		os.makedirs('results')
+
+	filename = input_file.split("/")[-1]
+
+	filename = filename.replace(".csv","")
+
+	with open('results/'+filename+'.csv',"w") as out:
+		out.write(test_result+","+str(seed)+","+individual)
