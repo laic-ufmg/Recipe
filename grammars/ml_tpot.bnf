@@ -1,6 +1,6 @@
 <Start> ::= <preprocessing> '#' <algorithm> | <algorithm>
 
-<preprocessing> ::=  <bounding> | <dimensionality> | <binarizer> | <bounding> '#' <dimensionality> | <bounding> '#' <dimensionality>
+<preprocessing> ::=  <bounding> | <dimensionality> | <binarizer> | <bounding> '#' <dimensionality>
 
 
 <binarizer> ::= 'Binarizer' <threshold_bin>
