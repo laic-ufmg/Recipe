@@ -53,7 +53,7 @@ def export_pipe(_filename,individual):
 
 def print_progress(generation,total,best,individual):
 
-	suff = '{message: <{width}}'.format(message="Best found: "+str(best)+ " -> " + individual, width=120)
+	suff = '{message: <{width}}'.format(message="Best found: "+str(best)+ " -> " + individual, width=150)
 
 	progress.printProgress (generation,total, prefix = 'Processing '+str(generation)+' of '+str(total), suffix = suff)
 
@@ -66,5 +66,21 @@ def export_result(test_result,seed,individual,input_file):
 
 	filename = filename.replace(".csv","")
 
-	with open('results/'+filename+'.csv',"w") as out:
-		out.write(test_result+","+str(seed)+","+individual)
+	with open('results/'+filename+'.csv',"a") as out:
+		out.write(test_result+","+str(seed)+","+individual+"\n")
+
+def save_individuals(individuals,generation,input_file,seed):
+
+	indi_list = individuals.split(';')
+	
+	if not os.path.exists('individuals'):
+		os.makedirs('individuals')
+
+	filename = input_file.split("/")[-1]
+
+	filename = filename.split("-")[0]
+
+	with open('individuals/'+filename+'_s'+str(seed)+'.csv',"a+") as out:
+		out.write(strftime("%Y-%m-%d %H:%M:%S ", gmtime())+"Generation "+str(generation)+"\n")
+		out.write("\n".join(indi_list))
+		out.write("\n\n")
