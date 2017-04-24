@@ -67,7 +67,7 @@ def export_result(test_result,seed,individual,input_file):
 	filename = filename.replace(".csv","")
 
 	with open('results/'+filename+'.csv',"a") as out:
-		out.write(test_result+","+str(seed)+","+individual+"\n")
+		out.write(str(seed)+","+individual+","+test_result+"\n")
 
 def save_individuals(individuals,generation,input_file,seed):
 
