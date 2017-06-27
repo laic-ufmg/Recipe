@@ -582,6 +582,8 @@ struct gges_parameters *gges_default_parameters()
     def->export_name = "pipeline.py";
     //Default verbosity level
     def->verbosity = 1;
+    //Defaul track individuals variable
+    def->track_ind = 1;
    
     /**
      *--------------------------------------------------------------------------*

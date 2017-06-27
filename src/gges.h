@@ -96,7 +96,8 @@ extern "C" {
         char *export_name;
         //Verbosity level of output
         int verbosity;
-
+        //Track individuals variable
+        int track_ind;
         
         /**
 	 *--------------------------------------------------------------------------*
