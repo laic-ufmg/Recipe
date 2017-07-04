@@ -19,16 +19,13 @@ from sklearn.linear_model import Perceptron
 
 def perceptron(args):
 
-    """Uses scikit-learn's Perceptron, a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector. 
-    
+    """Uses scikit-learn's Perceptron, a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector.
+
     Parameters
     ----------
-  
-    penalty : str, ‘none’, ‘l2’, ‘l1’, or ‘elasticnet’
-        The penalty (aka regularization term) to be used.
 
     alpha : float
-        Constant that multiplies the regularization term. 
+        Constant that multiplies the regularization term.
 
     fit_intercept : bool
         Whether the intercept should be estimated or not. If False, the data is assumed to be already centered.
@@ -68,11 +65,11 @@ def perceptron(args):
     if(args[7].find("balanced")!=-1):
         cw = "balanced"
     elif(args[7].find("None")!=-1):
-        cw = None  
+        cw = None
 
     warm = False
     if(args[8].find("True")!=-1):
         warm = True
 
-    return Perceptron(penalty=penal, alpha=alp, fit_intercept=fi, n_iter=it, 
+    return Perceptron(penalty=penal, alpha=alp, fit_intercept=fi, n_iter=it,
         shuffle=sffle, verbose=0, eta0=eta, n_jobs=1, random_state=42, class_weight=cw, warm_start=warm)

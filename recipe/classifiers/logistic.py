@@ -20,18 +20,12 @@ from sklearn.linear_model import LogisticRegression
 def logistic(args):
 
     """Uses scikit-learn's Logistic Regression, this class implements logistic regression using liblinear, newton-cg, sag of lbfgs optimizer.
-        
+
     Parameters
     ----------
 
     warm_start : bool
         When set to True, reuse the solution of the previous call to fit as initialization, otherwise, just erase the previous solution. Useless for liblinear solver.
-    
-    C : float
-        Inverse of regularization strength; must be a positive float.
-
-    intercept_scaling : float
-        Useful only when the solver ‘liblinear’ is used and self.fit_intercept is set to True.
 
     max_iter : int
         Maximum number of iterations of the optimization algorithm.
@@ -39,17 +33,9 @@ def logistic(args):
     solver : {‘newton-cg’, ‘lbfgs’, ‘liblinear’, ‘sag’}
         Algorithm to use in the optimization problem.
 
-    penalty : str, ‘l1’ or ‘l2’
-        Used to specify the norm used in the penalization.
-
-    dual : bool
-        Dual or primal formulation.
 
     class_weight : dict or ‘balanced’, optional
         Weights associated with classes in the form {class_label: weight}.
-
-    multi_class : str, {‘ovr’, ‘multinomial’}
-        Multiclass option can be either ‘ovr’ or ‘multinomial’.
 
     fit_intercept : bool
         Specifies if a constant (a.k.a. bias or intercept) should be added to the decision function.
@@ -63,47 +49,27 @@ def logistic(args):
     if(args[1].find("True")!=-1):
         warm = True
 
-    c=1.0
-    if(args[2].find("None")!=-1):
-        c = float(args[2])
-
-    int_scal=1
-    if(args[3].find("None")!=-1):
-        int_scal = float(args[3])
-
     mi=100
-    if(args[4].find("None")!=-1):
-        mi = int(args[4])
-    
+    if(args[2].find("None")!=-1):
+        mi = int(args[2])
+
     sol='liblinear'
-    if(args[5].find("None")!=-1):
-        sol = args[5]
-    
-    pen='l2'
-    if(args[6].find("None")!=-1):
-        pen = args[6]
+    if(args[3].find("None")!=-1):
+        sol = args[3]
 
-    d = False
-    if(args[7].find("True")!=-1):
-        d = True
-
-    if(args[8].find("balanced")!=-1):
+    cw=None
+    if(args[4].find("balanced")!=-1):
         cw = "balanced"
-    elif(args[8].find("None")!=-1):
-        cw = None  
-
-    mc='ovr'
-    if(args[9].find("None")!=-1):
-        mc = args[9]
+    elif(args[4].find("None")!=-1):
+        cw = None
 
     fi = False
-    if(args[10].find("True")!=-1):
+    if(args[5].find("True")!=-1):
         fi = True
 
-    t=0.0001  
-    if(args[11].find("None")!=-1):
-        t = float(args[11])
+    t=0.0001
+    if(args[6].find("None")!=-1):
+        t = float(args[6])
 
-    return LogisticRegression(penalty=pen, dual=d, tol=t, C=c, fit_intercept=fi, 
-        intercept_scaling=int_scal, class_weight=cw, random_state=42, solver=sol, max_iter=mi, 
-        multi_class=mc, verbose=0, warm_start=warm, n_jobs=1)
+    return LogisticRegression(tol=t, fit_intercept=fi,class_weight=cw, random_state=42,
+    solver=sol, max_iter=mi, verbose=0, warm_start=warm)

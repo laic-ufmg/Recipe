@@ -31,7 +31,7 @@ from .ncentroid import *
 from .multinomialNB import *
 from .bernoulliNB import *
 from .gaussianNB import *
-from .SVC import *
+from .svc import *
 from .gradientBC import *
 from .ada import *
 from .specificTree import *

@@ -5,6 +5,9 @@ DEMDIR:=main
 OBJDIR:=build
 INCDIR:=include
 BINDIR:=bin
+EVODIR:=evolution
+INDDIR:=individuals
+RESDIR:=results
 LIBDIR:=$(BINDIR)
 
 INCS:=$(wildcard $(SRCDIR)/*.h)
@@ -19,7 +22,7 @@ INC:=$(SRCDIR)/gges.h $(SRCDIR)/grammar.h $(SRCDIR)/cfggp.h $(SRCDIR)/ge.h \
 	$(SRCDIR)/derivation.h $(SRCDIR)/individual.h $(SRCDIR)/mapping.h
 
 LIB:=$(LIBDIR)/libgges.a
-BIN:=$(BINDIR)/automaticML 
+BIN:=$(BINDIR)/automaticML
 
 all: $(LIB) $(BIN)
 
@@ -47,7 +50,7 @@ $(OBJDIR)/%.o : $(DEMDIR)/%.c $(wildcard $(DEMDIR)/*.h) $(INC)
 	@$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@
 
 clean:
-	@rm -rf $(OBJDIR) $(BINDIR)/automaticML
+	@rm -rf $(OBJDIR) $(RESDIR) $(INDDIR) $(EVODIR) $(BINDIR)/automaticML
 
 nuke: clean
 	@rm -rf $(INCDIR) $(BINDIR) $(LIBDIR)

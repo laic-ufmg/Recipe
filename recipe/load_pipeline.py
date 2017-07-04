@@ -16,11 +16,12 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 """
 
 import load_method as load
+from sklearn.ensemble import VotingClassifier
 
 def load_pipeline(mlAlgorithm):
 
 	"""Uses scikit-learn's make pipeline to generate a new pipeline to be evaluated.
-	
+
 	Parameters
 	----------
 	mlAlgorithm: string
@@ -28,11 +29,34 @@ def load_pipeline(mlAlgorithm):
 	"""
 
 	pipeline=[]
+	algorithms=[]
+	preprocess=[]
 
+	start_alg = False
 	steps_list = mlAlgorithm.strip().split('#')
 
 	for steps in steps_list:
-		temporary_method=load.load_method(steps)
-		pipeline.append(temporary_method)
+		if(start_alg):
+			algorithms.append(steps)
+		elif 'SA*' in steps:
+			steps = steps.replace('SA*','').lstrip()
+			start_alg = True
+			algorithms.append(steps)
+		else:
+			preprocess.append(steps)
+
+	# Placing preprocessors in the pipeline
+	for pre in preprocess:
+		method = load.load_method(pre)
+		pipeline.append(method)
+
+	for pos,alg in enumerate(algorithms[:-1]):
+		method = load.load_method(alg)
+		transf = VotingClassifier('alg'+str(pos),method)
+		pipeline.append(transf)
+
+	method=load.load_method(algorithms[-1])
+
+	pipeline.append(method)
 
 	return pipeline

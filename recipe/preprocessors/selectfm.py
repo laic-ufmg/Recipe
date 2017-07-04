@@ -16,11 +16,12 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 """
 
 from sklearn.feature_selection import SelectFromModel
+from sklearn.svm import SVR
 
 def selectfm(args):
 
 	"""Uses scikit-learn's SelectFromModel, a meta-transformer for selecting features based on importance weights.
-		
+
 	Parameters
 	----------
 

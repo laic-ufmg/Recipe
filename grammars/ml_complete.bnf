@@ -1,13 +1,11 @@
 <Start> ::= <preprocessing> '#' <algorithm> | <algorithm>
 
-<preprocessing> ::=  <imputation> | <bounding> | <dimensionality> | <binarizer> |      		     
-		     <imputation> '#' <bounding> | 
+<preprocessing> ::=  <imputation> | <bounding> | <dimensionality> | <binarizer> |
+		     <imputation> '#' <bounding> |
 		     <imputation> '#' <binarizer> |
 		     <imputation> '#' <dimensionality> |
-		     <bounding> '#' <dimensionality> | 	
+		     <bounding> '#' <dimensionality> |
 		     <imputation> '#' <bounding> '#' <dimensionality>
-
-
 
 <oneHotEncoder> ::= 'OneHotEncoder' <min_frac>
 <min_frac> ::= 'None' | 'RANDFLOAT(0.0001,0.5)'
@@ -44,7 +42,7 @@
 
 <RFE> ::= 'RFE' <featuresToSelect>  | 'RecursiveFE_CV' <cv_rfe> <scoring_rfe>
 <step> ::= 'RANDFLOAT(0.0,1.0)'
-<cv_rfe> ::= '2' | '3' | '5' | '10' 
+<cv_rfe> ::= '2' | '3' | '5' | '10'
 <scoring_rfe> ::= 'mean_absolute_error' | 'mean_squared_error' | 'median_absolute_error' | 'r2' | 'None'
 
 
@@ -105,7 +103,7 @@
 <degree_construction>  ::= 'RANDINT(2,10)'
 
 ##Depend on the number of features = 2 to numbersOfFeatures-1:
-<features> ::= 'RANDINT(2,3)' 
+<features> ::= 'RANDINT(2,3)'
 ##Depend on the number of features = 1 to numbersOfFeatures-1:
 <featuresToSelect> ::= 'RANDINT(1,3)'
 
@@ -119,10 +117,10 @@
 <TreeOptions> ::= <OneEstimator> | <VariousEstimators>  <n_estimators>  <warm_start>
 <OneEstimator> ::= <TreeClassifier>  <criterion>  <splitter>  <class_weight>  <presort>
 <TreeClassifier> ::= 'ExtraTreeClassifier'  | 'DecisionTreeClassifier'
-<VariousEstimators> ::=  <gradientBoostingClassifier> | <TreesEnsemble>  <criterion> <class_weight_Trees> <bootstrap_and_oob> 
+<VariousEstimators> ::=  <gradientBoostingClassifier> | <TreesEnsemble>  <criterion> <class_weight_Trees> <bootstrap_and_oob>
 <TreesEnsemble> ::= 'RandomForestClassifier' | 'ExtraTreesClassifier'
 <gradientBoostingClassifier> ::= 'GradientBoostingClassifier' <loss_gradient>  <learning_rate_gradient>  <subsample>  <presort>
- 
+
 <max_features> ::= 'RANDFLOAT(0.01,1.0)' | 'sqrt' | 'log2' | 'None'
 ##Depend on the number of features:
 <max_depth> ::= 'RANDINT(1,100000)' | 'None'
@@ -150,18 +148,18 @@
 
 <NaiveBayes> ::= 'GaussianNB' | <SpecificNB> <alpha>  'fit_prior' | <SpecificNB> <alpha>
 <SpecificNB> ::= 'BernoulliNB' | 'MultinomialNB'
-<alpha> ::= 'RANDFLOAT(0.0,9.0)' 
+<alpha> ::= 'RANDFLOAT(0.0,9.0)'
 
 <SVM> ::= <general_SVC> <tol> <max_iter>  <class_weight>
 
-<general_SVC> ::= <SVC>  <kernel>  <degree_kernel>  <gamma>  <coef0>  <probability>  <shrinking>  <decision_function_shape> | <Linear> 
+<general_SVC> ::= <SVC>  <kernel>  <degree_kernel>  <gamma>  <coef0>  <probability>  <shrinking>  <decision_function_shape> | <Linear>
 
 <Linear> ::= 'LinearSVC' <C>  <loss_penalty_dual> <multi_class>  <fit_intercept>  <intercept_scaling>
-<SVC> ::= 'SVC' <C> | 'NuSVC' <nu> 
+<SVC> ::= 'SVC' <C> | 'NuSVC' <nu>
 <max_iter> ::= '10' | '100' | '500' | '1000' | '2500' | '5000' | '7500' | '10000' | '15000' | '20000' | '25000' | '30000' | '50000' | '100000'
 
 <loss_penalty_dual> ::= 'squared_hinge l2' <dual> | 'hinge l2 True' | 'squared_hinge l1 False'
-<loss> ::= 'hinge' | 'squared_hinge' 
+<loss> ::= 'hinge' | 'squared_hinge'
 <penalty> ::= 'l2' | 'l1'
 <dual> ::= 'True' | 'False'
 
@@ -233,7 +231,7 @@
 <lr_opt> ::= <common_opt>  <intercept_scaling> <max_iter_lr>  <solver_lr_options>
 <common_opt> ::= 'LogisticRegression' <warm_start>  <C> | 'LogisticCV' <Cs>  <cv>  <refit>
 
-<solver_lr_options> ::= <solver_lr_opt1> <class_weight> <multi_class_lr>| <solver_lr_opt2> 'ovr'  
+<solver_lr_options> ::= <solver_lr_opt1> <class_weight> <multi_class_lr>| <solver_lr_opt2> 'ovr'
 <solver_lr_opt1> ::= 'newton-cg l2 False'| 'lbfgs l2 False'
 <solver_lr_opt2> ::= 'liblinear' <penalty_lr> 'None' | 'sag l2 False' <class_weight>
 <penalty_lr> ::= 'l1 False' | 'l2' <dual>

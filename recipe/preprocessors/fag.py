@@ -20,17 +20,17 @@ from sklearn.cluster import FeatureAgglomeration
 def fag(args):
 
 	"""Uses scikit-learn's FeatureAgglomeration agglomerate features.
-		
+
 	Parameters
 	----------
 
 	affinity : string
-		Metric used to compute the linkage. Can be “euclidean”, “l1”, “l2”, “manhattan”, “cosine”, or ‘precomputed’. If linkage is “ward”, 
+		Metric used to compute the linkage. Can be “euclidean”, “l1”, “l2”, “manhattan”, “cosine”, or ‘precomputed’. If linkage is “ward”,
 		only “euclidean” is accepted.
 
 	linkage : {“ward”, “complete”, “average”}
-		Which linkage criterion to use. 
-		The linkage criterion determines which distance to use between sets of features. 
+		Which linkage criterion to use.
+		The linkage criterion determines which distance to use between sets of features.
 		The algorithm will merge the pairs of cluster that minimize this criterion.
 
 	compute_full_tree : bool or ‘auto’
@@ -51,6 +51,5 @@ def fag(args):
 
 	n_clust = int(args[4])
 
-	return FeatureAgglomeration(n_clusters=n_clust, affinity=affi, 
-		connectivity=None, n_components=None, 
-		compute_full_tree=cft, linkage=link)
+	return FeatureAgglomeration(n_clusters=n_clust, affinity=affi,
+		connectivity=None,compute_full_tree=cft, linkage=link)

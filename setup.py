@@ -48,9 +48,11 @@ class RecipeClean(build):
         build.run(self)
 
         cmd = 'make clean'
-      
+        cmd2 = 'find . -name "*.pyc" -exec rm -rf {} \;'
+
         def compile():
             call(cmd, shell=True)
+            call(cmd2,shell=True)
 
         self.execute(compile, [], 'Cleaning Recipe')
 
@@ -77,5 +79,5 @@ setup(
         'build': RecipeBuild,
         'install': RecipeBuild,
         'clean': RecipeClean,
-	}    
+	}
 )

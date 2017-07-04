@@ -14,6 +14,7 @@ RECIPE is distributed in the hope that it will be useful, but WITHOUT ANY WARRAN
 FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. See http://www.gnu.org/licenses/.
 
 """
+import warnings
 
 from sklearn.preprocessing import LabelEncoder
 

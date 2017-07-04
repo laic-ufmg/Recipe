@@ -21,14 +21,42 @@ from sys import platform
 from subprocess import call
 
 def verbosity_range(X):
+
+	"""Function that evaluates if the verbosity level given by the user is at a certain range 
+    
+    Parameters
+    ----------
+
+    X: int
+       Range of the verbosity level
+
+	"""
+
 	x=int(X)
 	if x>3:
 		x=1
 	return x
 
+def track_range(X):
+
+	"""Function that evaluates if the track level given by the user is at a certain range 
+    
+    Parameters
+    ----------
+
+    X: int
+       Range of the track level
+
+	"""
+
+	x=int(X)
+	if x>1:
+		x=0
+	return x
+
 def main(args):
 
-	cmd = './bin/automaticML '+args.config+" "+str(args.seed)+" "+args.dataTrain+" "+args.dataTest+" "+str(args.nCores)+" "+str(args.timeout)+" "+args.export_name+" "+str(args.verbosity)
+	cmd = './bin/automaticML '+args.config+" "+str(args.seed)+" "+args.dataTrain+" "+args.dataTest+" "+str(args.nCores)+" "+str(args.timeout)+" "+args.export_name+" "+str(args.verbosity)+" "+str(args.track_ind)
 	call(cmd,shell=True)
 
 if __name__ == "__main__":
@@ -36,7 +64,7 @@ if __name__ == "__main__":
 	if(os.path.isfile('./bin/automaticML')):
 		
 		parser = argparse.ArgumentParser(description = 'RECIPE - Algorithm to generate machine learning pipelines')
-		parser.add_argument('-c', '--config', help= "configuration file of the GP", default = './config/gecco2015-cfggp.ini', required=False)
+		parser.add_argument('-c', '--config', help= "configuration file of the GP", default ='./config/gecco2015-cfggp.ini', required=False)
 		parser.add_argument('-s', '--seed' , help="seed value for the random functions",default=1,type=int,required=False)
 		parser.add_argument('-dTr','--dataTrain',help="file to train the algorithm",required=True)
 		parser.add_argument('-dTe','--dataTest',help="file to test the algorithm",required=True)
@@ -44,6 +72,7 @@ if __name__ == "__main__":
 		parser.add_argument('-t','--timeout',help="time to execute each individual of the GP on evaluation",default=300,required=False, type=int)
 		parser.add_argument('-en','--export_name',help="file name for the exported pipeline",default='pipeline.py',required=False)
 		parser.add_argument('-v','--verbosity',help="verbosity level of the output",default=1,required=False,type=verbosity_range)
+		parser.add_argument('-ti','--track_ind',help="create a file to track the individuals of all generations(1-true|0-false)",default=0,required=False,type=track_range)
 
 		args = parser.parse_args()
 

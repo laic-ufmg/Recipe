@@ -21,14 +21,14 @@ import classifiers as clas
 def load_method(algorithm_string):
 
   """Retunrn a scikit-learn's methods already configured to make the pipeline.
-  
+
   Parameters
   ----------
   algorithm_string: string
     A string the contains the algorithm to be loaded
-  
+
   """
-    
+
   args=algorithm_string.strip().split();
 
   if((args[0] == "DecisionTreeClassifier") or (args[0] == "ExtraTreeClassifier")):
@@ -48,9 +48,9 @@ def load_method(algorithm_string):
     return clas.multinomialNB(args)
 
   elif(args[0] == "NuSVC"):
-    return clas.SVC(args)
+    return clas.svc(args)
   elif(args[0] == "SVC"):
-    return clas.SVC(args)
+    return clas.svc(args)
 
   elif(args[0] == "KNeighborsClassifier"):
     return clas.kNeighboors(args)
