@@ -17,6 +17,8 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 import load_method as load
 from sklearn.ensemble import VotingClassifier
+from sklearn.pipeline import make_union
+from sklearn.preprocessing import FunctionTransformer
 
 def load_pipeline(mlAlgorithm):
 
@@ -50,13 +52,31 @@ def load_pipeline(mlAlgorithm):
 		method = load.load_method(pre)
 		pipeline.append(method)
 
-	for pos,alg in enumerate(algorithms[:-1]):
-		method = load.load_method(alg)
-		transf = VotingClassifier('alg'+str(pos),method)
-		pipeline.append(transf)
+	# Check if ensemble flag is used
+	if algorithms[-1].lstrip() == 'Ensemble':
+		estimators_list = []
+		for pos,alg in enumerate(algorithms[:-1]):
+			method = load.load_method(alg)
+			estimators_list.append(('alg'+str(pos),method))
+		ensembler = VotingClassifier(estimators=estimators_list)
+		pipeline.append(ensembler)
+	# Check if stacking flag is used
+	elif algorithms[-1].lstrip() == 'Stacking':
+		estimators_list = []
+		for pos,alg in enumerate(algorithms[:-2]):
+			method = load.load_method(alg)
+			estimators_list.append(VotingClassifier(estimators=[('alg'+str(pos),method)]))
+		estimators_list.append(FunctionTransformer(lambda X: X))
+		union = make_union(*estimators_list)
+		method=load.load_method(algorithms[-2])
+		pipeline+=[union,method]
+	else:
+		for pos,alg in enumerate(algorithms[:-1]):
+			method = load.load_method(alg)
+			transf = VotingClassifier(estimators=[('alg'+str(pos),method)])
+			pipeline.append(transf)
 
-	method=load.load_method(algorithms[-1])
-
-	pipeline.append(method)
+		method=load.load_method(algorithms[-1])
+		pipeline.append(method)
 
 	return pipeline

@@ -1,4 +1,4 @@
-<Start> ::= <preprocessing> '#' 'SA* ' <algorithm> | 'SA* ' <algorithm>
+<Start> ::= <preprocessing> '#' 'SA* ' <algorithm> | 'SA* ' <algorithm> '#' <algorithm> '#' 'Stacking'
 
 ##PREPROCESSING
 <preprocessing> ::=  <imputation> | <bounding> | <dimensionality> | <binarizer> |
