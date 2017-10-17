@@ -1,4 +1,6 @@
-<Start> ::= <preprocessing> '#' 'SA* ' <algorithm> | 'SA* ' <algorithm> '#' <algorithm> '#' 'Stacking'
+<Start> ::= <preprocessing> '#' 'SA* ' <algorithm> | 'SA* ' <algorithm> |
+	<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' 'Stacking' | 'SA* ' <algorithm> '#' <algorithm> '#' 'Stacking' |
+	<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' 'Ensemble' | '#' 'SA* ' <algorithm> '#' <algorithm> '#' 'Ensemble'
 
 ##PREPROCESSING
 <preprocessing> ::=  <imputation> | <bounding> | <dimensionality> | <binarizer> |
