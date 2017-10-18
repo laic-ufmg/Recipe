@@ -32221,3 +32221,702 @@
 2017-10-18 16:00:47 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
   warnings.warn("Variables are collinear")
 
+2017-10-18 16:16:24 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-10-18 16:16:24 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:16:26 : ./recipe/evaluate_algorithm.py:97: UserWarning: WARNING: ExponentialLoss requires 2 classes.->SelectKBest 2 f_classif # PolynomialFeatures 3 True False # SA*  AdaBoostClassifier SAMME.R 30 1.913506 # GradientBoostingClassifier exponential 0.041418 0.765485 True 10 False 0.590689 None 0.223990 None # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-10-18 16:16:27 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-10-18 16:16:32 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-10-18 16:16:33 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-10-18 16:16:36 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:16:38 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:488: UserWarning: class_weight presets "balanced" or "balanced_subsample" are not recommended for warm_start if the fitted data differs from the full dataset. In order to use "balanced" weights, use compute_class_weight("balanced", classes, y). In place of y you can use a large enough sample of the full training set target to properly estimate the class frequency distributions. Pass the resulting weights as the class_weight parameter.
+  warn('class_weight presets "balanced" or "balanced_subsample" are '
+
+2017-10-18 16:16:49 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:16:49 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:16:50 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ExponentialLoss requires 2 classes.->SelectKBest 2 f_classif # PolynomialFeatures 3 True False # SA*  AdaBoostClassifier SAMME.R 30 1.913506 # GradientBoostingClassifier exponential 0.041418 0.765485 True 10 False 0.590689 None 0.223990 None # Ensemble 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-10-18 16:16:50 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-10-18 16:16:55 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-10-18 16:16:55 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-10-18 16:16:58 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:16:58 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:488: UserWarning: class_weight presets "balanced" or "balanced_subsample" are not recommended for warm_start if the fitted data differs from the full dataset. In order to use "balanced" weights, use compute_class_weight("balanced", classes, y). In place of y you can use a large enough sample of the full training set target to properly estimate the class frequency distributions. Pass the resulting weights as the class_weight parameter.
+  warn('class_weight presets "balanced" or "balanced_subsample" are '
+
+2017-10-18 16:17:07 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:17:12 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-10-18 16:17:14 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:17:27 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:17:33 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-10-18 16:17:35 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:17:35 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:17:45 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:17:45 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:01 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:02 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:03 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:04 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:04 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:04 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:04 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:04 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:04 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:04 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:04 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:04 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:05 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:18:05 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:18:05 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:18:20 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:20 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:20 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:20 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:22 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:23 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:23 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:23 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:23 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:23 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:23 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:23 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:23 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:23 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:23 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:23 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:23 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:23 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:23 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-10-18 16:18:24 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:18:24 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:18:43 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:18:43 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:18:43 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:18:57 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:18:58 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:19:14 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:19:14 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:19:14 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:19:26 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:19:27 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:19:47 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:19:48 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:19:48 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:20:04 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:20:05 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:20:31 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:20:32 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:20:32 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:20:51 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:20:52 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:21:13 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:21:14 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:21:14 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:21:33 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:21:34 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:22:00 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:22:00 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:22:00 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:22:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:22:23 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:22:49 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:22:49 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:22:50 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:23:07 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:23:08 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:23:35 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:23:35 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:23:35 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:23:57 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:24:11 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:24:30 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:24:31 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:24:31 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:24:53 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:24:55 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:25:32 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:25:32 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:25:32 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:25:55 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:25:59 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:26:34 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:26:35 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:26:35 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:27:04 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:27:08 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:455: UserWarning: The priors do not sum to 1. Renormalizing
+  UserWarning)
+
+2017-10-18 16:27:44 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-10-18 16:27:53 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:27:53 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-10-18 16:28:21 : /home/walterjgsp_local/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
