@@ -30,8 +30,8 @@ import testAlgorithm as test
 
 def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,timeOut):
 
-    """Evaluate the test individuals 
-    
+    """Evaluate the test individuals
+
     Parameters
     ----------
 
@@ -50,7 +50,7 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
     dataSeed: int
         The seed to control the data resample each x generations.
 
-    """    
+    """
 
     #print "#####TESTE##### \n"
 
@@ -110,13 +110,13 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
                 if(len(test_res) > 1):
                     test_results.append(float(test_res[15]))
             else:
-                test_results.append(0.0)   
+                test_results.append(0.0)
 
-        filename = dataTraining.split("/")[-1]
+        filename = dataTest.split("/")[-1]
         filename = filename.replace(".csv","")
         printG.printGeneration(G, seed, test_results, "EvoTest_"+filename)
 
-        return "" 
+        return ""
 
     except (KeyboardInterrupt, SystemExit):
         return

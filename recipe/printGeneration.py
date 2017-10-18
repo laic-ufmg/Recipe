@@ -38,6 +38,3 @@ def printGeneration(G, seed, output, file_name):
 		evolution_file.close()
 	except IOError as e:
 		print "WARNING: ", e
-
-	#print str(G)+';'+str(worst_training)+';'+str(average_training)+';'+str(best_training)
-	#print str(G)+';'+str(worst_test)+';'+str(average_test)+';'+str(best_test)

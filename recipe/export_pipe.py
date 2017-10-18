@@ -35,6 +35,8 @@ def export_pipe(_filename,pipeline):
 
 	for steps in steps_list:
 		algorithm = steps.strip().split()
+		if(algorithm[0].startswith('SA*')):
+			algorithm=algorithm[1:]
 		temporary_import=load.load_imports(algorithm[0])
 		imports.append(temporary_import)
 
@@ -53,7 +55,7 @@ def export_pipe(_filename,pipeline):
 		out.write('''
 \t#Load the training and test datasets:
 \ttraining_df = pd.read_csv(dataTraining, header=0, delimiter=",")
-\ttest_df = pd.read_csv(dataTest, header=0, delimiter=",") 
+\ttest_df = pd.read_csv(dataTest, header=0, delimiter=",")
 
 \t#Apply a filter if the data has categorical data (sklean does not accept this type of data):
 \tobjectList = list(training_df.select_dtypes(include=['object']).columns)
@@ -63,8 +65,8 @@ def export_pipe(_filename,pipeline):
 
 \t#Get the feature data and the class for training:
 \ttrain_data = training_df.ix[:,:-1].values
-\ttrain_target = training_df["class"].values    
-        
+\ttrain_target = training_df["class"].values
+
 \t# ... and test:
 \ttest_data = test_df.ix[:,:-1].values
 \ttest_target = test_df["class"].values
@@ -93,4 +95,4 @@ def export_pipe(_filename,pipeline):
 
 		out.write("\n\n\tpipeline = make_pipeline(*methods)")
 
-		
+		out.write("\n\n\treturn pipeline")

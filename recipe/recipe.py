@@ -48,7 +48,7 @@ def export_pipe(_filename,individual):
 
 	if(_filename.endswith(".py")==False):
 		_filename=_filename+'.py'
-	
+
 	export.export_pipe(_filename,individual)
 
 def print_progress(generation,total,best,individual):
@@ -58,7 +58,7 @@ def print_progress(generation,total,best,individual):
 	progress.printProgress (generation,total, prefix = 'Processing '+str(generation)+' of '+str(total), suffix = suff)
 
 def export_result(test_result,seed,individual,input_file):
-	
+
 	if not os.path.exists('results'):
 		os.makedirs('results')
 
@@ -66,13 +66,13 @@ def export_result(test_result,seed,individual,input_file):
 
 	filename = filename.replace(".csv","")
 
-	with open('results/'+filename+'.csv',"a") as out:
+	with open('results/Result_'+filename+'.csv',"a") as out:
 		out.write(test_result+","+str(seed)+","+individual+"\n")
 
 def save_individuals(individuals,generation,input_file,seed):
 
 	indi_list = individuals.split(';')
-	
+
 	if not os.path.exists('individuals'):
 		os.makedirs('individuals')
 
