@@ -7,6 +7,7 @@ INCDIR:=include
 BINDIR:=bin
 EVODIR:=evolution
 INDDIR:=individuals
+MAPDIR:=fit_map
 RESDIR:=results
 LIBDIR:=$(BINDIR)
 
@@ -50,7 +51,7 @@ $(OBJDIR)/%.o : $(DEMDIR)/%.c $(wildcard $(DEMDIR)/*.h) $(INC)
 	@$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@
 
 clean:
-	@rm -rf $(OBJDIR) $(RESDIR) $(INDDIR) $(EVODIR) $(BINDIR)/automaticML
+	@rm -rf $(OBJDIR) $(RESDIR) $(INDDIR) $(MAPDIR) $(EVODIR) $(BINDIR)/automaticML
 
 nuke: clean
 	@rm -rf $(INCDIR) $(BINDIR) $(LIBDIR)

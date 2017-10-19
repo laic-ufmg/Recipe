@@ -29,11 +29,12 @@ import pandas as pd
 
 import evaluate_algorithm as evaluate
 import printGeneration as printG
+from fit_map import *
 
 def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalCV,nCores,timeOut):
-    
-    """Evaluate all individuals of a generation using a seed and a Training method. Uses multiprocessing 
-    
+
+    """Evaluate all individuals of a generation using a seed and a Training method. Uses multiprocessing
+
     Parameters
     ----------
 
@@ -59,49 +60,21 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
 
     try:
         #Generate all the algorithms to evaluate:
+        filename = dataTraining.split("/")[-1]
+        filename = filename.replace(".csv","")
+
         algorithms =  individuals.strip().split(';')
+        output_training = [0.0] * len(algorithms)
+        fitness_map = get_fitness_map(filename)
 
-        #Uses a pool with n process to evaluate the individuals:
-        pool = Pool(processes=nCores)
-        results = []
-        output_training = []
-        try:
-            for alg in algorithms:
-                #Apply the algorithm over the dataset with a multiprocess approach and get the return:
-                results.append(pool.apply_async(evaluate.evaluate_algorithm, args=(alg,dataTraining,seed,dataSeed,internalCV)))
-        except Exception as ei:
-            print ei
+        for index,alg in enumerate(algorithms):
+            if(alg in fitness_map):
+                output_training[index] = fitness_map[alg]
+            else:
+                output_training[index] = evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV)
+                fitness_map[alg] = output_training[index]
 
-        #position of the individual that suffers timeout:
-        posTimeout = 0
-
-        #To control the timeout to finish the method in a proper time:
-        start = time()
-        #Timeout=300s for each process:
-        wait_until = start + timeOut
-
-        try:
-            for r in results:
-                try:
-                    #Controls the timeout in order to kill the method in a proper time:
-                    timeout = wait_until - time()
-                    if timeout < 0:
-                        timeout = 0
-
-                    #Apply the algorithm over the dataset with a multiprocess approach and get the return:
-                    output_training.append(r.get(timeout))
-                    posTimeout = posTimeout + 1
-                except TimeoutError as toe:
-                    warnings.warn("WARNING: Timeout reached for the algorithm -> "+ algorithms[posTimeout],UserWarning)
-                    posTimeout = posTimeout + 1
-                    output_training.append(0.0)
-
-        except Exception as ei:
-            print "Exception: ",ei
-
-        #Finish the pool:
-        pool.terminate()
-        pool.join()
+        save_fitness_map(fitness_map,filename)
 
         #Get the evaluations:
         evaluations = ""
@@ -112,8 +85,7 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
             if (i is not (len(algorithms)-1)):
                 evaluations += ";"
 
-        filename = dataTraining.split("/")[-1]
-        filename = filename.replace(".csv","")
+
         printG.printGeneration(G, seed, output_training, "EvoTraining_"+filename)
 
         #Return the evaluations separated by semicolons:
