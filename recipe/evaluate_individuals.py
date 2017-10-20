@@ -19,8 +19,7 @@ import warnings
 
 from sklearn.preprocessing import LabelEncoder
 
-import multiprocessing
-from multiprocessing import Pool, TimeoutError, Queue
+from multiprocessing import Process, Queue
 
 from time import sleep, time
 
@@ -67,11 +66,23 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
         output_training = [0.0] * len(algorithms)
         fitness_map = get_fitness_map(filename)
 
+        queue = Queue() #create a queue object
+
         for index,alg in enumerate(algorithms):
             if(alg in fitness_map):
                 output_training[index] = fitness_map[alg]
             else:
-                output_training[index] = evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV)
+
+                result = 0.0
+                p = Process(target=run_evaluation,args=(alg,dataTraining,seed,dataSeed,internalCV,queue))
+                p.start()
+                result = queue.get()
+                p.join(timeOut)
+                if p.is_alive():
+                    p.terminate()
+
+                # output_training[index] = evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV)
+                output_training[index] = result
                 fitness_map[alg] = output_training[index]
 
         save_fitness_map(fitness_map,filename)
@@ -92,3 +103,6 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
         return evaluations
     except (KeyboardInterrupt, SystemExit):
         return
+
+def run_evaluation(alg,dataTraining,seed,dataSeed,internalCV,que):
+    que.put(evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV))

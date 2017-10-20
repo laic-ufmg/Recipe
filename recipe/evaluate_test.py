@@ -63,13 +63,20 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
 
         fitness_map = get_fitness_map(filename)
 
-
         for index,alg in enumerate(algorithms):
             if(alg in fitness_map):
                 output_test[index] = fitness_map[alg]
             else:
-                result = test.testAlgorithm(alg,dataTraining,dataTest,seed,dataSeed).strip()
-                output_test[index] = float(result.strip().split(',')[-1])
+                result = 0.0
+                p = Process(target=run_evaluation,args=(alg,dataTraining,seed,dataSeed,internalCV,queue))
+                p.start()
+                result = queue.get()
+                p.join(timeOut)
+                if p.is_alive():
+                    p.terminate()
+
+                # output_test[index] = float(result.strip().split(',')[-1])
+                output_test[index] = result
                 fitness_map[alg] = output_test[index]
 
         save_fitness_map(fitness_map,filename)
@@ -80,3 +87,7 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
 
     except (KeyboardInterrupt, SystemExit):
         return
+
+def run_test(alg,dataTraining,dataTest,seed,dataSeed,que):
+    result = test.testAlgorithm(alg,dataTraining,dataTest,seed,dataSeed).strip()
+    que.put(float(result.strip().split(',')[-1]))

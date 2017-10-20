@@ -40,7 +40,7 @@ def get_fitness_map(filename):
 
 def save_fitness_map(fitness_map,filename):
 
-    sorted_fitness = OrderedDict(sorted(fitness_map.items(),key=lambda x: x[1]))
+    sorted_fitness = OrderedDict(sorted(fitness_map.items(),key=lambda x: x[1],reverse=True))
 
     with open(os.path.join('fit_map','fit_'+filename),'w') as fout:
         for key,value in sorted_fitness.items():
