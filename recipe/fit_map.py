@@ -16,10 +16,15 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 """
 
 import os
+from collections import OrderedDict
 
 def get_fitness_map(filename):
 
     fitness_map = {}
+
+    if not os.path.exists('fit_map'):
+		os.makedirs('fit_map')
+
     if os.path.exists(os.path.join('fit_map','fit_'+filename)):
         with open(os.path.join('fit_map','fit_'+filename),'r') as fin:
             content = fin.readlines()
@@ -32,8 +37,11 @@ def get_fitness_map(filename):
 
     return fitness_map
 
+
 def save_fitness_map(fitness_map,filename):
 
+    sorted_fitness = OrderedDict(sorted(fitness_map.items(),key=lambda x: x[1]))
+
     with open(os.path.join('fit_map','fit_'+filename),'w') as fout:
-        for key,value in fitness_map.items():
+        for key,value in sorted_fitness.items():
             fout.write('{}|{}\n'.format(key,value))

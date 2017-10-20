@@ -27,7 +27,7 @@ def printGeneration(G, seed, output, file_name):
 
 		output.sort()
 
-		best = output[len(output)-1]
+		best = output[-1]
 		worst = output[0]
 		average = np.mean(output)
 

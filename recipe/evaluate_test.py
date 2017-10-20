@@ -25,8 +25,8 @@ from time import sleep, time
 import random
 
 import printGeneration as printG
-
 import testAlgorithm as test
+from fit_map import *
 
 def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,timeOut):
 
@@ -53,68 +53,28 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
     """
 
     #print "#####TESTE##### \n"
-
     try:
-        #Generate all the algorithms to evaluate:
-        algorithms =  individuals.strip().split(';')
-
-        #Uses a pool with n process to evaluate the individuals:
-        pool = Pool(processes=nCores)
-        results = []
-        output = []
-        try:
-            for alg in algorithms:
-                #Apply the algorithm over the dataset with a multiprocess approach and get the return:
-                results.append(pool.apply_async(test.testAlgorithm, args=(alg,dataTraining,dataTest,seed,dataSeed)))
-        except Exception as ei:
-            print ei
-
-        #position of the individual that suffers timeout:
-        posTimeout = 0
-
-        #To control the timeout to finish the method in a proper time:
-        start = time()
-        #Timeout=300s for each process:
-        wait_until = start + timeOut
-
-        try:
-            for r in results:
-                try:
-                    #Controls the timeout in order to kill the method in a proper time:
-                    timeout = wait_until - time()
-                    if timeout < 0:
-                        timeout = 0
-
-                    #Apply the algorithm over the dataset with a multiprocess approach and get the return:
-                    output.append(r.get(timeout))
-                    posTimeout = posTimeout + 1
-                except TimeoutError as toe:
-                    warnings.warn("WARNING: Timeout reached for the algorithm ->"+ algorithms[posTimeout],UserWarning)
-                    posTimeout = posTimeout + 1
-                    output.append(0.0)
-
-
-        except Exception as ei:
-            print ei
-
-        #Finish the pool:
-        pool.terminate()
-        pool.join()
-
-        i = 0
-        test_results = []
-        for out in output:
-            out = str(out)
-            if(out.find(",")!=-1):
-                test_res = out.split(',')
-                if(len(test_res) > 1):
-                    test_results.append(float(test_res[15]))
-            else:
-                test_results.append(0.0)
 
         filename = dataTest.split("/")[-1]
         filename = filename.replace(".csv","")
-        printG.printGeneration(G, seed, test_results, "EvoTest_"+filename)
+        #Generate all the algorithms to evaluate:
+        algorithms =  individuals.strip().split(';')
+        output_test= [0.0] * len(algorithms)
+
+        fitness_map = get_fitness_map(filename)
+
+
+        for index,alg in enumerate(algorithms):
+            if(alg in fitness_map):
+                output_test[index] = fitness_map[alg]
+            else:
+                result = test.testAlgorithm(alg,dataTraining,dataTest,seed,dataSeed).strip()
+                output_test[index] = float(result.strip().split(',')[-1])
+                fitness_map[alg] = output_test[index]
+
+        save_fitness_map(fitness_map,filename)
+
+        printG.printGeneration(G, seed, output_test, "EvoTest_"+filename)
 
         return ""
 
