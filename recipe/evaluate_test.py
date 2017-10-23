@@ -19,7 +19,7 @@ import warnings
 from sklearn.preprocessing import LabelEncoder
 
 import multiprocessing
-from multiprocessing import Pool, TimeoutError, Queue
+from multiprocessing import Process, Queue
 
 from time import sleep, time
 import random
@@ -61,14 +61,18 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
         algorithms =  individuals.strip().split(';')
         output_test= [0.0] * len(algorithms)
 
-        fitness_map = get_fitness_map(filename)
+        filename_map = filename+"s"+str(seed)
+
+        fitness_map = get_fitness_map(filename_map)
+
+        queue = Queue() #create a queue object
 
         for index,alg in enumerate(algorithms):
             if(alg in fitness_map):
                 output_test[index] = fitness_map[alg]
             else:
                 result = 0.0
-                p = Process(target=run_evaluation,args=(alg,dataTraining,seed,dataSeed,internalCV,queue))
+                p = Process(target=run_test,args=(alg,dataTraining,dataTest,seed,dataSeed,queue))
                 p.start()
                 result = queue.get()
                 p.join(timeOut)
@@ -79,7 +83,7 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
                 output_test[index] = result
                 fitness_map[alg] = output_test[index]
 
-        save_fitness_map(fitness_map,filename)
+        save_fitness_map(fitness_map,filename_map)
 
         printG.printGeneration(G, seed, output_test, "EvoTest_"+filename)
 
@@ -89,5 +93,5 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
         return
 
 def run_test(alg,dataTraining,dataTest,seed,dataSeed,que):
-    result = test.testAlgorithm(alg,dataTraining,dataTest,seed,dataSeed).strip()
+    result = test.testAlgorithm(alg,dataTraining,dataTest,seed,dataSeed)
     que.put(float(result.strip().split(',')[-1]))

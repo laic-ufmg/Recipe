@@ -62,9 +62,11 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
         filename = dataTraining.split("/")[-1]
         filename = filename.replace(".csv","")
 
+        filename_map = filename+"s"+str(seed)
+
         algorithms =  individuals.strip().split(';')
         output_training = [0.0] * len(algorithms)
-        fitness_map = get_fitness_map(filename)
+        fitness_map = get_fitness_map(filename_map)
 
         queue = Queue() #create a queue object
 
@@ -85,7 +87,7 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
                 output_training[index] = result
                 fitness_map[alg] = output_training[index]
 
-        save_fitness_map(fitness_map,filename)
+        save_fitness_map(fitness_map,filename_map)
 
         #Get the evaluations:
         evaluations = ""
@@ -95,7 +97,6 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
             evaluations += str(round(evalTraining,6))
             if (i is not (len(algorithms)-1)):
                 evaluations += ";"
-
 
         printG.printGeneration(G, seed, output_training, "EvoTraining_"+filename)
 
