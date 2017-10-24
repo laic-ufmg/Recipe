@@ -22,8 +22,8 @@ from subprocess import call
 
 def verbosity_range(X):
 
-	"""Function that evaluates if the verbosity level given by the user is at a certain range 
-    
+	"""Function that evaluates if the verbosity level given by the user is at a certain range
+
     Parameters
     ----------
 
@@ -39,8 +39,8 @@ def verbosity_range(X):
 
 def track_range(X):
 
-	"""Function that evaluates if the track level given by the user is at a certain range 
-    
+	"""Function that evaluates if the track level given by the user is at a certain range
+
     Parameters
     ----------
 
@@ -62,13 +62,13 @@ def main(args):
 if __name__ == "__main__":
 
 	if(os.path.isfile('./bin/automaticML')):
-		
+
 		parser = argparse.ArgumentParser(description = 'RECIPE - Algorithm to generate machine learning pipelines')
 		parser.add_argument('-c', '--config', help= "configuration file of the GP", default ='./config/gecco2015-cfggp.ini', required=False)
 		parser.add_argument('-s', '--seed' , help="seed value for the random functions",default=1,type=int,required=False)
 		parser.add_argument('-dTr','--dataTrain',help="file to train the algorithm",required=True)
 		parser.add_argument('-dTe','--dataTest',help="file to test the algorithm",required=True)
-		parser.add_argument('-nc','--nCores',help="number of cores to be used on the algorithm execution",default=1,required=False, type=int)	
+		parser.add_argument('-nc','--nCores',help="number of cores to be used on the algorithm execution",default=1,required=False, type=int)
 		parser.add_argument('-t','--timeout',help="time to execute each individual of the GP on evaluation",default=300,required=False, type=int)
 		parser.add_argument('-en','--export_name',help="file name for the exported pipeline",default='pipeline.py',required=False)
 		parser.add_argument('-v','--verbosity',help="verbosity level of the output",default=1,required=False,type=verbosity_range)
@@ -81,5 +81,3 @@ if __name__ == "__main__":
 	else:
 
 		print "First is necessary to build the project. Run python setup.py build"
-		
-		

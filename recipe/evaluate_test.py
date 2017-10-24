@@ -18,8 +18,8 @@ import warnings
 
 from sklearn.preprocessing import LabelEncoder
 
-import multiprocessing
-from multiprocessing import Process, Queue
+from pebble import concurrent
+from concurrent.futures import TimeoutError
 
 from time import sleep, time
 import random
@@ -65,21 +65,26 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
 
         fitness_map = get_fitness_map(filename_map)
 
-        queue = Queue() #create a queue object
-
         for index,alg in enumerate(algorithms):
             if(alg in fitness_map):
                 output_test[index] = fitness_map[alg]
             else:
                 result = 0.0
-                p = Process(target=run_test,args=(alg,dataTraining,dataTest,seed,dataSeed,queue))
-                p.start()
-                result = queue.get()
-                p.join(timeOut)
-                if p.is_alive():
-                    p.terminate()
 
-                # output_test[index] = float(result.strip().split(',')[-1])
+                @concurrent.process(timeout=timeOut)
+                def run_test(alg,dataTraining,dataTest,seed,dataSeed):
+                    result = test.testAlgorithm(alg,dataTraining,dataTest,seed,dataSeed)
+                    return float(result.strip().split(',')[-1])
+
+                future = run_test(alg,dataTraining,dataTest,seed,dataSeed)
+
+                try:
+                    result = future.result()
+                except TimeoutError as error:
+                    result = 0.0
+                except Exception as error:
+                    result = 0.0
+
                 output_test[index] = result
                 fitness_map[alg] = output_test[index]
 

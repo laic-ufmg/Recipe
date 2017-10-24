@@ -28,6 +28,8 @@ def get_fitness_map(filename):
     if os.path.exists(os.path.join('fit_map','fit_'+filename)):
         with open(os.path.join('fit_map','fit_'+filename),'r') as fin:
             content = fin.readlines()
+            if(len(content)<2):
+                return fitness_map
             for lines in content:
                 line = lines.split("|")
                 fitness_map[line[0]]=float(line[1])

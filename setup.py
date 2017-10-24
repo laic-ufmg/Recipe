@@ -65,7 +65,7 @@ setup(
     license='GNU/GPLv3',
     description=('Resilient Classification Pipeline Evolution'),
     long_description="read('README.md')",
-    install_requires=['numpy', 'scipy', 'scikit-learn', 'update_checker', 'tqdm'],
+    install_requires=['numpy', 'scipy', 'scikit-learn', 'update_checker', 'tqdm','pebble'],
     classifiers=[
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',

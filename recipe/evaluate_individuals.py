@@ -19,7 +19,8 @@ import warnings
 
 from sklearn.preprocessing import LabelEncoder
 
-from multiprocessing import Process, Queue
+from pebble import concurrent
+from concurrent.futures import TimeoutError
 
 from time import sleep, time
 
@@ -68,22 +69,26 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
         output_training = [0.0] * len(algorithms)
         fitness_map = get_fitness_map(filename_map)
 
-        queue = Queue() #create a queue object
-
         for index,alg in enumerate(algorithms):
             if(alg in fitness_map):
                 output_training[index] = fitness_map[alg]
             else:
 
                 result = 0.0
-                p = Process(target=run_evaluation,args=(alg,dataTraining,seed,dataSeed,internalCV,queue))
-                p.start()
-                result = queue.get()
-                p.join(timeOut)
-                if p.is_alive():
-                    p.terminate()
 
-                # output_training[index] = evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV)
+                @concurrent.process(timeout=timeOut)
+                def evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV):
+                    return evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV)
+
+                future = evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV)
+
+                try:
+                    result = future.result()
+                except TimeoutError as error:
+                    result = 0.0
+                except Exception as error:
+                    result = 0.0
+
                 output_training[index] = result
                 fitness_map[alg] = output_training[index]
 
@@ -104,6 +109,3 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
         return evaluations
     except (KeyboardInterrupt, SystemExit):
         return
-
-def run_evaluation(alg,dataTraining,seed,dataSeed,internalCV,que):
-    que.put(evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV))
