@@ -523,6 +523,11 @@ int main(int argc, char **argv){
     params->export_name = argv[7];
     params->verbosity = atoi(argv[8]);
     params->track_ind = atoi(argv[9]);
+    // GP parameters
+    params->mutation_rate = atof(argv[10]);
+    params->crossover_rate = atof(argv[11]);
+    params->population_size = atoi(argv[12]);
+    params->generation_count = atoi(argv[13]);
 
     //Load the grammar, which its grammar directory is defined by a parameter:
     G = gges_load_bnf(params->grammarDir);

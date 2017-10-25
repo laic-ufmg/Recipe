@@ -140,7 +140,7 @@ static void initialise_population_rhh(struct gges_parameters *params,
 
     /* Initialize the evaluation for each individual */
     for (i = 0; i < pop->N; ++i) {
-        pop->members[i]->fitness = 0.0;    
+        pop->members[i]->fitness = 0.0;
     }
     /*Evaluate the whole population */
     evaluator(params, current_generation, pop->members, pop->N, args);
@@ -172,7 +172,7 @@ static void initialise_population_rnd(struct gges_parameters *params,
 
     /* Initialize the evaluation for each individual */
     for (i = 0; i < pop->N; ++i) {
-        pop->members[i]->fitness = 0.0;    
+        pop->members[i]->fitness = 0.0;
     }
     /*Evaluate the whole population */
     evaluator(params, current_generation, pop->members, pop->N, args);
@@ -267,7 +267,7 @@ static void generational_model(struct gges_parameters *params,
     for (i = 0; i < pop->N; ++i) {
         gen->members[i]->fitness = 0.0;
     }
-    
+
     /*Evaluate the whole population */
     evaluator(params, current_generation, gen->members, pop->N, args);
 }
@@ -379,7 +379,7 @@ static bool random_search_model(struct gges_parameters *params,
     /* Initialize the evaluation for each individual */
     for (i = 0; i < pop->N; ++i) {
         gen->members[i]->fitness = 0.0;
-    }    
+    }
     /*Evaluate the whole population */
     evaluator(params, current_generation, gen->members, pop->N, args);
 
@@ -408,10 +408,10 @@ struct gges_population *gges_run_system(struct gges_parameters *params,
 {
     struct gges_population *pop, *gen, *tmp;
     int g = 0;
-    
+
     /* Best fitness over the last five generations
      * It will be used as a stop criterion.
-     * If the best individual don't change over 
+     * If the best individual don't change over
      * five generations, we will stop the gp
      */
     float fitness1 = 0.0;
@@ -511,9 +511,6 @@ static double rnd()
     return (double)rand() / (double)(1.0 + RAND_MAX);
 }
 
-
-
-
 /*******************************************************************************
  * Public function implementations
  ******************************************************************************/
@@ -524,7 +521,7 @@ struct gges_parameters *gges_default_parameters()
 
     def = ALLOC(1, sizeof(struct gges_parameters), false);
 
-    def->population_size = 1000;
+    def->population_size = 100;
     def->generation_count = 50;
 
     def->model = CONTEXT_FREE_GP;
@@ -556,11 +553,11 @@ struct gges_parameters *gges_default_parameters()
     def->node_selection_method = PICK_NODE_KOZA_90_10;
     def->maximum_tree_depth = 17;
     def->maximum_mutation_depth = 4;
-    
+
     /**
      *--------------------------------------------------------------------------*
      *--------------------------------------------------------------------------*
-     * MODIFICATION FOR IMPLEMENTATION OF CFG-GP TO EVOLVE MACHINE LEARNING 
+     * MODIFICATION FOR IMPLEMENTATION OF CFG-GP TO EVOLVE MACHINE LEARNING
      * ALGORITHM FROM SKLEARN
      */
     //Default directory for training and test sets:
@@ -584,11 +581,11 @@ struct gges_parameters *gges_default_parameters()
     def->verbosity = 1;
     //Defaul track individuals variable
     def->track_ind = 1;
-   
+
     /**
      *--------------------------------------------------------------------------*
      *--------------------------------------------------------------------------*
-     */ 
+     */
     def->rnd = rnd;
 
     return def;
