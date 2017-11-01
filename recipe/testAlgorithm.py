@@ -37,7 +37,7 @@ def testAlgorithm(mlAlgorithm, dataTraining, dataTest, seed, dataSeed):
         training_df = pd.read_csv(dataTraining, header=0, delimiter=",")
         test_df = pd.read_csv(dataTest, header=0, delimiter=",")
 
-        class_name = test_df.columns.values.tolist()[-1] 
+        class_name = test_df.columns.values.tolist()[-1]
 
         #Apply a filter if the data has categorical data (sklean does not accept this type of data):
         objectList = list(training_df.select_dtypes(include=['object']).columns)
@@ -47,8 +47,8 @@ def testAlgorithm(mlAlgorithm, dataTraining, dataTest, seed, dataSeed):
 
         #Get the feature data and the class for training:
         train_data = training_df.ix[:,:-1].values
-        train_target = training_df[class_name].values    
-        
+        train_target = training_df[class_name].values
+
         # ... and test:
         test_data = test_df.ix[:,:-1].values
         test_target = test_df[class_name].values
@@ -60,7 +60,7 @@ def testAlgorithm(mlAlgorithm, dataTraining, dataTest, seed, dataSeed):
         try:
             pipeline=make_pipeline(*pipe)
         except Exception as exc:
-            print exc
+            warnings.warn("WARNING: "+ str(exc)+ "->"+ mlAlgorithm,UserWarning)
             return "0.0"
 
         pipelineTraining = pipeline
@@ -106,8 +106,8 @@ def testAlgorithm(mlAlgorithm, dataTraining, dataTest, seed, dataSeed):
         f1Test = metrics.f1_score(expectedTest, predictedTest, average='weighted')
         #classification metrics concatenation:
         resultMetrics = str(accuracyTraining) + "," + str(precisionTraining) + "," + str(recallTraining) + "," + str(f1Training) + "," + str(accuracyValidation) + "," + str(precisionValidation) + "," + str(recallValidation) + "," + str(f1Validation) + "," +str(accuracyWholeTraining) + "," + str(precisionWholeTraining) + "," + str(recallWholeTraining) + "," + str(f1WholeTraining) + "," + str(accuracyTest) + "," + str(precisionTest) + "," + str(recallTest) + "," + str(f1Test)
-        
+
         return resultMetrics
     except Exception as e:
         warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
-        return "0.0" 
+        return "0.0"

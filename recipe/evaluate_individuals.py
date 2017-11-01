@@ -73,21 +73,37 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
             if(alg in fitness_map):
                 output_training[index] = fitness_map[alg]
             else:
-
-                result = 0.0
-
-                @concurrent.process(timeout=timeOut)
-                def evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV):
-                    return evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV)
-
-                future = evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV)
-
                 try:
-                    result = future.result()
-                except TimeoutError as error:
                     result = 0.0
-                except Exception as error:
+
+                    @concurrent.process(timeout=timeOut)
+                    def evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV):
+                        return evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV)
+
+                    future = evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV)
+
+                    try:
+                        result = future.result()
+                    except TimeoutError as error:
+                        result = 0.0
+                    except Exception as error:
+                        result = 0.0
+                except e:
                     result = 0.0
+                # result = 0.0
+                #
+                # @concurrent.process(timeout=timeOut)
+                # def evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV):
+                #     return evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV)
+                #
+                # future = evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV)
+                #
+                # try:
+                #     result = future.result()
+                # except TimeoutError as error:
+                #     result = 0.0
+                # except Exception as error:
+                #     result = 0.0
 
                 output_training[index] = result
                 fitness_map[alg] = output_training[index]
