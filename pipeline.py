@@ -7,11 +7,9 @@ from sklearn.preprocessing import LabelEncoder
 import numpy as np
 import pandas as pd
 
-from sklearn.preprocessing import Imputer
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.preprocessing import PolynomialFeatures
+from sklearn.preprocessing import StandardScaler, RobustScaler
+from sklearn.linear_model import RidgeClassifierCV
 from sklearn.naive_bayes import BernoulliNB
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 None
 
 def pipeline(dataTraining,dataTest):
@@ -38,30 +36,24 @@ def pipeline(dataTraining,dataTest):
 	#Validation -- Get a subsample of the training to get information about possible overfitting:
 	X_train, X_validation, y_train, y_validation = train_test_split(train_data, train_target, train_size=0.7, test_size=0.3, random_state=dataSeed, stratify=train_target)
 
-	step0 = Imputer(axis=0, copy=True, missing_values='NaN', strategy='most_frequent',
-    verbose=0)
+	step0 = RobustScaler(copy=True, quantile_range=(25.0, 75.0), with_centering='False',
+       with_scaling=True)
 
-	step1 = MinMaxScaler(copy=True, feature_range=(0, 1))
-
-	step2 = PolynomialFeatures(degree=5, include_bias=False, interaction_only=False)
-
-	step3 = FeatureUnion(n_jobs=1,
-       transformer_list=[('votingclassifier', VotingClassifier(estimators=[('alg0', BernoulliNB(alpha=4.641762, binarize=0.402657, class_prior=None,
-      fit_prior=True))],
-         n_jobs=1, voting='hard', weights=None)), ('functiontransformer', FunctionTransformer(accept_sparse=False,
-          func=<function <lambda> at 0x7fecb7ed2cf8>, inv_kw_args=None,
+	step1 = FeatureUnion(n_jobs=1,
+       transformer_list=[('votingclassifier', VotingClassifier(estimators=[('alg0', RidgeClassifierCV(alphas=(4.751391, 47.513909999999996, 475.1391, 0.4751391, 0.04751391),
+         class_weight='balanced', cv=7, fit_intercept=True, normalize=True,
+         scoring=None))],
+         n_jobs=1, voting='hard...1bd0c8>, inv_kw_args=None,
           inverse_func=None, kw_args=None, pass_y=False, validate=True))],
        transformer_weights=None)
 
-	step4 = LinearDiscriminantAnalysis(n_components=None, priors=None, shrinkage=None,
-              solver='lsqr', store_covariance=True, tol=0.06504)
+	step2 = BernoulliNB(alpha=8.634647, binarize=0.481652, class_prior=None,
+      fit_prior=True)
 
 	methods = []
 	methods.append(step0)
 	methods.append(step1)
 	methods.append(step2)
-	methods.append(step3)
-	methods.append(step4)
 
 	pipeline = make_pipeline(*methods)
 
