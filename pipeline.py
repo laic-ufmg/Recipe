@@ -7,9 +7,10 @@ from sklearn.preprocessing import LabelEncoder
 import numpy as np
 import pandas as pd
 
-from sklearn.preprocessing import StandardScaler, RobustScaler
-from sklearn.linear_model import RidgeClassifierCV
-from sklearn.naive_bayes import BernoulliNB
+from sklearn.preprocessing import Imputer
+from sklearn.feature_selection import VarianceThreshold
+from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+from sklearn.tree import DecisionTreeClassifier, ExtraTreeClassifier
 None
 
 def pipeline(dataTraining,dataTest):
@@ -36,24 +37,29 @@ def pipeline(dataTraining,dataTest):
 	#Validation -- Get a subsample of the training to get information about possible overfitting:
 	X_train, X_validation, y_train, y_validation = train_test_split(train_data, train_target, train_size=0.7, test_size=0.3, random_state=dataSeed, stratify=train_target)
 
-	step0 = RobustScaler(copy=True, quantile_range=(25.0, 75.0), with_centering='False',
-       with_scaling=True)
+	step0 = Imputer(axis=0, copy=True, missing_values='NaN', strategy='median', verbose=0)
 
-	step1 = FeatureUnion(n_jobs=1,
-       transformer_list=[('votingclassifier', VotingClassifier(estimators=[('alg0', RidgeClassifierCV(alphas=(4.751391, 47.513909999999996, 475.1391, 0.4751391, 0.04751391),
-         class_weight='balanced', cv=7, fit_intercept=True, normalize=True,
-         scoring=None))],
-         n_jobs=1, voting='hard...1bd0c8>, inv_kw_args=None,
+	step1 = VarianceThreshold(threshold=0.0)
+
+	step2 = FeatureUnion(n_jobs=1,
+       transformer_list=[('votingclassifier', VotingClassifier(estimators=[('alg0', QuadraticDiscriminantAnalysis(priors=None, reg_param=0.79862,
+               store_covariances=True, tol=0.065016))],
+         n_jobs=1, voting='hard', weights=None)), ('functiontransformer', FunctionTransformer(accept_sparse=False,
+          func=<function <lambda> at 0x7f8aefb3a0c8>, inv_kw_args=None,
           inverse_func=None, kw_args=None, pass_y=False, validate=True))],
        transformer_weights=None)
 
-	step2 = BernoulliNB(alpha=8.634647, binarize=0.481652, class_prior=None,
-      fit_prior=True)
+	step3 = DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=0.864283, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.006302,
+            presort=True, random_state=42, splitter='random')
 
 	methods = []
 	methods.append(step0)
 	methods.append(step1)
 	methods.append(step2)
+	methods.append(step3)
 
 	pipeline = make_pipeline(*methods)
 

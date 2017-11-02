@@ -74,8 +74,7 @@
 
 <passive> ::= 'PassiveAggressive ' <boolean> <n_iter> <boolean> <loss_sgd> <boolean> <class_weight>
 
-<gradient_options> ::= 'Perceptron' <penalty> <alpha> <boolean> <n_iter> <boolean> <value_rand_1> <class_weight> <boolean> |
-    'SGDClassifier' <loss_sgd>  <value_rand_1> <value_rand_1> <learning_rate_sgd> <power_t> <average> <penalty> <alpha> <boolean> <n_iter> <boolean> <value_rand_1> <class_weight> <boolean>
+<gradient_options> ::= 'Perceptron' <penalty> <alpha> <boolean> <n_iter> <boolean> <value_rand_1> <class_weight> <boolean>
 
 ##ATRIBUTES DEFINITION
 <strategy_imp> ::= 'mean' | 'median' | 'most_frequent'
