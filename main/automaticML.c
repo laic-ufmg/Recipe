@@ -27,6 +27,8 @@ typedef struct
     bool evalTest;
     int nCores;
     int timeout;
+    double mutation_rate;
+    double crossover_rate;
 
 }ExecParams;
 
@@ -78,25 +80,29 @@ static char *evaluate_algorithms(int G, char *algorithms, char *dataTraining, ch
     if((dataTest == NULL) && (!exP.evalTest)){
         // pFunc is also a borrowed reference
         pFunc = PyDict_GetItemString(pDict, "evaluate_inds");
-        pArgs = PyTuple_Pack(8, PyInt_FromLong(G),
+        pArgs = PyTuple_Pack(10, PyInt_FromLong(G),
                                       PyString_FromString(algorithms),
                                       PyString_FromString(dataTraining),
                                       PyInt_FromLong(exP.seed),
                                       PyInt_FromLong(exP.dataSeed),
                                       PyInt_FromLong(exP.internalCV),
                                       PyInt_FromLong(exP.nCores),
-                                      PyInt_FromLong(exP.timeout));
+                                      PyInt_FromLong(exP.timeout),
+                                      PyFloat_FromDouble(exP.mutation_rate),
+                                      PyFloat_FromDouble(exP.crossover_rate));
     //Test the resultant algorithm on the test data:
     }else if((dataTest != NULL) && (!exP.evalTest)){
         pFunc = PyDict_GetItemString(pDict, "evaluate_on_test");
-        pArgs = PyTuple_Pack(8, PyInt_FromLong(G),
+        pArgs = PyTuple_Pack(10, PyInt_FromLong(G),
                                       PyString_FromString(algorithms),
                                       PyString_FromString(dataTraining),
                                       PyString_FromString(dataTest),
                                       PyInt_FromLong(exP.seed),
                                       PyInt_FromLong(exP.dataSeed),
                                       PyInt_FromLong(exP.nCores),
-                                      PyInt_FromLong(exP.timeout));
+                                      PyInt_FromLong(exP.timeout),
+                                      PyFloat_FromDouble(exP.mutation_rate),
+                                      PyFloat_FromDouble(exP.crossover_rate));
 
     }if((dataTest != NULL) && (exP.evalTest)){
 
@@ -387,6 +393,8 @@ static  void eval(struct gges_parameters *params, int G, struct gges_individual 
     exP.evalTest=false;
     exP.nCores=params->nCores;
     exP.timeout=params->timeout;
+    exP.mutation_rate=params->mutation_rate;
+    exP.crossover_rate=params->crossover_rate;
 
     //Concatenate the individuals in a single string:
     char *individuals = concatenate(members, N);
@@ -451,6 +459,8 @@ static void report(struct gges_parameters *params, int G, bool stop_criterion,  
     exP.evalTest=true;
     exP.nCores=params->nCores;
     exP.timeout=params->timeout;
+    exP.mutation_rate=params->mutation_rate;
+    exP.crossover_rate=params->crossover_rate;
 
     snprintf(stringSeed, 10, "%ld", params->seed);
 

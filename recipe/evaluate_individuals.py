@@ -31,7 +31,7 @@ import evaluate_algorithm as evaluate
 import printGeneration as printG
 from fit_map import *
 
-def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalCV,nCores,timeOut):
+def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalCV,nCores,timeOut,mutation_rate,crossover_rate):
 
     """Evaluate all individuals of a generation using a seed and a Training method. Uses multiprocessing
 
@@ -63,7 +63,7 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
         filename = dataTraining.split("/")[-1]
         filename = filename.replace(".csv","")
 
-        filename_map = filename+"s"+str(seed)
+        filename_map = filename+"s"+str(seed)+'m'+str(mutation_rate).replace('.','_')+'c'+str(crossover_rate).replace('.',"_")
 
         algorithms =  individuals.strip().split(';')
         output_training = [0.0] * len(algorithms)
@@ -90,20 +90,6 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
                         result = 0.0
                 except e:
                     result = 0.0
-                # result = 0.0
-                #
-                # @concurrent.process(timeout=timeOut)
-                # def evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV):
-                #     return evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV)
-                #
-                # future = evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV)
-                #
-                # try:
-                #     result = future.result()
-                # except TimeoutError as error:
-                #     result = 0.0
-                # except Exception as error:
-                #     result = 0.0
 
                 output_training[index] = result
                 fitness_map[alg] = output_training[index]
@@ -113,7 +99,6 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
         #Get the evaluations:
         evaluations = ""
         for i in range(len(algorithms)):
-            #eval = runAlgorithmAndEvaluate(algorithms[i], dataTraining)  # iterative
             evalTraining = output_training[i]
             evaluations += str(round(evalTraining,6))
             if (i is not (len(algorithms)-1)):

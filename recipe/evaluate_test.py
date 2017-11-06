@@ -28,7 +28,7 @@ import printGeneration as printG
 import testAlgorithm as test
 from fit_map import *
 
-def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,timeOut):
+def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,timeOut,mutation_rate,crossover_rate):
 
     """Evaluate the test individuals
 
@@ -61,7 +61,7 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
         algorithms =  individuals.strip().split(';')
         output_test= [0.0] * len(algorithms)
 
-        filename_map = filename+"s"+str(seed)
+        filename_map = filename+"s"+str(seed)+'m'+str(mutation_rate).replace('.','_')+'c'+str(crossover_rate).replace('.',"_")
 
         fitness_map = get_fitness_map(filename_map)
 
