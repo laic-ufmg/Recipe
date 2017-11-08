@@ -88,21 +88,6 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
                         result = 0.0
                 except e:
                     result = 0.0
-                # result = 0.0
-                #
-                # @concurrent.process(timeout=timeOut)
-                # def run_test(alg,dataTraining,dataTest,seed,dataSeed):
-                #     result = test.testAlgorithm(alg,dataTraining,dataTest,seed,dataSeed)
-                #     return float(result.strip().split(',')[-1])
-                #
-                # future = run_test(alg,dataTraining,dataTest,seed,dataSeed)
-                #
-                # try:
-                #     result = future.result()
-                # except TimeoutError as error:
-                #     result = 0.0
-                # except Exception as error:
-                #     result = 0.0
 
                 output_test[index] = result
                 fitness_map[alg] = output_test[index]

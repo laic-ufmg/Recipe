@@ -29,6 +29,7 @@ typedef struct
     int timeout;
     double mutation_rate;
     double crossover_rate;
+    char* metric;
 
 }ExecParams;
 
@@ -80,7 +81,7 @@ static char *evaluate_algorithms(int G, char *algorithms, char *dataTraining, ch
     if((dataTest == NULL) && (!exP.evalTest)){
         // pFunc is also a borrowed reference
         pFunc = PyDict_GetItemString(pDict, "evaluate_inds");
-        pArgs = PyTuple_Pack(10, PyInt_FromLong(G),
+        pArgs = PyTuple_Pack(11, PyInt_FromLong(G),
                                       PyString_FromString(algorithms),
                                       PyString_FromString(dataTraining),
                                       PyInt_FromLong(exP.seed),
@@ -89,7 +90,8 @@ static char *evaluate_algorithms(int G, char *algorithms, char *dataTraining, ch
                                       PyInt_FromLong(exP.nCores),
                                       PyInt_FromLong(exP.timeout),
                                       PyFloat_FromDouble(exP.mutation_rate),
-                                      PyFloat_FromDouble(exP.crossover_rate));
+                                      PyFloat_FromDouble(exP.crossover_rate),
+                                      PyString_FromString(exP.metric));
     //Test the resultant algorithm on the test data:
     }else if((dataTest != NULL) && (!exP.evalTest)){
         pFunc = PyDict_GetItemString(pDict, "evaluate_on_test");
@@ -395,6 +397,7 @@ static  void eval(struct gges_parameters *params, int G, struct gges_individual 
     exP.timeout=params->timeout;
     exP.mutation_rate=params->mutation_rate;
     exP.crossover_rate=params->crossover_rate;
+    exP.metric = params->metric;
 
     //Concatenate the individuals in a single string:
     char *individuals = concatenate(members, N);
@@ -461,6 +464,7 @@ static void report(struct gges_parameters *params, int G, bool stop_criterion,  
     exP.timeout=params->timeout;
     exP.mutation_rate=params->mutation_rate;
     exP.crossover_rate=params->crossover_rate;
+    exP.metric=params->metric;
 
     snprintf(stringSeed, 10, "%ld", params->seed);
 
@@ -538,6 +542,7 @@ int main(int argc, char **argv){
     params->crossover_rate = atof(argv[11]);
     params->population_size = atoi(argv[12]);
     params->generation_count = atoi(argv[13]);
+    params->metric = argv[14];
 
     //Load the grammar, which its grammar directory is defined by a parameter:
     G = gges_load_bnf(params->grammarDir);

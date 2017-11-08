@@ -32,9 +32,9 @@ import testAlgorithm as test
 import export_pipe as export
 import progress
 
-def evaluate_inds(G, individuals, dataTraining, seed, dataSeed, internalCV,nCores,timeout,mutation_rate,crossover_rate):
+def evaluate_inds(G, individuals, dataTraining, seed, dataSeed, internalCV,nCores,timeout,mutation_rate,crossover_rate,metric):
 
-    return evaluate.evaluate_individuals(G,individuals,dataTraining,seed,dataSeed,internalCV,nCores,timeout,mutation_rate,crossover_rate)
+    return evaluate.evaluate_individuals(G,individuals,dataTraining,seed,dataSeed,internalCV,nCores,timeout,mutation_rate,crossover_rate,metric)
 
 def evaluate_on_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,timeout,mutation_rate,crossover_rate):
 

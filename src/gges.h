@@ -68,15 +68,15 @@ extern "C" {
 
         int maximum_mutation_depth;
         int maximum_tree_depth;
-        
+
     /**
 	 *--------------------------------------------------------------------------*
 	 *--------------------------------------------------------------------------*
-	 * MODIFICATION FOR IMPLEMENTATION OF CFG-GP TO EVOLVE MACHINE LEARNING 
+	 * MODIFICATION FOR IMPLEMENTATION OF CFG-GP TO EVOLVE MACHINE LEARNING
 	 * ALGORITHM FROM SKLEARN
-	 * 
+	 *
 	 */
-	
+
 	//Directory for training and test sets:
         char *dataTraining;
         char *dataTest;
@@ -98,11 +98,13 @@ extern "C" {
         int verbosity;
         //Track individuals variable
         int track_ind;
-        
+        //Metric to be used by the GGP
+        char *metric;
+
         /**
 	 *--------------------------------------------------------------------------*
 	 *--------------------------------------------------------------------------*
-	*/ 
+	*/
 
         GGES_EVAL eval;
 

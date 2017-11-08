@@ -19,7 +19,7 @@ import warnings
 
 from sklearn.preprocessing import LabelEncoder
 
-from pebble import concurrent
+from pebble import ProcessPool
 from concurrent.futures import TimeoutError
 
 from time import sleep, time
@@ -31,7 +31,10 @@ import evaluate_algorithm as evaluate
 import printGeneration as printG
 from fit_map import *
 
-def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalCV,nCores,timeOut,mutation_rate,crossover_rate):
+def evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV,metric,index):
+    return evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV,metric),index
+
+def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalCV,nCores,timeOut,mutation_rate,crossover_rate,metric):
 
     """Evaluate all individuals of a generation using a seed and a Training method. Uses multiprocessing
 
@@ -73,25 +76,21 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
             if(alg in fitness_map):
                 output_training[index] = fitness_map[alg]
             else:
-                try:
-                    result = 0.0
 
-                    @concurrent.process(timeout=timeOut)
-                    def evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV):
-                        return evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV)
-
-                    future = evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV)
-
+                def task_done(future):
                     try:
-                        result = future.result()
+                        result,index = future.result()  # blocks until results are ready
+                        output_training[index] = result
                     except TimeoutError as error:
-                        result = 0.0
+                        output_training[index] = 0.0
                     except Exception as error:
-                        result = 0.0
-                except e:
-                    result = 0.0
+                        output_training[index] = 0.0
 
-                output_training[index] = result
+                with ProcessPool(max_workers=1) as pool:
+
+                    future = pool.schedule(evaluate_alg, args=[alg,dataTraining,seed,dataSeed,internalCV,metric,index], timeout=timeOut)
+                    future.add_done_callback(task_done)
+
                 fitness_map[alg] = output_training[index]
 
         save_fitness_map(fitness_map,filename_map)

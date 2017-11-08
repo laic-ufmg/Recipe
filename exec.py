@@ -71,11 +71,26 @@ def max_rate(X):
 		x=0.1
 	return x
 
+def metric(met):
+	"""Function that validate the possible metris
+
+    Parameters
+    ----------
+
+    metric: string
+       Metric to be used by the RECIPE
+
+	"""
+
+	return 'f1_weighted'
+
+
+
 def main(args):
 
 	cmd = './bin/automaticML '+args.config+" "+str(args.seed)+" "+args.dataTrain+" "+args.dataTest+"\
 	 "+str(args.nCores)+" "+str(args.timeout)+" "+args.export_name+" "+str(args.verbosity)+" "+str(args.track_ind)+" "+str(args.mutation_rate)+"\
-	  "+str(args.crossover_rate)+" "+str(args.population_size)+" "+str(args.generation_count)
+	  "+str(args.crossover_rate)+" "+str(args.population_size)+" "+str(args.generation_count)+" "+args.metric
 	call(cmd,shell=True)
 
 if __name__ == "__main__":
@@ -96,6 +111,7 @@ if __name__ == "__main__":
 		parser.add_argument('-cr','--crossover_rate',help="define the crossover rate for the algorithm (max=1.0)",default=0.9,required=False,type=max_rate)
 		parser.add_argument('-ps','--population_size',help="define the size for the inicial population for the algorithm",default=30,required=False)
 		parser.add_argument('-gc','--generation_count',help="define the generation count for the algorithm",default=100,required=False)
+		parser.add_argument('-mt','--metric',help='define the metric to be used by RECIPE',default='f1_weighted',required=False)
 
 		args = parser.parse_args()
 

@@ -581,6 +581,8 @@ struct gges_parameters *gges_default_parameters()
     def->verbosity = 1;
     //Defaul track individuals variable
     def->track_ind = 1;
+    //Default metric to be used by the GGP
+    def->metric = "f1_weighted";
 
     /**
      *--------------------------------------------------------------------------*
