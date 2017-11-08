@@ -8,10 +8,10 @@ import numpy as np
 import pandas as pd
 
 from sklearn.preprocessing import Imputer
-from sklearn.feature_selection import VarianceThreshold
-from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.feature_selection import f_classif, chi2, SelectFpr
+from sklearn.preprocessing import PolynomialFeatures
 from sklearn.tree import DecisionTreeClassifier, ExtraTreeClassifier
-None
 
 def pipeline(dataTraining,dataTest):
 
@@ -37,29 +37,26 @@ def pipeline(dataTraining,dataTest):
 	#Validation -- Get a subsample of the training to get information about possible overfitting:
 	X_train, X_validation, y_train, y_validation = train_test_split(train_data, train_target, train_size=0.7, test_size=0.3, random_state=dataSeed, stratify=train_target)
 
-	step0 = Imputer(axis=0, copy=True, missing_values='NaN', strategy='median', verbose=0)
+	step0 = Imputer(axis=0, copy=True, missing_values='NaN', strategy='mean', verbose=0)
 
-	step1 = VarianceThreshold(threshold=0.0)
+	step1 = MinMaxScaler(copy=True, feature_range=(0, 1))
 
-	step2 = FeatureUnion(n_jobs=1,
-       transformer_list=[('votingclassifier', VotingClassifier(estimators=[('alg0', QuadraticDiscriminantAnalysis(priors=None, reg_param=0.79862,
-               store_covariances=True, tol=0.065016))],
-         n_jobs=1, voting='hard', weights=None)), ('functiontransformer', FunctionTransformer(accept_sparse=False,
-          func=<function <lambda> at 0x7f45b2b14c08>, inv_kw_args=None,
-          inverse_func=None, kw_args=None, pass_y=False, validate=True))],
-       transformer_weights=None)
+	step2 = SelectFpr(alpha=0.371134, score_func=<function f_classif at 0x7ff7f1c75b18>)
 
-	step3 = DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
-            max_features=0.864283, max_leaf_nodes=None,
-            min_impurity_split=1e-07, min_samples_leaf=1,
-            min_samples_split=2, min_weight_fraction_leaf=0.006302,
-            presort=True, random_state=42, splitter='random')
+	step3 = PolynomialFeatures(degree=6, include_bias=False, interaction_only=False)
+
+	step4 = ExtraTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
+          max_features=None, max_leaf_nodes=74534,
+          min_impurity_split=1e-07, min_samples_leaf=1,
+          min_samples_split=2, min_weight_fraction_leaf=0.254394,
+          random_state=42, splitter='random')
 
 	methods = []
 	methods.append(step0)
 	methods.append(step1)
 	methods.append(step2)
 	methods.append(step3)
+	methods.append(step4)
 
 	pipeline = make_pipeline(*methods)
 

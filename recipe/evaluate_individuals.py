@@ -19,8 +19,8 @@ import warnings
 
 from sklearn.preprocessing import LabelEncoder
 
-from pebble import ProcessPool
-from concurrent.futures import TimeoutError
+# from pebble import ProcessPool
+# from concurrent.futures import TimeoutError
 
 from time import sleep, time
 
@@ -31,8 +31,16 @@ import evaluate_algorithm as evaluate
 import printGeneration as printG
 from fit_map import *
 
+from stopit import threading_timeoutable, TimeoutException
+
+@threading_timeoutable(default=0.0)
 def evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV,metric,index):
-    return evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV,metric),index
+    try:
+        return evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV,metric),index
+    except TimeoutException:
+        return 0.0,index
+    except Exception as e:
+        return 0.0,index
 
 def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalCV,nCores,timeOut,mutation_rate,crossover_rate,metric):
 
@@ -76,21 +84,9 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
             if(alg in fitness_map):
                 output_training[index] = fitness_map[alg]
             else:
-
-                def task_done(future):
-                    try:
-                        result,index = future.result()  # blocks until results are ready
-                        output_training[index] = result
-                    except TimeoutError as error:
-                        output_training[index] = 0.0
-                    except Exception as error:
-                        output_training[index] = 0.0
-
-                with ProcessPool(max_workers=1,max_tasks=1) as pool:
-
-                    future = pool.schedule(evaluate_alg, args=[alg,dataTraining,seed,dataSeed,internalCV,metric,index], timeout=timeOut)
-                    future.add_done_callback(task_done)
-
+                result,index = evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV,metric,index,timeout=timeOut)
+                
+                output_training[index] = result
                 fitness_map[alg] = output_training[index]
 
         save_fitness_map(fitness_map,filename_map)

@@ -18,9 +18,6 @@ import warnings
 
 from sklearn.preprocessing import LabelEncoder
 
-from pebble import ProcessPool
-from concurrent.futures import TimeoutError
-
 from time import sleep, time
 import random
 
@@ -28,9 +25,17 @@ import printGeneration as printG
 import testAlgorithm as test
 from fit_map import *
 
+from stopit import threading_timeoutable, TimeoutException
+
+@threading_timeoutable(default=0.0)
 def run_test(alg,dataTraining,dataTest,seed,dataSeed,index):
-    result = test.testAlgorithm(alg,dataTraining,dataTest,seed,dataSeed)
-    return float(result.strip().split(',')[-1]),index
+    try:
+        result = test.testAlgorithm(alg,dataTraining,dataTest,seed,dataSeed)
+        return float(result.strip().split(',')[-1]),index
+    except TimeoutException:
+        return 0.0,index
+    except Exception as e:
+        return 0.0,index
 
 def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,timeOut,mutation_rate,crossover_rate):
 
@@ -74,20 +79,9 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
                 output_test[index] = fitness_map[alg]
             else:
 
-                def task_done(future):
-                    try:
-                        result,index = future.result()  # blocks until results are ready
-                        output_test[index] = result
-                    except TimeoutError as error:
-                        output_test[index] = 0.0
-                    except Exception as error:
-                        output_test[index] = 0.0
-
-                with ProcessPool(max_workers=1,max_tasks=1) as pool:
-
-                    future = pool.schedule(run_test, args=[alg,dataTraining,dataTest,seed,dataSeed,index], timeout=timeOut)
-                    future.add_done_callback(task_done)
-
+                result,index = run_test(alg,dataTraining,dataTest,seed,dataSeed,index,timeout=timeOut)
+                
+                output_test[index] = result
                 fitness_map[alg] = output_test[index]
 
         save_fitness_map(fitness_map,filename_map)
