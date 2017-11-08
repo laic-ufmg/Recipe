@@ -18,7 +18,7 @@ import warnings
 
 from sklearn.preprocessing import LabelEncoder
 
-from pebble import concurrent
+from pebble import ProcessPool
 from concurrent.futures import TimeoutError
 
 from time import sleep, time
@@ -27,6 +27,10 @@ import random
 import printGeneration as printG
 import testAlgorithm as test
 from fit_map import *
+
+def run_test(alg,dataTraining,dataTest,seed,dataSeed,index):
+    result = test.testAlgorithm(alg,dataTraining,dataTest,seed,dataSeed)
+    return float(result.strip().split(',')[-1]),index
 
 def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,timeOut,mutation_rate,crossover_rate):
 
@@ -70,26 +74,20 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
                 output_test[index] = fitness_map[alg]
             else:
 
-                try:
-                    result = 0.0
-
-                    @concurrent.process(timeout=timeOut)
-                    def run_test(alg,dataTraining,dataTest,seed,dataSeed):
-                        result = test.testAlgorithm(alg,dataTraining,dataTest,seed,dataSeed)
-                        return float(result.strip().split(',')[-1])
-
-                    future = run_test(alg,dataTraining,dataTest,seed,dataSeed)
-
+                def task_done(future):
                     try:
-                        result = future.result()
+                        result,index = future.result()  # blocks until results are ready
+                        output_test[index] = result
                     except TimeoutError as error:
-                        result = 0.0
+                        output_test[index] = 0.0
                     except Exception as error:
-                        result = 0.0
-                except e:
-                    result = 0.0
+                        output_test[index] = 0.0
 
-                output_test[index] = result
+                with ProcessPool(max_workers=1,max_tasks=1) as pool:
+
+                    future = pool.schedule(run_test, args=[alg,dataTraining,dataTest,seed,dataSeed,index], timeout=timeOut)
+                    future.add_done_callback(task_done)
+
                 fitness_map[alg] = output_test[index]
 
         save_fitness_map(fitness_map,filename_map)
@@ -100,7 +98,3 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
 
     except (KeyboardInterrupt, SystemExit):
         return
-
-def run_test(alg,dataTraining,dataTest,seed,dataSeed,que):
-    result = test.testAlgorithm(alg,dataTraining,dataTest,seed,dataSeed)
-    que.put(float(result.strip().split(',')[-1]))

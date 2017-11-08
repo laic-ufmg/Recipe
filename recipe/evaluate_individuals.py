@@ -86,7 +86,7 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
                     except Exception as error:
                         output_training[index] = 0.0
 
-                with ProcessPool(max_workers=1) as pool:
+                with ProcessPool(max_workers=1,max_tasks=1) as pool:
 
                     future = pool.schedule(evaluate_alg, args=[alg,dataTraining,seed,dataSeed,internalCV,metric,index], timeout=timeOut)
                     future.add_done_callback(task_done)
