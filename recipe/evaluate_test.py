@@ -18,24 +18,25 @@ import warnings
 
 from sklearn.preprocessing import LabelEncoder
 
-from time import sleep, time
 import random
 
 import printGeneration as printG
 import testAlgorithm as test
 from fit_map import *
 
-from stopit import threading_timeoutable, TimeoutException
+import multiprocessing as mp
 
-@threading_timeoutable(default=0.0)
-def run_test(alg,dataTraining,dataTest,seed,dataSeed,index):
+def exec_timeout(func,args,timeout):
+    pool = mp.Pool(1, maxtasksperchild=1)
+    result = pool.apply_async(func, args)
+    pool.close()
+
     try:
-        result = test.testAlgorithm(alg,dataTraining,dataTest,seed,dataSeed)
-        return float(result.strip().split(',')[-1]),index
-    except TimeoutException:
-        return 0.0,index
-    except Exception as e:
-        return 0.0,index
+        s = result.get(timeout)
+        return s
+    except mp.TimeoutError:
+        pool.terminate()
+        return '0.0'
 
 def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,timeOut,mutation_rate,crossover_rate):
 
@@ -79,8 +80,10 @@ def evaluate_test(G, individuals, dataTraining, dataTest, seed, dataSeed,nCores,
                 output_test[index] = fitness_map[alg]
             else:
 
-                result,index = run_test(alg,dataTraining,dataTest,seed,dataSeed,index,timeout=timeOut)
-                
+                # result,index = run_test(alg,dataTraining,dataTest,seed,dataSeed,index,timeout=timeOut)
+                result = exec_timeout(func=test.testAlgorithm,args=[alg,dataTraining,dataTest,seed,dataSeed],timeout=timeOut)
+                result = float(result.strip().split(',')[-1])
+
                 output_test[index] = result
                 fitness_map[alg] = output_test[index]
 

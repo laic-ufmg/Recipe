@@ -26317,3 +26317,1224 @@
 2017-11-08 23:03:25 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ExponentialLoss requires 2 classes.->RFE 1 0.752756 # SA*  RandomForestClassifier entropy False False balanced_subsample 50 True 0.730732 None 0.453908 None # GradientBoostingClassifier exponential 0.092520 0.915606 False 20 True log2 None 0.404169 39489 # Ensemble 
   warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
 
+2017-11-08 23:08:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-11-08 23:13:20 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer mean # MaxAbsScaler # PolynomialFeatures 8 True False # SA*  RandomForestClassifier gini False False None 45 False 0.831307 16984 0.335264 None # LogisticRegression True 100 lbfgs balanced True 0.098886 # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-08 23:13:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-08 23:13:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-08 23:24:25 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: The classifier does not expose "coef_" or "feature_importances_" attributes->RFE 1 0.752756 # SA*  RandomForestClassifier entropy False False balanced_subsample 50 True 0.730732 None 0.453908 None # GradientBoostingClassifier exponential 0.092520 0.915606 False 20 True log2 None 0.404169 39489 # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-08 23:24:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-08 23:24:38 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-08 23:24:39 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: Input X must be non-negative.->Imputer most_frequent # RobustScaler True True # SelectKBest 2 chi2 # SA*  DecisionTreeClassifier entropy random balanced False 0.894383 None 0.492854 98076 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-08 23:24:51 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-08 23:24:57 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->StandardScaler False True # PolynomialFeatures 10 False True # SA*  QuadraticDiscriminantAnalysis 0.947215 0.062434 False 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-08 23:27:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-08 23:29:57 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer mean # StandardScaler True False # RecursiveFE_CV 3 None 0.532419 # PolynomialFeatures 10 True False # SA*  SVC rbf 10 0.029422 100 balanced 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-08 23:29:58 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: Input X must be non-negative->RobustScaler True False # PolynomialFeatures 2 True True # SA*  CentroidClassifier 25.660693 minkowski # MultinomialNB 5.044316 True # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-08 23:37:01 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer mean # MinMaxScaler # PolynomialFeatures 9 True True # SA*  NuSVC rbf 2 0.022730 5000 balanced # GradientBoostingClassifier exponential 0.050266 0.169941 True 30 False 0.982426 None 0.248645 66217 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-08 23:43:00 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer median # StandardScaler False True # PolynomialFeatures 7 True False # SA*  PassiveAggressive  False 5 True squared_epsilon_insensitive False None # Perceptron l1 0.760432 True 100 False 0.036068 balanced False # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-08 23:43:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-08 23:43:05 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=7500).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-08 23:43:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=1000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-08 23:44:15 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer most_frequent # PolynomialFeatures 7 False False # SA*  RidgeClassifier 10 True auto 0.021989 7.575631 None True True # ExtraTreesClassifier gini True True balanced 5 False None 17807 0.162319 10031 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-08 23:54:57 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: The classifier does not expose "coef_" or "feature_importances_" attributes->Imputer most_frequent # RFE 2 0.225807 # PolynomialFeatures 6 False False # SA*  Perceptron l1 3.106043 True 50 True 0.188647 None False 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-08 23:54:59 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->MaxAbsScaler # PolynomialFeatures 9 False True # SA*  ExtraTreeClassifier entropy best balanced True log2 27799 0.295273 26967 # GaussianNB # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-08 23:58:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-08 23:58:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-11-09 00:07:36 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->Imputer mean # MaxAbsScaler # PolynomialFeatures 8 True False # SA*  RandomForestClassifier gini False False None 45 False 0.831307 16984 0.335264 None # LogisticRegression True 100 lbfgs balanced True 0.098886 # Ensemble 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 00:07:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 00:20:14 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: The classifier does not expose "coef_" or "feature_importances_" attributes->RFE 1 0.752756 # SA*  RandomForestClassifier entropy False False balanced_subsample 50 True 0.730732 None 0.453908 None # GradientBoostingClassifier exponential 0.092520 0.915606 False 20 True log2 None 0.404169 39489 # Ensemble 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 00:20:27 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: Input X must be non-negative.->Imputer most_frequent # RobustScaler True True # SelectKBest 2 chi2 # SA*  DecisionTreeClassifier entropy random balanced False 0.894383 None 0.492854 98076 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 00:20:39 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ndarray is not C-contiguous->SA*  GradientBoostingClassifier exponential 0.045736 0.069703 False 30 True sqrt 46725 0.202494 None 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 00:20:46 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->StandardScaler False True # PolynomialFeatures 10 False True # SA*  QuadraticDiscriminantAnalysis 0.947215 0.062434 False 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 00:27:14 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->Imputer mean # StandardScaler True False # RecursiveFE_CV 3 None 0.532419 # PolynomialFeatures 10 True False # SA*  SVC rbf 10 0.029422 100 balanced 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 00:27:15 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: Input X must be non-negative->RobustScaler True False # PolynomialFeatures 2 True True # SA*  CentroidClassifier 25.660693 minkowski # MultinomialNB 5.044316 True # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 00:34:53 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->Imputer mean # MinMaxScaler # PolynomialFeatures 9 True True # SA*  NuSVC rbf 2 0.022730 5000 balanced # GradientBoostingClassifier exponential 0.050266 0.169941 True 30 False 0.982426 None 0.248645 66217 # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 00:40:18 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->Imputer median # StandardScaler False True # PolynomialFeatures 7 True False # SA*  PassiveAggressive  False 5 True squared_epsilon_insensitive False None # Perceptron l1 0.760432 True 100 False 0.036068 balanced False # Ensemble 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 00:40:18 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-09 00:41:33 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->Imputer most_frequent # PolynomialFeatures 7 False False # SA*  RidgeClassifier 10 True auto 0.021989 7.575631 None True True # ExtraTreesClassifier gini True True balanced 5 False None 17807 0.162319 10031 # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 00:53:46 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->Imputer most_frequent # RFE 2 0.225807 # PolynomialFeatures 6 False False # SA*  Perceptron l1 3.106043 True 50 True 0.188647 None False 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 00:53:48 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->MaxAbsScaler # PolynomialFeatures 9 False True # SA*  ExtraTreeClassifier entropy best balanced True log2 27799 0.295273 26967 # GaussianNB # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 01:04:58 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer mean # SelectPercentile 92 f_classif # PolynomialFeatures 9 True False # SA*  GradientBoostingClassifier exponential 0.032183 0.508410 auto 15 False 0.540648 79126 0.096708 76417 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 01:23:28 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->PolynomialFeatures 7 True True # SA*  Perceptron l1 5.751531 True 750 False 0.264297 None True 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 01:23:28 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: Input X must be non-negative->RBFSampler 7.322197 1 # PolynomialFeatures 7 False False # SA*  MultinomialNB 8.416378 False # NuSVC poly 9 0.015803 10 balanced # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 01:23:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=2500).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 01:37:07 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->Imputer mean # SelectPercentile 92 f_classif # PolynomialFeatures 9 True False # SA*  GradientBoostingClassifier exponential 0.032183 0.508410 auto 15 False 0.540648 79126 0.096708 76417 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 01:58:06 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->PolynomialFeatures 7 True True # SA*  Perceptron l1 5.751531 True 750 False 0.264297 None True 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 01:58:06 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: Input X must be non-negative->RBFSampler 7.322197 1 # PolynomialFeatures 7 False False # SA*  MultinomialNB 8.416378 False # NuSVC poly 9 0.015803 10 balanced # Ensemble 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 02:03:22 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ndarray is not C-contiguous->Binarizer 74.193953 # SA*  GradientBoostingClassifier exponential 0.018847 0.967264 True 30 True None 58341 0.070558 22761 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 02:10:27 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->MaxAbsScaler # SelectFromModel None False # PolynomialFeatures 9 False False # SA*  SVC poly 5 0.001614 100000 None # AdaBoostClassifier SAMME 45 1.643286 # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 02:16:12 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->PolynomialFeatures 7 True True # SA*  MultinomialNB 0.571824 False # KNeighborsClassifier 3 uniform auto 96 10 manhattan # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 02:23:05 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->PolynomialFeatures 7 True True # SA*  GradientBoostingClassifier exponential 0.041418 0.765485 True 10 False 0.590689 None 0.223990 None # NuSVC poly 9 0.015803 10 balanced # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 02:23:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:387: UserWarning: Variables are collinear.
+  warnings.warn("Variables are collinear.")
+
+2017-11-09 02:28:43 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->MaxAbsScaler # SelectFromModel None False # PolynomialFeatures 9 False False # SA*  SVC poly 5 0.001614 100000 None # AdaBoostClassifier SAMME 45 1.643286 # Ensemble 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 02:38:28 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->PolynomialFeatures 7 True True # SA*  MultinomialNB 0.571824 False # KNeighborsClassifier 3 uniform auto 96 10 manhattan # Ensemble 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 02:51:47 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer mean # MinMaxScaler # SelectFpr 0.371134 f_classif # PolynomialFeatures 6 False False # SA*  AdaBoostClassifier SAMME 45 1.643286 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 02:56:55 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer mean # SelectPercentile 92 f_classif # PolynomialFeatures 9 True False # SA*  LogisticCV None True 300 liblinear None True 0.057839 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 03:02:05 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->PolynomialFeatures 7 True True # SA*  GaussianNB # AdaBoostClassifier SAMME.R 10 1.323525 # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 03:09:15 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->Imputer mean # MinMaxScaler # SelectFpr 0.371134 f_classif # PolynomialFeatures 6 False False # SA*  AdaBoostClassifier SAMME 45 1.643286 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 03:14:25 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->Imputer mean # SelectPercentile 92 f_classif # PolynomialFeatures 9 True False # SA*  LogisticCV None True 300 liblinear None True 0.057839 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 03:20:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=500).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 13:03:38 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-11-09 13:03:54 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-11-09 13:03:59 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer mean # MaxAbsScaler # PolynomialFeatures 8 True False # SA*  RandomForestClassifier gini False False None 45 False 0.831307 16984 0.335264 None # LogisticRegression True 100 lbfgs balanced True 0.098886 # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 13:04:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 13:04:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 13:04:11 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer mean # MinMaxScaler # SelectFpr 0.371134 f_classif # PolynomialFeatures 6 False False # SA*  ExtraTreeClassifier entropy random None True None None 0.254394 74534 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 13:46:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-11-09 13:46:28 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer mean # MaxAbsScaler # PolynomialFeatures 8 True False # SA*  RandomForestClassifier gini False False None 45 False 0.831307 16984 0.335264 None # LogisticRegression True 100 lbfgs balanced True 0.098886 # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 13:46:29 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->SelectKBest 2 f_classif # PolynomialFeatures 3 True False # SA*  AdaBoostClassifier SAMME.R 30 1.913506 # GradientBoostingClassifier exponential 0.041418 0.765485 True 10 False 0.590689 None 0.223990 None # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 13:46:29 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 13:46:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 13:46:31 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->IncrementalPCA True 1 # PolynomialFeatures 9 True False # SA*  CentroidClassifier None minkowski # ExtraTreesClassifier gini True False None 50 False 0.180556 2622 0.254905 86003 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 13:46:32 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->SA*  RidgeClassifier 1000 False sag 0.036784 7.205694 balanced False True # Perceptron l1 1.380046 False 750 False 0.712989 None True # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 13:46:33 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer mean # MinMaxScaler # SelectFpr 0.371134 f_classif # PolynomialFeatures 6 False False # SA*  ExtraTreeClassifier entropy random None True None None 0.254394 74534 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 13:47:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-11-09 13:47:44 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer mean # MaxAbsScaler # PolynomialFeatures 8 True False # SA*  RandomForestClassifier gini False False None 45 False 0.831307 16984 0.335264 None # LogisticRegression True 100 lbfgs balanced True 0.098886 # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 13:47:46 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->SelectKBest 2 f_classif # PolynomialFeatures 3 True False # SA*  AdaBoostClassifier SAMME.R 30 1.913506 # GradientBoostingClassifier exponential 0.041418 0.765485 True 10 False 0.590689 None 0.223990 None # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 13:47:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 13:47:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 13:47:47 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->IncrementalPCA True 1 # PolynomialFeatures 9 True False # SA*  CentroidClassifier None minkowski # ExtraTreesClassifier gini True False None 50 False 0.180556 2622 0.254905 86003 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 13:47:49 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer mean # MinMaxScaler # SelectFpr 0.371134 f_classif # PolynomialFeatures 6 False False # SA*  ExtraTreeClassifier entropy random None True None None 0.254394 74534 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:11:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-11-09 14:11:08 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer mean # MaxAbsScaler # PolynomialFeatures 8 True False # SA*  RandomForestClassifier gini False False None 45 False 0.831307 16984 0.335264 None # LogisticRegression True 100 lbfgs balanced True 0.098886 # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:11:09 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->SelectKBest 2 f_classif # PolynomialFeatures 3 True False # SA*  AdaBoostClassifier SAMME.R 30 1.913506 # GradientBoostingClassifier exponential 0.041418 0.765485 True 10 False 0.590689 None 0.223990 None # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:11:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:11:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:11:10 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->IncrementalPCA True 1 # PolynomialFeatures 9 True False # SA*  CentroidClassifier None minkowski # ExtraTreesClassifier gini True False None 50 False 0.180556 2622 0.254905 86003 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:11:12 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer mean # MinMaxScaler # SelectFpr 0.371134 f_classif # PolynomialFeatures 6 False False # SA*  ExtraTreeClassifier entropy random None True None None 0.254394 74534 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:15:03 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-11-09 14:15:05 : ./recipe/evaluate_algorithm.py:104: UserWarning: WARNING: ->Imputer mean # MaxAbsScaler # PolynomialFeatures 8 True False # SA*  RandomForestClassifier gini False False None 45 False 0.831307 16984 0.335264 None # LogisticRegression True 100 lbfgs balanced True 0.098886 # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:15:06 : ./recipe/evaluate_algorithm.py:104: UserWarning: WARNING: ->SelectKBest 2 f_classif # PolynomialFeatures 3 True False # SA*  AdaBoostClassifier SAMME.R 30 1.913506 # GradientBoostingClassifier exponential 0.041418 0.765485 True 10 False 0.590689 None 0.223990 None # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:15:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:15:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:15:07 : ./recipe/evaluate_algorithm.py:104: UserWarning: WARNING: ->IncrementalPCA True 1 # PolynomialFeatures 9 True False # SA*  CentroidClassifier None minkowski # ExtraTreesClassifier gini True False None 50 False 0.180556 2622 0.254905 86003 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:15:08 : ./recipe/evaluate_algorithm.py:104: UserWarning: WARNING: ->SA*  RidgeClassifier 1000 False sag 0.036784 7.205694 balanced False True # Perceptron l1 1.380046 False 750 False 0.712989 None True # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:15:09 : ./recipe/evaluate_algorithm.py:104: UserWarning: WARNING: ->Imputer mean # MinMaxScaler # SelectFpr 0.371134 f_classif # PolynomialFeatures 6 False False # SA*  ExtraTreeClassifier entropy random None True None None 0.254394 74534 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:15:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-11-09 14:15:47 : ./recipe/evaluate_algorithm.py:104: UserWarning: WARNING: ->Imputer mean # MaxAbsScaler # PolynomialFeatures 8 True False # SA*  RandomForestClassifier gini False False None 45 False 0.831307 16984 0.335264 None # LogisticRegression True 100 lbfgs balanced True 0.098886 # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:15:48 : ./recipe/evaluate_algorithm.py:104: UserWarning: WARNING: ->SelectKBest 2 f_classif # PolynomialFeatures 3 True False # SA*  AdaBoostClassifier SAMME.R 30 1.913506 # GradientBoostingClassifier exponential 0.041418 0.765485 True 10 False 0.590689 None 0.223990 None # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:15:48 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:15:48 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:15:49 : ./recipe/evaluate_algorithm.py:104: UserWarning: WARNING: ->IncrementalPCA True 1 # PolynomialFeatures 9 True False # SA*  CentroidClassifier None minkowski # ExtraTreesClassifier gini True False None 50 False 0.180556 2622 0.254905 86003 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:15:50 : ./recipe/evaluate_algorithm.py:104: UserWarning: WARNING: ->SA*  RidgeClassifier 1000 False sag 0.036784 7.205694 balanced False True # Perceptron l1 1.380046 False 750 False 0.712989 None True # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:15:51 : ./recipe/evaluate_algorithm.py:104: UserWarning: WARNING: ->Imputer mean # MinMaxScaler # SelectFpr 0.371134 f_classif # PolynomialFeatures 6 False False # SA*  ExtraTreeClassifier entropy random None True None None 0.254394 74534 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:17:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-11-09 14:17:35 : ./recipe/evaluate_algorithm.py:104: UserWarning: WARNING: ->Imputer mean # MaxAbsScaler # PolynomialFeatures 8 True False # SA*  RandomForestClassifier gini False False None 45 False 0.831307 16984 0.335264 None # LogisticRegression True 100 lbfgs balanced True 0.098886 # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:17:36 : ./recipe/evaluate_algorithm.py:104: UserWarning: WARNING: ->SelectKBest 2 f_classif # PolynomialFeatures 3 True False # SA*  AdaBoostClassifier SAMME.R 30 1.913506 # GradientBoostingClassifier exponential 0.041418 0.765485 True 10 False 0.590689 None 0.223990 None # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:17:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:17:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:17:38 : ./recipe/evaluate_algorithm.py:104: UserWarning: WARNING: ->IncrementalPCA True 1 # PolynomialFeatures 9 True False # SA*  CentroidClassifier None minkowski # ExtraTreesClassifier gini True False None 50 False 0.180556 2622 0.254905 86003 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:17:40 : ./recipe/evaluate_algorithm.py:104: UserWarning: WARNING: ->Imputer mean # MinMaxScaler # SelectFpr 0.371134 f_classif # PolynomialFeatures 6 False False # SA*  ExtraTreeClassifier entropy random None True None None 0.254394 74534 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:41:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-11-09 14:41:50 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->Imputer mean # MaxAbsScaler # PolynomialFeatures 8 True False # SA*  RandomForestClassifier gini False False None 45 False 0.831307 16984 0.335264 None # LogisticRegression True 100 lbfgs balanced True 0.098886 # Ensemble 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 14:41:51 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:41:51 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:41:51 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:41:52 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->IncrementalPCA True 1 # PolynomialFeatures 9 True False # SA*  CentroidClassifier None minkowski # ExtraTreesClassifier gini True False None 50 False 0.180556 2622 0.254905 86003 # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 14:41:54 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->Imputer mean # MinMaxScaler # SelectFpr 0.371134 f_classif # PolynomialFeatures 6 False False # SA*  ExtraTreeClassifier entropy random None True None None 0.254394 74534 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 14:42:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-11-09 14:42:47 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:42:47 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:42:48 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:42:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:42:53 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:42:53 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:42:53 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:42:53 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:42:55 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:42:55 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:42:55 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:42:56 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:42:56 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:42:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:42:59 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:42:59 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:42:59 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:00 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:43:02 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:43:02 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:02 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: Input X must be non-negative.->Imputer most_frequent # RobustScaler True True # SelectKBest 2 chi2 # SA*  DecisionTreeClassifier entropy random balanced False 0.894383 None 0.492854 98076 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:43:04 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:04 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:05 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:43:08 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:43:08 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: Input X must be non-negative->RobustScaler True False # PolynomialFeatures 2 True True # SA*  CentroidClassifier 25.660693 minkowski # MultinomialNB 5.044316 True # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:43:10 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:43:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:12 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:43:12 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:12 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:43:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:43:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-09 14:43:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:43:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=7500).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:43:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=1000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:43:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:24 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer most_frequent # PolynomialFeatures 7 False False # SA*  RidgeClassifier 10 True auto 0.021989 7.575631 None True True # ExtraTreesClassifier gini True True balanced 5 False None 17807 0.162319 10031 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:43:24 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:35 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:43:35 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-09 14:43:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:38 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:40 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-11-09 14:43:41 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->Imputer mean # MaxAbsScaler # PolynomialFeatures 8 True False # SA*  RandomForestClassifier gini False False None 45 False 0.831307 16984 0.335264 None # LogisticRegression True 100 lbfgs balanced True 0.098886 # Ensemble 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 14:43:42 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:42 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:43:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:43:44 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->IncrementalPCA True 1 # PolynomialFeatures 9 True False # SA*  CentroidClassifier None minkowski # ExtraTreesClassifier gini True False None 50 False 0.180556 2622 0.254905 86003 # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 14:43:46 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->Imputer mean # MinMaxScaler # SelectFpr 0.371134 f_classif # PolynomialFeatures 6 False False # SA*  ExtraTreeClassifier entropy random None True None None 0.254394 74534 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 14:49:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-11-09 14:49:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:49:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:18 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:18 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:49:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-11-09 14:49:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:49:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:49:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-09 14:49:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:49:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:49:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:49:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-09 14:49:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-11-09 14:49:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:38 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:49:39 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:40 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:49:41 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:42 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:49:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=25000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:49:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:49:48 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:51 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-11-09 14:49:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:49:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:49:56 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:49:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:50:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:50:03 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:51:08 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-11-09 14:51:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:12 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:51:12 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:18 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:51:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:51:24 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:24 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:51:26 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:51:26 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:27 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: Input X must be non-negative.->Imputer most_frequent # RobustScaler True True # SelectKBest 2 chi2 # SA*  DecisionTreeClassifier entropy random balanced False 0.894383 None 0.492854 98076 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:51:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:29 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:51:33 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:51:33 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: Input X must be non-negative->RobustScaler True False # PolynomialFeatures 2 True True # SA*  CentroidClassifier 25.660693 minkowski # MultinomialNB 5.044316 True # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:51:35 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:51:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:51:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:51:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:40 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:40 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:41 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:41 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:51:42 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-09 14:51:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:51:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=7500).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:51:47 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:47 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=1000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:51:48 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:48 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:48 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:49 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: ->Imputer most_frequent # PolynomialFeatures 7 False False # SA*  RidgeClassifier 10 True auto 0.021989 7.575631 None True True # ExtraTreesClassifier gini True True balanced 5 False None 17807 0.162319 10031 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:51:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:55 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:51:59 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:00 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:52:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-09 14:52:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:02 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:02 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:04 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:05 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-11-09 14:52:08 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:08 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:52:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:52:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:18 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:18 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:52:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:52:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:52:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:23 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: Input X must be non-negative.->Imputer most_frequent # RobustScaler True True # SelectKBest 2 chi2 # SA*  DecisionTreeClassifier entropy random balanced False 0.894383 None 0.492854 98076 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 14:52:25 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ndarray is not C-contiguous->SA*  GradientBoostingClassifier exponential 0.045736 0.069703 False 30 True sqrt 46725 0.202494 None 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 14:52:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:52:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:52:28 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: Input X must be non-negative->RobustScaler True False # PolynomialFeatures 2 True True # SA*  CentroidClassifier 25.660693 minkowski # MultinomialNB 5.044316 True # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 14:52:31 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:31 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:52:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:52:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:33 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:52:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:52:38 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-09 14:52:38 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-09 14:52:39 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:39 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:40 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:40 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:41 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:52:41 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=7500).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:52:42 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:42 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:44 : ./recipe/testAlgorithm.py:112: UserWarning: WARNING: ->Imputer most_frequent # PolynomialFeatures 7 False False # SA*  RidgeClassifier 10 True auto 0.021989 7.575631 None True True # ExtraTreesClassifier gini True True balanced 5 False None 17807 0.162319 10031 # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-09 14:52:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:54 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:54 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:54 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:52:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:58 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:52:58 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:00 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-11-09 14:53:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:03 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:04 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:04 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:04 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:53:04 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:06 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: Input X must be non-negative.->Imputer most_frequent # RobustScaler True True # SelectKBest 2 chi2 # SA*  PassiveAggressive  False 25 False epsilon_insensitive False None 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:53:07 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-11-09 14:53:07 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:53:10 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:53:10 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-09 14:53:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:53:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:53:12 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:53:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-11-09 14:53:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:33 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:53:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:35 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:35 : ./recipe/evaluate_algorithm.py:100: UserWarning: WARNING: Input X must be non-negative.->Imputer most_frequent # RobustScaler True True # SelectKBest 2 chi2 # SA*  PassiveAggressive  False 25 False epsilon_insensitive False None 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-09 14:53:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-11-09 14:53:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:53:42 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-09 14:53:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:53:53 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-09 14:53:53 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:53:53 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-09 14:53:55 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-09 14:53:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:54:02 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:54:04 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-09 14:54:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+

@@ -19,9 +19,6 @@ import warnings
 
 from sklearn.preprocessing import LabelEncoder
 
-# from pebble import ProcessPool
-# from concurrent.futures import TimeoutError
-
 from time import sleep, time
 
 import numpy as np
@@ -31,16 +28,20 @@ import evaluate_algorithm as evaluate
 import printGeneration as printG
 from fit_map import *
 
-from stopit import threading_timeoutable, TimeoutException
+import multiprocessing as mp
 
-@threading_timeoutable(default=0.0)
-def evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV,metric,index):
+def exec_timeout(func,args,timeout):
+    pool = mp.Pool(1, maxtasksperchild=1)
+    result = pool.apply_async(func, args)
+    pool.close()
+
     try:
-        return evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV,metric),index
-    except TimeoutException:
-        return 0.0,index
-    except Exception as e:
-        return 0.0,index
+        s = result.get(timeout)
+        return s
+    except mp.TimeoutError:
+        pool.terminate()
+        return 0.0
+
 
 def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalCV,nCores,timeOut,mutation_rate,crossover_rate,metric):
 
@@ -84,8 +85,8 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
             if(alg in fitness_map):
                 output_training[index] = fitness_map[alg]
             else:
-                result,index = evaluate_alg(alg,dataTraining,seed,dataSeed,internalCV,metric,index,timeout=timeOut)
-                
+                # result = evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV,metric)
+                result = exec_timeout(func=evaluate.evaluate_algorithm,args=[alg,dataTraining,seed,dataSeed,internalCV,metric],timeout=timeOut)
                 output_training[index] = result
                 fitness_map[alg] = output_training[index]
 
