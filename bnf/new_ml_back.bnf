@@ -1,6 +1,6 @@
 <Start> ::= <preprocessing> '#' 'SA* ' <algorithm> | 'SA* ' <algorithm> |
 	<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' 'Stacking' | 'SA* ' <algorithm> '#' <algorithm> '#' 'Stacking' |
-	<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' 'Ensemble' | 'SA* ' <algorithm> '#' <algorithm> '#' 'Ensemble'
+	<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble'
 
 ##PREPROCESSING
 <preprocessing> ::=  <imputation> | <bounding> | <dimensionality> | <binarizer> |
@@ -40,17 +40,19 @@
 <feature_construction> ::= 'PolynomialFeatures' <degree_1>  <boolean> <boolean>
 
 ##ALGORITHM
-<algorithm> ::= <strong> | <weak>
+<algorithm> ::= <strong> | <weak> | <tree_ensemble>
+<algorithm_e> ::= <strong> | <weak>
 
 <strong> ::= <Trees> | <NaiveBayes> | <SVM>
 <weak> ::= <nearest> | <discriminant> | <logistic> | <passive> | <gradient_options> | <ridge>
 
+<tree_ensemble> ::= 'AdaBoostClassifier' <algorithm_ada> <n_estimators> <learning_rate_ada> |
+		'GradientBoostingClassifier' <loss_gradient>  <tol>  <value_rand_1>  <presort> <n_estimators>  <boolean> <max_features>  <max_depth>  <min_weight_fraction_leaf>  <max_leaf_nodes> |
+		'RandomForestClassifier' <criterion>  <bootstrap_and_oob> <class_weight_Trees> <n_estimators>  <boolean> <max_features>  <max_depth>  <min_weight_fraction_leaf>  <max_leaf_nodes> |
+		'ExtraTreesClassifier' <criterion>  <bootstrap_and_oob> <class_weight_Trees> <n_estimators>  <boolean> <max_features>  <max_depth>  <min_weight_fraction_leaf>  <max_leaf_nodes>
+
 <Trees> ::= 'ExtraTreeClassifier' <criterion>  <splitter>  <class_weight>  <presort> <max_features>  <max_depth>  <min_weight_fraction_leaf>  <max_leaf_nodes> |
-    'DecisionTreeClassifier' <criterion>  <splitter>  <class_weight>  <presort> <max_features>  <max_depth>  <min_weight_fraction_leaf>  <max_leaf_nodes> |
-    'AdaBoostClassifier' <algorithm_ada> <n_estimators> <learning_rate_ada> |
-    'GradientBoostingClassifier' <loss_gradient>  <tol>  <value_rand_1>  <presort> <n_estimators>  <boolean> <max_features>  <max_depth>  <min_weight_fraction_leaf>  <max_leaf_nodes> |
-    'RandomForestClassifier' <criterion>  <bootstrap_and_oob> <class_weight_Trees> <n_estimators>  <boolean> <max_features>  <max_depth>  <min_weight_fraction_leaf>  <max_leaf_nodes> |
-    'ExtraTreesClassifier' <criterion>  <bootstrap_and_oob> <class_weight_Trees> <n_estimators>  <boolean> <max_features>  <max_depth>  <min_weight_fraction_leaf>  <max_leaf_nodes>
+    'DecisionTreeClassifier' <criterion>  <splitter>  <class_weight>  <presort> <max_features>  <max_depth>  <min_weight_fraction_leaf>  <max_leaf_nodes>
 
 <NaiveBayes> ::= 'GaussianNB' |
     'BernoulliNB' <value_rand_1> <alpha> <boolean>|
@@ -75,7 +77,7 @@
 <passive> ::= 'PassiveAggressive ' <boolean> <n_iter> <boolean> <loss_sgd> <boolean> <class_weight>
 
 <gradient_options> ::= 'Perceptron' <penalty> <alpha> <boolean> <n_iter> <boolean> <value_rand_1> <class_weight> <boolean> |
-    'SGDClassifier' <loss_sgd>  <value_rand_1> <learning_rate_sgd> <average> <penalty> <boolean> <n_iter> <boolean> <value_rand_1>
+		'SGDClassifier' <loss_sgd>  <value_rand_1> <learning_rate_sgd> <average> <penalty> <boolean> <n_iter> <boolean> <value_rand_1>
 
 ##ATRIBUTES DEFINITION
 <strategy_imp> ::= 'mean' | 'median' | 'most_frequent'
