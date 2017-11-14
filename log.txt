@@ -38146,3 +38146,2193 @@
 2017-11-10 19:12:41 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
   'recall', 'true', average, warn_for)
 
+2017-11-14 16:45:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-11-14 16:45:26 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:26 : ./recipe/evaluate_algorithm.py:98: UserWarning: WARNING: Input X must be non-negative.->RobustScaler True False # SelectPercentile 55 chi2 # SA*  GradientBoostingClassifier deviance 0.021273 0.210174 auto 5 True None 93102 0.262335 None 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-14 16:45:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:45:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-11-14 16:45:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-14 16:45:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:45:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:33 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-14 16:45:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:387: UserWarning: Variables are collinear.
+  warnings.warn("Variables are collinear.")
+
+2017-11-14 16:45:36 : ./recipe/evaluate_algorithm.py:98: UserWarning: WARNING: On entry to DGESDD parameter number 10 had an illegal value->Imputer median # Binarizer 80.561132 # SA*  LinearDiscriminantAnalysis svd 0.028960 False # SVC linear 6 0.073325 25000 balanced # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-14 16:45:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the normalize function.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:45:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:38 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:45:38 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:39 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:41 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-11-14 16:45:41 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:45:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-14 16:45:50 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:51 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:45:53 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:45:56 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:45:56 : ./recipe/evaluate_algorithm.py:98: UserWarning: WARNING: Input X must be non-negative.->Imputer mean # StandardScaler False True # SelectFpr 0.421406 chi2 # SA*  SVC linear 6 0.022421 1000 None # AdaBoostClassifier SAMME.R 30 0.602174 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-14 16:45:56 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the normalize function.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:45:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:488: UserWarning: class_weight presets "balanced" or "balanced_subsample" are not recommended for warm_start if the fitted data differs from the full dataset. In order to use "balanced" weights, use compute_class_weight("balanced", classes, y). In place of y you can use a large enough sample of the full training set target to properly estimate the class frequency distributions. Pass the resulting weights as the class_weight parameter.
+  warn('class_weight presets "balanced" or "balanced_subsample" are '
+
+2017-11-14 16:45:58 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:46:00 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-14 16:46:00 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:46:00 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:46:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:46:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:46:03 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=2500).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:46:04 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:46:35 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:488: UserWarning: class_weight presets "balanced" or "balanced_subsample" are not recommended for warm_start if the fitted data differs from the full dataset. In order to use "balanced" weights, use compute_class_weight("balanced", classes, y). In place of y you can use a large enough sample of the full training set target to properly estimate the class frequency distributions. Pass the resulting weights as the class_weight parameter.
+  warn('class_weight presets "balanced" or "balanced_subsample" are '
+
+2017-11-14 16:46:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:48:53 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:48:55 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the normalize function.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:48:55 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:48:55 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:48:58 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:05 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:49:10 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:10 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:10 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: Input X must be non-negative.->RobustScaler True False # SelectPercentile 55 chi2 # SA*  GradientBoostingClassifier deviance 0.021273 0.210174 auto 5 True None 93102 0.262335 None 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 16:49:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:49:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:12 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:12 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-11-14 16:49:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-14 16:49:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:49:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-14 16:49:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:387: UserWarning: Variables are collinear.
+  warnings.warn("Variables are collinear.")
+
+2017-11-14 16:49:17 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: On entry to DGESDD parameter number 10 had an illegal value->Imputer median # Binarizer 80.561132 # SA*  LinearDiscriminantAnalysis svd 0.028960 False # SVC linear 6 0.073325 25000 balanced # Ensemble 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 16:49:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:18 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the normalize function.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:49:18 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:18 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:49:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-11-14 16:49:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:49:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:24 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:24 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:26 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:26 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-14 16:49:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-14 16:49:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:29 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:29 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:31 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:49:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:49:33 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: Input X must be non-negative.->Imputer mean # StandardScaler False True # SelectFpr 0.421406 chi2 # SA*  SVC linear 6 0.022421 1000 None # AdaBoostClassifier SAMME.R 30 0.602174 # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 16:49:33 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the normalize function.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:49:33 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:488: UserWarning: class_weight presets "balanced" or "balanced_subsample" are not recommended for warm_start if the fitted data differs from the full dataset. In order to use "balanced" weights, use compute_class_weight("balanced", classes, y). In place of y you can use a large enough sample of the full training set target to properly estimate the class frequency distributions. Pass the resulting weights as the class_weight parameter.
+  warn('class_weight presets "balanced" or "balanced_subsample" are '
+
+2017-11-14 16:49:33 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:303: UserWarning: Warm-start fitting without increasing n_estimators does not fit new trees.
+  warn("Warm-start fitting without increasing n_estimators does not "
+
+2017-11-14 16:49:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:35 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-14 16:49:35 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-14 16:49:35 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:35 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:36 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: ndarray is not C-contiguous->SA*  GradientBoostingClassifier deviance 0.035602 0.665384 True 30 True None 75807 0.400694 89051 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 16:49:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:49:39 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:49:39 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:50:18 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:488: UserWarning: class_weight presets "balanced" or "balanced_subsample" are not recommended for warm_start if the fitted data differs from the full dataset. In order to use "balanced" weights, use compute_class_weight("balanced", classes, y). In place of y you can use a large enough sample of the full training set target to properly estimate the class frequency distributions. Pass the resulting weights as the class_weight parameter.
+  warn('class_weight presets "balanced" or "balanced_subsample" are '
+
+2017-11-14 16:52:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:52:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:52:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:52:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:52:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the normalize function.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:52:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:52:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:52:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:52:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:52:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:52:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:52:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:52:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:52:29 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-14 16:52:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:52:40 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:488: UserWarning: class_weight presets "balanced" or "balanced_subsample" are not recommended for warm_start if the fitted data differs from the full dataset. In order to use "balanced" weights, use compute_class_weight("balanced", classes, y). In place of y you can use a large enough sample of the full training set target to properly estimate the class frequency distributions. Pass the resulting weights as the class_weight parameter.
+  warn('class_weight presets "balanced" or "balanced_subsample" are '
+
+2017-11-14 16:52:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:52:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:52:58 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:52:59 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:488: UserWarning: class_weight presets "balanced" or "balanced_subsample" are not recommended for warm_start if the fitted data differs from the full dataset. In order to use "balanced" weights, use compute_class_weight("balanced", classes, y). In place of y you can use a large enough sample of the full training set target to properly estimate the class frequency distributions. Pass the resulting weights as the class_weight parameter.
+  warn('class_weight presets "balanced" or "balanced_subsample" are '
+
+2017-11-14 16:53:03 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:53:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:53:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:53:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-14 16:53:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-14 16:53:12 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:53:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:488: UserWarning: class_weight presets "balanced" or "balanced_subsample" are not recommended for warm_start if the fitted data differs from the full dataset. In order to use "balanced" weights, use compute_class_weight("balanced", classes, y). In place of y you can use a large enough sample of the full training set target to properly estimate the class frequency distributions. Pass the resulting weights as the class_weight parameter.
+  warn('class_weight presets "balanced" or "balanced_subsample" are '
+
+2017-11-14 16:53:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:303: UserWarning: Warm-start fitting without increasing n_estimators does not fit new trees.
+  warn("Warm-start fitting without increasing n_estimators does not "
+
+2017-11-14 16:53:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:53:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:53:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:53:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:53:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:488: UserWarning: class_weight presets "balanced" or "balanced_subsample" are not recommended for warm_start if the fitted data differs from the full dataset. In order to use "balanced" weights, use compute_class_weight("balanced", classes, y). In place of y you can use a large enough sample of the full training set target to properly estimate the class frequency distributions. Pass the resulting weights as the class_weight parameter.
+  warn('class_weight presets "balanced" or "balanced_subsample" are '
+
+2017-11-14 16:53:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:303: UserWarning: Warm-start fitting without increasing n_estimators does not fit new trees.
+  warn("Warm-start fitting without increasing n_estimators does not "
+
+2017-11-14 16:53:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:53:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:53:38 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-14 16:53:39 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:53:41 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:53:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:53:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:53:58 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:54:00 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-14 16:54:05 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:54:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:54:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:54:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:54:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-14 16:54:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:54:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:54:24 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:54:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-14 16:54:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-14 16:54:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:54:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:54:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:54:33 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:54:40 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:54:40 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:54:40 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:54:40 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:54:42 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-14 16:54:42 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+2017-11-14 16:54:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:54:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:54:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:54:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:54:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:54:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-14 16:54:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:54:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:54:54 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: ndarray is not C-contiguous->SA*  RidgeCCV 4 3.090116 None False False # GradientBoostingClassifier exponential 0.046739 0.929437 auto 50 True 0.745337 69682 0.115181 None # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 16:54:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:54:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:55:02 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:55:02 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:55:03 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:55:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:55:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:55:10 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:55:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:55:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:55:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:55:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:55:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:55:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:55:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-14 16:55:39 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:55:44 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: ndarray is not C-contiguous->SA*  LogisticCV None False 300 sag None True 0.003523 # GradientBoostingClassifier exponential 0.046739 0.929437 auto 50 True 0.745337 69682 0.115181 None # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 16:55:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:55:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:55:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:55:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:55:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:55:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:55:50 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:55:50 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:55:52 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: ndarray is not C-contiguous->SA*  RidgeCCV 4 3.090116 None False False # GradientBoostingClassifier exponential 0.046739 0.297404 auto 50 True 0.745337 69682 0.115181 None # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 16:55:53 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:439: UserWarning: Some inputs do not have OOB scores. This probably means too few trees were used to compute any reliable oob estimates.
+  warn("Some inputs do not have OOB scores. "
+
+2017-11-14 16:55:53 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:444: RuntimeWarning: invalid value encountered in true_divide
+  predictions[k].sum(axis=1)[:, np.newaxis])
+
+2017-11-14 16:55:58 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:55:58 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:00 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: ndarray is not C-contiguous->SA*  RidgeCCV 4 3.090116 None False False # GradientBoostingClassifier exponential 0.050841 0.929437 auto 50 True 0.745337 69682 0.115181 None # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 16:56:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:56:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:56:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:03 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:56:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:56:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-14 16:56:10 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:56:24 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:56:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:56:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:31 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:35 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:56:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:42 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:56:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:56:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:56:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:56:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:56:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:56:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:56:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:56:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:56:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:56:46 : ./recipe/evaluate_algorithm.py:98: UserWarning: WARNING: ->Imputer most_frequent # MinMaxScaler # RecursiveFE_CV 5 mean_squared_error 0.960031 # PolynomialFeatures 6 False True # SA*  LogisticRegression False 300 sag None False 0.023542 # LinearDiscriminantAnalysis lsqr 0.046621 False # Ensemble 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-14 16:56:48 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:48 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:50 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:50 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:53 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-14 16:56:53 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:56:55 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:56:56 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:56 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:56:56 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:56:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:488: UserWarning: class_weight presets "balanced" or "balanced_subsample" are not recommended for warm_start if the fitted data differs from the full dataset. In order to use "balanced" weights, use compute_class_weight("balanced", classes, y). In place of y you can use a large enough sample of the full training set target to properly estimate the class frequency distributions. Pass the resulting weights as the class_weight parameter.
+  warn('class_weight presets "balanced" or "balanced_subsample" are '
+
+2017-11-14 16:56:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:56:58 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:57:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:57:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:57:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:57:02 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:57:02 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:57:08 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:57:08 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:57:08 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:57:10 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 16:57:10 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:57:11 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: ndarray is not C-contiguous->SA*  SVC sigmoid 10 0.084473 50000 balanced # GradientBoostingClassifier exponential 0.050841 0.929437 auto 50 True 0.745337 69682 0.115181 None # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 16:57:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:57:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:57:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:57:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 16:57:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:57:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:57:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:303: UserWarning: Warm-start fitting without increasing n_estimators does not fit new trees.
+  warn("Warm-start fitting without increasing n_estimators does not "
+
+2017-11-14 16:57:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 16:57:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:57:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:57:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:57:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:57:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:57:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:57:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:57:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:57:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:57:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:58:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:58:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:58:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:58:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:58:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:58:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:58:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:58:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:58:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:58:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:59:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:59:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:59:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:59:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:59:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:59:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:59:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:59:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:59:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 16:59:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/scorer.py:90: DeprecationWarning: Scoring method mean_squared_error was renamed to neg_mean_squared_error in version 0.18 and will be removed in 0.20.
+  sample_weight=sample_weight)
+
+2017-11-14 17:01:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:10 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-14 17:01:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:01:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:01:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:01:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:01:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:01:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:488: UserWarning: class_weight presets "balanced" or "balanced_subsample" are not recommended for warm_start if the fitted data differs from the full dataset. In order to use "balanced" weights, use compute_class_weight("balanced", classes, y). In place of y you can use a large enough sample of the full training set target to properly estimate the class frequency distributions. Pass the resulting weights as the class_weight parameter.
+  warn('class_weight presets "balanced" or "balanced_subsample" are '
+
+2017-11-14 17:01:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:303: UserWarning: Warm-start fitting without increasing n_estimators does not fit new trees.
+  warn("Warm-start fitting without increasing n_estimators does not "
+
+2017-11-14 17:01:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:26 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:01:26 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:29 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:33 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:35 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:40 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:47 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:47 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:01:47 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:01:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:01:50 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:01:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:54 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:01:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:01:59 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:04 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:05 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:07 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:08 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:02:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:02:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:02:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:02:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:439: UserWarning: Some inputs do not have OOB scores. This probably means too few trees were used to compute any reliable oob estimates.
+  warn("Some inputs do not have OOB scores. "
+
+2017-11-14 17:02:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:444: RuntimeWarning: invalid value encountered in true_divide
+  predictions[k].sum(axis=1)[:, np.newaxis])
+
+2017-11-14 17:02:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:02:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:02:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:02:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:02:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:02:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:02:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:02:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:02:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:29 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:02:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:38 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:41 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:42 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:54 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:54 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:58 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:02:58 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:02:58 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:03 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:03 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=500).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:03:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:10 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:439: UserWarning: Some inputs do not have OOB scores. This probably means too few trees were used to compute any reliable oob estimates.
+  warn("Some inputs do not have OOB scores. "
+
+2017-11-14 17:03:10 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:444: RuntimeWarning: invalid value encountered in true_divide
+  predictions[k].sum(axis=1)[:, np.newaxis])
+
+2017-11-14 17:03:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:18 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:03:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=500).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:03:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:29 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the normalize function.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:29 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:03:31 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:33 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:35 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:38 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:40 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:43 : ./recipe/evaluate_algorithm.py:98: UserWarning: WARNING: Input X must be non-negative->StandardScaler False False # SA*  MultinomialNB 1.654777 False # RandomForestClassifier gini False False balanced 50 False log2 None 0.125481 20086 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-14 17:03:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:48 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:03:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:03:59 : ./recipe/evaluate_algorithm.py:98: UserWarning: WARNING: ->PolynomialFeatures 10 False False # SA*  DecisionTreeClassifier gini best None True 0.487960 None 0.060059 20279 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-14 17:03:59 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:59 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:03:59 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:03:59 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:03 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:03 : ./recipe/evaluate_algorithm.py:98: UserWarning: WARNING: Input X must be non-negative->StandardScaler False False # SA*  MultinomialNB 4.798140 False # RandomForestClassifier gini False False balanced 50 False log2 None 0.125481 20086 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-14 17:04:03 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:05 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:05 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:05 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the normalize function.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:04:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:04:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:04:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:04:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:24 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:24 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: Input X must be non-negative->StandardScaler False False # SA*  MultinomialNB 1.654777 False # RandomForestClassifier gini False False balanced 50 False log2 None 0.125481 20086 # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 17:04:24 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:26 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:04:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:04:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:04:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:05:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:05:45 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: ndarray is not C-contiguous->StandardScaler False False # SA*  BernoulliNB 0.328819 1.698706 False # GradientBoostingClassifier exponential 0.015458 0.929119 False 10 True None None 0.379665 58527 # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 17:05:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:05:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:05:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=50000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:05:48 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:05:48 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: Input X must be non-negative->StandardScaler False False # SA*  MultinomialNB 4.798140 False # RandomForestClassifier gini False False balanced 50 False log2 None 0.125481 20086 # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 17:05:48 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:05:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:05:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:05:50 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:05:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:05:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:05:55 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:05:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:06:00 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:06:02 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:06:04 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:06:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:06:08 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:06:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:06:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:06:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:06:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:06:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:06:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:06:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:26 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:29 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=100).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:07:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=10).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:07:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:07:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:07:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:38 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:07:41 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:15 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:24 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:27 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:31 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:39 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:488: UserWarning: class_weight presets "balanced" or "balanced_subsample" are not recommended for warm_start if the fitted data differs from the full dataset. In order to use "balanced" weights, use compute_class_weight("balanced", classes, y). In place of y you can use a large enough sample of the full training set target to properly estimate the class frequency distributions. Pass the resulting weights as the class_weight parameter.
+  warn('class_weight presets "balanced" or "balanced_subsample" are '
+
+2017-11-14 17:08:47 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:51 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:53 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:54 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:54 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:08:59 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:02 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:07 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:488: UserWarning: class_weight presets "balanced" or "balanced_subsample" are not recommended for warm_start if the fitted data differs from the full dataset. In order to use "balanced" weights, use compute_class_weight("balanced", classes, y). In place of y you can use a large enough sample of the full training set target to properly estimate the class frequency distributions. Pass the resulting weights as the class_weight parameter.
+  warn('class_weight presets "balanced" or "balanced_subsample" are '
+
+2017-11-14 17:09:07 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:303: UserWarning: Warm-start fitting without increasing n_estimators does not fit new trees.
+  warn("Warm-start fitting without increasing n_estimators does not "
+
+2017-11-14 17:09:07 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/feature_selection/base.py:80: UserWarning: No features were selected: either the data is too noisy or the selection test too strict.
+  UserWarning)
+
+2017-11-14 17:09:14 : ./recipe/evaluate_algorithm.py:98: UserWarning: WARNING: Found array with 0 feature(s) (shape=(421, 0)) while a minimum of 1 is required.->Imputer most_frequent # SelectFromModel 0.826280 False # SA*  SVC sigmoid 10 0.084473 50000 balanced # RandomForestClassifier gini False False balanced 50 False log2 None 0.125481 20086 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-14 17:09:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:09:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:26 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:28 : ./recipe/evaluate_algorithm.py:98: UserWarning: WARNING: Input X must be non-negative->StandardScaler False False # SA*  MultinomialNB 4.746537 True # RandomForestClassifier gini False False balanced 50 False log2 None 0.125481 20086 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-14 17:09:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:31 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:32 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:39 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:41 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=1000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:09:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:48 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:51 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:51 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:09:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:09:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/feature_selection/base.py:80: UserWarning: No features were selected: either the data is too noisy or the selection test too strict.
+  UserWarning)
+
+2017-11-14 17:09:57 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: Found array with 0 feature(s) (shape=(440, 0)) while a minimum of 1 is required.->Imputer most_frequent # SelectFromModel 0.826280 False # SA*  SVC sigmoid 10 0.084473 50000 balanced # RandomForestClassifier gini False False balanced 50 False log2 None 0.125481 20086 # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 17:09:59 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:09:59 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:09:59 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:02 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:03 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:04 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:439: UserWarning: Some inputs do not have OOB scores. This probably means too few trees were used to compute any reliable oob estimates.
+  warn("Some inputs do not have OOB scores. "
+
+2017-11-14 17:10:04 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/forest.py:444: RuntimeWarning: invalid value encountered in true_divide
+  predictions[k].sum(axis=1)[:, np.newaxis])
+
+2017-11-14 17:10:05 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:07 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:07 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: Input X must be non-negative->StandardScaler False False # SA*  MultinomialNB 4.746537 True # RandomForestClassifier gini False False balanced 50 False log2 None 0.125481 20086 # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 17:10:07 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:08 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:11 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:13 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:18 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/svm/base.py:220: ConvergenceWarning: Solver terminated early (max_iter=1000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+
+2017-11-14 17:10:18 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:10:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:10:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:31 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:33 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:35 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:38 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:43 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:10:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:50 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:50 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:53 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:58 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:58 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:10:58 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:03 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:04 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:08 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:20 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:22 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:24 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:25 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:11:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:11:30 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:33 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:39 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:39 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:39 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:42 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:42 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: ndarray is not C-contiguous->StandardScaler False False # SA*  BernoulliNB 0.328819 1.698706 True # GradientBoostingClassifier exponential 0.089999 0.509201 True 50 True 0.468889 50478 0.113668 9209 # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 17:11:42 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:44 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:50 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:51 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:51 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:54 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:54 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:54 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:56 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:11:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:02 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:05 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:07 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:12:09 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the normalize function.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:12 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:14 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-14 17:12:16 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:19 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:21 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:23 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:26 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:26 : ./recipe/evaluate_algorithm.py:98: UserWarning: WARNING: Input X must be non-negative->StandardScaler False False # SA*  MultinomialNB 2.561213 False # RandomForestClassifier gini False False balanced 50 False log2 None 0.125481 16705 # Stacking 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-11-14 17:12:26 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:28 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:31 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:31 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:34 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:35 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:35 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:36 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:37 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:40 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:42 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:12:45 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:12:46 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the normalize function.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:47 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:49 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py:138: UserWarning: Averaging for metrics other than euclidean and manhattan not supported. The average is set to be the mean.
+  warnings.warn("Averaging for metrics other than "
+
+2017-11-14 17:12:50 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:51 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: ndarray is not C-contiguous->StandardScaler False False # SA*  BernoulliNB 0.328819 1.698706 True # GradientBoostingClassifier exponential 0.054064 0.596302 auto 25 True log2 34414 0.287460 8745 # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 17:12:51 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:52 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:54 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:56 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:57 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: Input X must be non-negative->StandardScaler False False # SA*  MultinomialNB 2.561213 False # RandomForestClassifier gini False False balanced 50 False log2 None 0.125481 16705 # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 17:12:57 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:12:59 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:13:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:13:01 : ./recipe/testAlgorithm.py:118: UserWarning: WARNING: ndarray is not C-contiguous->StandardScaler False False # SA*  BernoulliNB 0.328819 1.698706 True # GradientBoostingClassifier exponential 0.089999 0.580663 True 50 True 0.468889 50478 0.113668 9209 # Stacking 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-11-14 17:13:01 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:13:03 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:13:03 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the normalize function.
+  warnings.warn(msg, _DataConversionWarning)
+
+2017-11-14 17:13:06 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-11-14 17:13:08 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, _DataConversionWarning)
+

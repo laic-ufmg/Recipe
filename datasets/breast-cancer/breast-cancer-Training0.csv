@@ -37,7 +37,7 @@ ClumpThickness,CellSizeUniformity,CellShapeUniformity,MarginalAdhesion,SingleEpi
 4,8,6,3,4,10,7,1,1,m
 10,3,5,4,3,7,3,5,3,m
 10,10,10,10,6,10,8,1,5,m
-8,8,8,1,2,?,6,10,1,m
+8,8,8,1,2,NaN,6,10,1,m
 10,6,4,3,10,10,9,10,1,m
 10,4,5,4,3,5,7,3,1,m
 5,10,10,3,8,1,5,10,3,m
@@ -92,7 +92,7 @@ ClumpThickness,CellSizeUniformity,CellShapeUniformity,MarginalAdhesion,SingleEpi
 2,3,1,1,2,1,2,1,1,b
 4,1,1,1,2,1,1,1,1,b
 1,1,1,1,2,1,1,1,8,b
-1,1,1,1,1,?,2,1,1,b
+1,1,1,1,1,NaN,2,1,1,b
 2,3,2,2,2,2,3,1,1,b
 2,1,1,1,1,1,3,1,1,b
 3,1,1,2,3,4,1,1,1,b
@@ -114,10 +114,10 @@ ClumpThickness,CellSizeUniformity,CellShapeUniformity,MarginalAdhesion,SingleEpi
 4,1,1,1,2,1,3,1,1,b
 2,1,1,2,2,1,3,1,1,b
 1,1,1,1,2,1,2,1,1,b
-6,6,6,9,6,?,7,8,1,b
+6,6,6,9,6,NaN,7,8,1,b
 3,1,1,1,3,1,2,1,1,b
 4,1,2,1,2,1,2,1,1,b
-1,1,1,1,2,?,2,1,1,b
+1,1,1,1,2,NaN,2,1,1,b
 1,2,3,1,2,1,1,1,1,b
 1,1,3,1,2,1,2,1,1,b
 4,1,1,1,1,1,2,1,1,b
@@ -283,7 +283,7 @@ ClumpThickness,CellSizeUniformity,CellShapeUniformity,MarginalAdhesion,SingleEpi
 5,1,1,3,2,1,1,1,1,b
 5,1,1,3,2,1,1,1,1,b
 3,1,1,1,2,1,1,1,1,b
-1,1,1,1,1,?,2,1,1,b
+1,1,1,1,1,NaN,2,1,1,b
 5,1,1,1,2,1,1,1,1,b
 1,1,1,1,2,1,2,1,1,b
 5,3,4,1,4,1,3,1,1,b
@@ -363,7 +363,7 @@ ClumpThickness,CellSizeUniformity,CellShapeUniformity,MarginalAdhesion,SingleEpi
 10,7,7,4,5,10,5,7,2,m
 6,10,10,10,8,10,7,10,7,m
 2,5,3,3,6,7,7,5,1,m
-8,4,5,1,2,?,7,3,1,m
+8,4,5,1,2,NaN,7,3,1,m
 10,10,7,8,7,1,10,10,3,m
 4,8,7,10,4,10,7,5,1,m
 6,8,7,5,6,8,8,9,2,m
@@ -379,7 +379,7 @@ ClumpThickness,CellSizeUniformity,CellShapeUniformity,MarginalAdhesion,SingleEpi
 3,1,1,1,2,1,1,1,1,b
 5,1,1,1,2,1,2,1,1,b
 2,2,2,1,1,1,7,1,1,b
-3,1,4,1,2,?,3,1,1,b
+3,1,4,1,2,NaN,3,1,1,b
 1,2,1,3,2,1,1,2,1,b
 3,1,1,1,2,1,2,1,1,b
 1,1,1,3,2,3,1,1,1,b
@@ -398,7 +398,7 @@ ClumpThickness,CellSizeUniformity,CellShapeUniformity,MarginalAdhesion,SingleEpi
 5,2,1,1,2,1,3,1,1,b
 5,1,1,6,3,1,2,1,1,b
 2,1,2,1,2,1,3,1,1,b
-4,6,5,6,7,?,4,9,1,b
+4,6,5,6,7,NaN,4,9,1,b
 3,1,2,2,2,1,1,1,1,b
 1,3,1,2,2,2,5,3,2,b
 5,1,1,1,2,1,2,2,1,b
@@ -444,11 +444,11 @@ ClumpThickness,CellSizeUniformity,CellShapeUniformity,MarginalAdhesion,SingleEpi
 6,1,1,3,2,1,1,1,1,b
 6,3,3,3,3,2,6,1,1,b
 2,1,1,1,3,1,2,1,1,b
-5,4,3,1,2,?,2,3,1,b
+5,4,3,1,2,NaN,2,3,1,b
 2,1,1,1,2,1,1,1,1,b
 4,1,1,1,2,1,1,1,1,b
 4,3,2,1,3,1,2,1,1,b
-1,1,3,1,2,?,2,1,1,b
+1,1,3,1,2,NaN,2,1,1,b
 1,1,1,1,2,1,2,1,1,b
 5,2,2,2,3,1,1,3,1,b
 5,1,1,1,2,1,1,1,1,b
@@ -566,7 +566,7 @@ ClumpThickness,CellSizeUniformity,CellShapeUniformity,MarginalAdhesion,SingleEpi
 4,1,2,1,2,1,2,1,1,b
 4,1,1,1,2,1,2,1,1,b
 1,1,1,1,2,1,3,2,1,b
-3,1,1,1,2,?,3,1,1,b
+3,1,1,1,2,NaN,3,1,1,b
 1,1,1,2,1,3,1,1,7,b
 1,1,1,1,2,1,2,1,2,b
 1,1,1,1,2,1,1,1,1,b
@@ -575,7 +575,7 @@ ClumpThickness,CellSizeUniformity,CellShapeUniformity,MarginalAdhesion,SingleEpi
 3,1,1,1,2,1,2,1,1,b
 3,1,1,1,2,1,2,1,1,b
 5,1,2,10,4,5,2,1,1,b
-3,1,1,1,2,?,3,1,1,b
+3,1,1,1,2,NaN,3,1,1,b
 6,2,1,1,1,1,7,1,1,b
 4,1,3,1,2,1,2,1,1,b
 4,1,3,3,2,1,1,1,1,b
@@ -602,7 +602,7 @@ ClumpThickness,CellSizeUniformity,CellShapeUniformity,MarginalAdhesion,SingleEpi
 1,1,1,1,2,1,2,1,1,b
 5,1,1,1,1,1,3,1,1,b
 4,1,1,2,2,1,2,1,1,b
-5,1,1,1,2,?,3,1,1,b
+5,1,1,1,2,NaN,3,1,1,b
 4,4,4,2,2,3,2,1,1,b
 1,1,1,1,2,1,3,1,1,b
 2,1,1,2,2,1,1,1,1,b

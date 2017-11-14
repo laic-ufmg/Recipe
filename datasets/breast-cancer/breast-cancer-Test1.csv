@@ -47,7 +47,7 @@ ClumpThickness,CellSizeUniformity,CellShapeUniformity,MarginalAdhesion,SingleEpi
 3,1,1,1,2,1,2,1,1,b
 7,4,4,3,4,10,6,9,1,m
 5,5,5,2,5,10,4,3,1,m
-8,4,5,1,2,?,7,3,1,m
+8,4,5,1,2,NaN,7,3,1,m
 4,10,8,5,4,1,10,1,1,m
 10,4,7,2,2,8,6,1,1,m
 10,4,5,5,5,10,4,1,1,m
