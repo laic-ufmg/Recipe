@@ -69,18 +69,21 @@ def export_result(test_result,seed,individual,input_file):
 	with open('results/Result_'+filename+'.csv',"a") as out:
 		out.write(test_result+","+str(seed)+","+individual+"\n")
 
-def save_individuals(individuals,generation,input_file,seed):
+def save_individuals(individuals,results,generation,input_file,seed):
 
 	indi_list = individuals.split(';')
+	result_list = results.split(';')
 
 	if not os.path.exists('individuals'):
 		os.makedirs('individuals')
 
 	filename = input_file.split("/")[-1]
 
-	filename = filename.split("-")[0]
+	filename = filename.replace(".csv","")
 
 	with open('individuals/'+filename+'_s'+str(seed)+'.csv',"a+") as out:
-		out.write(strftime("%Y-%m-%d %H:%M:%S ", gmtime())+"Generation "+str(generation)+"\n")
-		out.write("\n".join(indi_list))
-		out.write("\n\n")
+		out.write("Generation "+str(generation)+"\n")
+		for index,ind in enumerate(indi_list):
+			out.write(ind+"|"+result_list[index]+"\n")
+		# out.write("\n".join(indi_list))
+		out.write("\n")
