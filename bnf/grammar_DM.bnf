@@ -93,6 +93,11 @@
 <gradient_options> ::= 'Perceptron' <penalty> <alpha> <boolean> <n_iter> <boolean> <value_rand_1> <class_weight> <boolean>
 
 ##ATRIBUTES DEFINITION
+##Depend on the number of features:
+<features> ::= 'RANDINT(2,584)'
+<featuresToSelect> ::= 'RANDINT(1,584)'
+
+##Do not depend on the number of features:
 <strategy_imp> ::= 'mean' | 'median' | 'most_frequent'
 <criterion> ::= 'entropy' | 'gini'
 <splitter> ::= 'best' | 'random'
@@ -109,10 +114,8 @@
 <boolean> ::= 'True' | 'False'
 <degree_1>  ::= 'RANDINT(2,10)'
 <score_function> ::= 'f_classif' | 'chi2'
-<features> ::= 'RANDINT(2,3)'
 <percentile> ::= 'RANDINT(5,95)'
 <value_rand_1> ::= 'RANDFLOAT(0.0,1.0)'
-<featuresToSelect> ::= 'RANDINT(1,3)'
 <cv_rfe> ::= '2' | '3' | '5' | '10'
 <scoring_rfe> ::= 'mean_absolute_error' | 'mean_squared_error' | 'median_absolute_error' | 'r2' | 'None'
 <threshold_sfm> ::= 'None' | 'median' | 'mean' | 'RANDFLOAT(0.0,1.0)'

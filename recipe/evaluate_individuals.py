@@ -85,8 +85,12 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
             if(alg in fitness_map):
                 output_training[index] = fitness_map[alg]
             else:
-                # result = evaluate.evaluate_algorithm(alg,dataTraining,seed,dataSeed,internalCV,metric)
-                result = exec_timeout(func=evaluate.evaluate_algorithm,args=[alg,dataTraining,seed,dataSeed,internalCV,metric],timeout=timeOut)
+                try:
+                    result = exec_timeout(func=evaluate.evaluate_algorithm,args=[alg,dataTraining,seed,dataSeed,internalCV,metric],timeout=timeOut)
+                except Exception as e:
+                    result = 0.0
+                    warnings.warn(exc, "Get Result Error ->", mlAlgorithm,UserWarning)
+                # result = exec_timeout(func=evaluate.evaluate_algorithm,args=[alg,dataTraining,seed,dataSeed,internalCV,metric],timeout=timeOut)
                 output_training[index] = result
                 fitness_map[alg] = output_training[index]
 

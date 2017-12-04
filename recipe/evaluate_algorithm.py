@@ -52,8 +52,8 @@ def evaluate_algorithm(mlAlgorithm, dataTraining, seed, dataSeed, internalCV,met
 
     """
 
-	soft, hard = 2147483648, 2147483648
-	resource.setrlimit(resource.RLIMIT_AS,(soft, hard))
+	# soft, hard = 2147483648, 2147483648
+	# resource.setrlimit(resource.RLIMIT_AS,(soft, hard))
 
 	try:
 		#Load the dataset:

@@ -1,6 +1,15 @@
 <Start> ::= <preprocessing> '#' 'SA* ' <algorithm> | 'SA* ' <algorithm> |
 	<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' 'Stacking' | 'SA* ' <algorithm> '#' <algorithm> '#' 'Stacking' |
-	<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble'
+	<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' | 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' |
+	<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' | 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' |
+	<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' | 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' |
+	<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> #' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble'
 
 ##PREPROCESSING
 <preprocessing> ::=  <imputation> | <bounding> | <dimensionality> | <binarizer> |
@@ -76,8 +85,7 @@
 
 <passive> ::= 'PassiveAggressive ' <boolean> <n_iter> <boolean> <loss_sgd> <boolean> <class_weight>
 
-<gradient_options> ::= 'Perceptron' <penalty> <alpha> <boolean> <n_iter> <boolean> <value_rand_1> <class_weight> <boolean> |
-		'SGDClassifier' <loss_sgd>  <value_rand_1> <learning_rate_sgd> <average> <penalty> <boolean> <n_iter> <boolean> <value_rand_1>
+<gradient_options> ::= 'Perceptron' <penalty> <alpha> <boolean> <n_iter> <boolean> <value_rand_1> <class_weight> <boolean>
 
 ##ATRIBUTES DEFINITION
 <strategy_imp> ::= 'mean' | 'median' | 'most_frequent'
@@ -105,7 +113,7 @@
 <threshold_sfm> ::= 'None' | 'median' | 'mean' | 'RANDFLOAT(0.0,1.0)'
 <algorithm_fastica> ::= 'parallel' | 'deflation'
 <funct> ::= 'logcosh' | 'exp' | 'cube'
-<max_iter_fastica> ::= '10' | '100' | '250' | '500' | '750' | '1000' | '1500' | '2000' | '2500' | '5000'
+<max_iter_fastica> ::= '10' | '100' | '250' | '500' | '750' | '1000'
 <tol> ::= 'RANDFLOAT(0.0000000001,0.1)'
 <density> ::= 'auto' | 'RANDFLOAT(0.00001,1.0)'
 <affinity> ::= 'euclidean' <linkage_type0>| <affinity_options> <linkage_type1>
@@ -122,7 +130,7 @@
 <bootstrap_and_oob> ::= 'True' <boolean> | 'False False'
 <class_weight_Trees> ::= 'balanced' | 'balanced_subsample' | 'None'
 <alpha> ::= 'RANDFLOAT(0.0,9.0)'
-<max_iter> ::= '10' | '100' | '500' | '1000' | '2500' | '5000' | '7500' | '10000' | '15000' | '20000' | '25000' | '30000' | '50000' | '100000'
+<max_iter> ::= '10' | '100' | '500' | '1000'
 <k> ::= 'RANDINT(1,30)'
 <weights> ::= 'uniform' | 'distance'
 <k_algorithm> ::= 'auto' | 'brute' | 'kd_tree' | 'ball_tree'
