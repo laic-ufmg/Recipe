@@ -1,0 +1,156 @@
+<Start> ::= <preprocessing> '#' 'SA* ' <algorithm> | 'SA* ' <algorithm> | <stacking> | <ensemble>
+
+<ensemble> ::= <preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> #' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+		<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+		<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+		<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+		<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+		<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+		<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble'
+
+<stacking> ::= <preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' 'Stacking' | 'SA* ' <algorithm> '#' <algorithm> '#' 'Stacking' |
+		<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' | 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' |
+		<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' | 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' |
+		<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' | 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking'
+
+##PREPROCESSING
+<preprocessing> ::=  <imputation> | <bounding> | <dimensionality> | <binarizer> |
+    <imputation> '#' <bounding> |
+    <imputation> '#' <binarizer> |
+    <imputation> '#' <dimensionality> |
+    <bounding> '#' <dimensionality> |
+    <imputation> '#' <bounding> '#' <dimensionality>
+
+<imputation> ::= 'Imputer' <strategy_imp>
+
+<binarizer> ::= 'Binarizer' <threshold_bin>
+
+<bounding> ::= 'Normalizer' <norm> | 'MinMaxScaler' | 'MaxAbsScaler' |
+    'RobustScaler' <boolean> <boolean> | 'StandardScaler' <boolean> <boolean>
+
+<dimensionality> ::= <feature_selection> | <feature_construction> | <feature_selection> '#' <feature_construction>
+
+<feature_selection> ::= 'VarianceThreshold' |
+    'SelectKBest' <features> <score_function> |
+    'SelectPercentile' <percentile> <score_function> |
+    'SelectFpr' <value_rand_1> <score_function> |
+    'SelectFwe' <value_rand_1> <score_function> |
+    'SelectFdr' <value_rand_1> <score_function> |
+    'RFE' <featuresToSelect> <value_rand_1> |
+    'RecursiveFE_CV' <cv_rfe> <scoring_rfe> <value_rand_1> |
+    'SelectFromModel' <threshold_sfm> <boolean> |
+    'IncrementalPCA' <boolean> <featuresToSelect> |
+    'TraditionalPCA' <boolean> <featuresToSelect> |
+    'FastICA' <algorithm_fastica> <funct> <max_iter_fastica> <tol> <boolean> <featuresToSelect> |
+    'GaussianRandomProjection' <value_rand_1> <featuresToSelect> |
+    'SparseRandomProjection' <density> <boolean> <value_rand_1> <featuresToSelect> |
+    'FeatureAgglomeration' <affinity> <boolean> <featuresToSelect> |
+    'RBFSampler' <gamma_kernelApprox> <featuresToSelect> |
+    'Nystroem' <kernel> <gamma_kernelApprox> <degree_1>  <coef0> <featuresToSelect>
+
+<feature_construction> ::= 'PolynomialFeatures' <degree_1>  <boolean> <boolean>
+
+##ALGORITHM
+<algorithm> ::= <strong> | <weak> | <tree_ensemble>
+<algorithm_e> ::= <strong> | <weak>
+
+<strong> ::= <Trees> | <NaiveBayes> | <SVM>
+<weak> ::= <nearest> | <discriminant> | <logistic> | <passive> | <gradient_options> | <ridge>
+
+<tree_ensemble> ::= 'AdaBoostClassifier' <algorithm_ada> <n_estimators> <learning_rate_ada> |
+		'GradientBoostingClassifier' <loss_gradient>  <tol>  <value_rand_1>  <presort> <n_estimators>  <boolean> <max_features>  <max_depth>  <min_weight_fraction_leaf>  <max_leaf_nodes> |
+		'RandomForestClassifier' <criterion>  <bootstrap_and_oob> <class_weight_Trees> <n_estimators>  <boolean> <max_features>  <max_depth>  <min_weight_fraction_leaf>  <max_leaf_nodes> |
+		'ExtraTreesClassifier' <criterion>  <bootstrap_and_oob> <class_weight_Trees> <n_estimators>  <boolean> <max_features>  <max_depth>  <min_weight_fraction_leaf>  <max_leaf_nodes>
+
+<Trees> ::= 'ExtraTreeClassifier' <criterion>  <splitter>  <class_weight>  <presort> <max_features>  <max_depth>  <min_weight_fraction_leaf>  <max_leaf_nodes> |
+    'DecisionTreeClassifier' <criterion>  <splitter>  <class_weight>  <presort> <max_features>  <max_depth>  <min_weight_fraction_leaf>  <max_leaf_nodes>
+
+<NaiveBayes> ::= 'GaussianNB' |
+    'BernoulliNB' <value_rand_1> <alpha> <boolean>|
+    'MultinomialNB' <alpha>  <boolean>
+
+<SVM> ::= 'SVC' <kernel>  <degree_1>  <tol>  <max_iter>  <class_weight> |
+    'NuSVC' <kernel>  <degree_1>  <tol>  <max_iter>  <class_weight>
+
+<nearest> ::= 'KNeighborsClassifier' <k> <weights> <k_algorithm> <leaf_size>  <p> <d_metric> |
+    'RadiusNeighborsClassifier' <radius> <weights> <k_algorithm> <leaf_size>  <p> <d_metric> |
+    'CentroidClassifier' <shrinking_threshold> <d_metric>
+
+<discriminant> ::= 'LinearDiscriminantAnalysis' <solver_discrim> <tol>  <boolean> |
+    'QuadraticDiscriminantAnalysis' <value_rand_1> <tol>  <boolean>
+
+<logistic> ::= 'LogisticRegression' <boolean> <max_iter_lr>  <solver_lr_options> <class_weight> <boolean> <tol> |
+    'LogisticCV' <cv>  <boolean> <max_iter_lr>  <solver_lr_options> <class_weight> <boolean>  <tol>
+
+<ridge> ::= 'RidgeClassifier' <max_iter> <boolean> <solver_ridge> <tol> <alpha> <class_weight> <boolean> <boolean> |
+    'RidgeCCV' <cv> <alpha> <class_weight> <boolean> <boolean>
+
+<passive> ::= 'PassiveAggressive ' <boolean> <n_iter> <boolean> <loss_sgd> <boolean> <class_weight>
+
+<gradient_options> ::= 'Perceptron' <penalty> <alpha> <boolean> <n_iter> <boolean> <value_rand_1> <class_weight> <boolean>
+
+##ATRIBUTES DEFINITION
+<strategy_imp> ::= 'mean' | 'median' | 'most_frequent'
+<criterion> ::= 'entropy' | 'gini'
+<splitter> ::= 'best' | 'random'
+<class_weight> ::= 'balanced' | 'None'
+<presort> ::= 'True' | 'False' | 'auto'
+<max_features> ::= 'RANDFLOAT(0.01,1.0)' | 'sqrt' | 'log2' | 'None'
+##Depend on the number of features:
+<max_depth> ::= 'RANDINT(1,100000)' | 'None'
+<min_weight_fraction_leaf> ::= 'RANDFLOAT(0.0,0.5)'
+##Depend on the number of features:
+<max_leaf_nodes> ::= 'RANDINT(2,100000)' | 'None'
+<threshold_bin> ::= 'RANDFLOAT(0.000001,100)'
+<norm> ::= 'l1'| 'l2' | 'max'
+<boolean> ::= 'True' | 'False'
+<degree_1>  ::= 'RANDINT(2,10)'
+<score_function> ::= 'f_classif' | 'chi2'
+<features> ::= 'RANDINT(2,3)'
+<percentile> ::= 'RANDINT(5,95)'
+<value_rand_1> ::= 'RANDFLOAT(0.0,1.0)'
+<featuresToSelect> ::= 'RANDINT(1,3)'
+<cv_rfe> ::= '2' | '3' | '5' | '10'
+<scoring_rfe> ::= 'mean_absolute_error' | 'mean_squared_error' | 'median_absolute_error' | 'r2' | 'None'
+<threshold_sfm> ::= 'None' | 'median' | 'mean' | 'RANDFLOAT(0.0,1.0)'
+<algorithm_fastica> ::= 'parallel' | 'deflation'
+<funct> ::= 'logcosh' | 'exp' | 'cube'
+<max_iter_fastica> ::= '10' | '100' | '250' | '500' | '750' | '1000'
+<tol> ::= 'RANDFLOAT(0.0000000001,0.1)'
+<density> ::= 'auto' | 'RANDFLOAT(0.00001,1.0)'
+<affinity> ::= 'euclidean' <linkage_type0>| <affinity_options> <linkage_type1>
+<affinity_options> ::= 'l1' | 'l2' | 'manhattan' | 'cosine'
+<linkage_type0> ::= 'ward' | <linkage_type1>
+<linkage_type1> ::= 'complete' | 'average'
+<gamma_kernelApprox> ::= 'RANDFLOAT(0.000030518,8.0)'
+<kernel> ::= 'linear' | 'poly' | 'rbf'| 'sigmoid'
+<coef0> ::= 'RANDFLOAT(0.0,1000.0)'
+<algorithm_ada> ::= 'SAMME.R' | 'SAMME'
+<n_estimators> ::=  '5' | '10' | '15' | '20' | '25' | '30' | '35' | '40' | '45' | '50'
+<learning_rate_ada> ::= 'RANDFLOAT(0.01,2.0)'
+<loss_gradient> ::= 'deviance' | 'exponential'
+<bootstrap_and_oob> ::= 'True' <boolean> | 'False False'
+<class_weight_Trees> ::= 'balanced' | 'balanced_subsample' | 'None'
+<alpha> ::= 'RANDFLOAT(0.0,9.0)'
+<max_iter> ::= '10' | '100' | '500' | '1000'
+<k> ::= 'RANDINT(1,30)'
+<weights> ::= 'uniform' | 'distance'
+<k_algorithm> ::= 'auto' | 'brute' | 'kd_tree' | 'ball_tree'
+<leaf_size> ::= 'RANDINT(5,100)'
+<d_metric> ::= 'euclidean' |'manhattan' |'chebyshev' | 'minkowski'
+<p> ::= 'RANDINT(1,15)'
+<radius> ::= 'RANDFLOAT(1.0,30.0)'
+<shrinking_threshold> ::= 'RANDFLOAT(0.0, 30.0)' | 'None'
+<solver_discrim> ::= 'svd' | 'lsqr'
+<C> ::= 'RANDFLOAT(0.03125,32768.0)'
+<intercept_scaling> ::= 'RANDFLOAT(0.0,100.0)'
+<max_iter_lr> ::= '10' | '100' | '150' | '300' | '350' | '400' | '450' |'500'
+<solver_lr_options> ::= 'liblinear' | 'sag' | 'newton-cg' | 'lbfgs'
+<cv> ::= 'RANDINT(2,10)' | 'None'
+<solver_ridge> ::= 'auto' | 'svd' | 'cholesky' | 'lsqr' | 'sparse_cg' | 'sag'
+<loss_sgd> ::= 'hinge'| 'log'| 'modified_huber'| 'squared_hinge'| 'perceptron'| 'squared_loss'| 'huber'| 'epsilon_insensitive'| 'squared_epsilon_insensitive'
+<n_iter> ::= '5' | '10' | '25' | '50' | '100' | '250' | '500' | '750'
+<penalty> ::= 'l1' | 'l2'
+<power_t> ::= 'RANDFLOAT(0.1, 5.0)'
+<learning_rate_sgd> ::= 'constant'| 'invscaling' | 'optimal'
+<average> ::= 'True' | 'False' | 'RANDINT(1,100)'

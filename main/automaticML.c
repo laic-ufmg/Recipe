@@ -543,6 +543,7 @@ int main(int argc, char **argv){
     params->population_size = atoi(argv[12]);
     params->generation_count = atoi(argv[13]);
     params->metric = argv[14];
+    params->grammarDir = argv[15];
 
     //Load the grammar, which its grammar directory is defined by a parameter:
     G = gges_load_bnf(params->grammarDir);

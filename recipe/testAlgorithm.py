@@ -36,7 +36,14 @@ import resource
 def testAlgorithm(mlAlgorithm, dataTraining, dataTest, seed, dataSeed):
 
     soft, hard = 2147483648, 2147483648
+    # print(soft,hard)
+    try:
+        resource.setrlimit(resource.RLIMIT_AS,(soft, hard))
+        # print(resource.getrlimit(resource.RLIMIT_AS))
+    except Exception as e:
+        print(e)
 	# resource.setrlimit(resource.RLIMIT_AS,(soft, hard))
+
 
     try:
         #Load the training and test datasets:
