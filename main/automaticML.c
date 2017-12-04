@@ -403,8 +403,13 @@ static  void eval(struct gges_parameters *params, int G, struct gges_individual 
     char *individuals = concatenate(members, N);
     //Measure the fitness of the individuals calling a python program (sklearn methods):
     char *results = evaluate_algorithms(G, individuals, params->dataTraining, NULL, exP);
+
     //Call to evaluate the individuals on the test set, to see the evolutionary curve in the test set:
-    evaluate_algorithms(G, individuals, params->dataTraining, params->dataTest, exP);
+    // evaluate_algorithms(G, individuals, params->dataTraining, params->dataTest, exP);
+
+    if(params->track_ind>0)
+        trackIndividuals(individuals,G,params->dataTraining,params->seed);
+
     char *evaluation;
     evaluation = strtok (results,";");
     //Set the fitness of each individual according to python sklearn library:
@@ -414,8 +419,7 @@ static  void eval(struct gges_parameters *params, int G, struct gges_individual 
         i++;
     }
 
-    if(params->track_ind>0)
-        trackIndividuals(individuals,G,params->dataTraining,params->seed);
+
 
     if(params->verbosity<2)
         return;

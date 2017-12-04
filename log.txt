@@ -42544,3 +42544,288 @@
 2017-11-16 15:47:17 : /home/walter/anaconda2/lib/python2.7/site-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
   warnings.warn("Variables are collinear")
 
+2017-12-04 18:14:47 : /usr/local/lib/python2.7/dist-packages/sklearn/cross_validation.py:41: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-12-04 18:14:49 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:49 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:49 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:49 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:49 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:50 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:50 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:50 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:50 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:50 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:52 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:52 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:14:52 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:52 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:52 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:52 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:52 : ./recipe/evaluate_algorithm.py:98: UserWarning: WARNING: Input X must be non-negative.->RobustScaler True False # SelectPercentile 55 chi2 # SA*  GradientBoostingClassifier deviance 0.021273 0.210174 auto 5 True None 93102 0.262335 None 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-12-04 18:14:53 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:14:54 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:54 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:54 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:54 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:54 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:56 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:14:56 : /usr/local/lib/python2.7/dist-packages/sklearn/discriminant_analysis.py:682: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-12-04 18:14:58 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:58 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:58 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:58 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:58 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:14:58 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:15:00 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:15:00 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:15:00 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:15:00 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:15:00 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:15:00 : ./recipe/testAlgorithm.py:125: UserWarning: WARNING: Input X must be non-negative.->RobustScaler True False # SelectPercentile 55 chi2 # SA*  GradientBoostingClassifier deviance 0.021273 0.210174 auto 5 True None 93102 0.262335 None 
+  warnings.warn("WARNING: "+ str(e)+ "->"+ mlAlgorithm,UserWarning)
+
+2017-12-04 18:15:01 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:15:02 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:15:02 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:15:02 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:15:02 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:15:02 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:15:03 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:15:03 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:15:03 : /usr/local/lib/python2.7/dist-packages/sklearn/discriminant_analysis.py:682: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-12-04 18:15:03 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:15:06 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:15:52 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:15:54 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:16:52 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:16:53 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:16:53 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:16:55 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:16:55 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:16:55 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:16:56 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:16:56 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:16:56 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:16:56 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:18:47 : /usr/local/lib/python2.7/dist-packages/sklearn/cross_validation.py:41: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-12-04 18:18:50 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:50 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:50 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:50 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:50 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:50 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:50 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:50 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:50 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:50 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:52 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:52 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:18:52 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:52 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:52 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:53 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:53 : ./recipe/evaluate_algorithm.py:98: UserWarning: WARNING: Input X must be non-negative.->RobustScaler True False # SelectPercentile 55 chi2 # SA*  GradientBoostingClassifier deviance 0.021273 0.210174 auto 5 True None 93102 0.262335 None 
+  warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+
+2017-12-04 18:18:54 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:18:54 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:54 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:54 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:54 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:54 : /usr/local/lib/python2.7/dist-packages/sklearn/linear_model/stochastic_gradient.py:117: DeprecationWarning: n_iter parameter is deprecated in 0.19 and will be removed in 0.21. Use max_iter and tol instead.
+  DeprecationWarning)
+
+2017-12-04 18:18:55 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:18:56 : /usr/local/lib/python2.7/dist-packages/sklearn/discriminant_analysis.py:682: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2017-12-04 18:18:56 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:18:59 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:19:49 : /usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+2017-12-04 18:19:49 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:19:49 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:19:50 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
+2017-12-04 18:24:03 : /usr/local/lib/python2.7/dist-packages/sklearn/cross_validation.py:41: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+
+2017-12-04 18:24:03 : /usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by MinMaxScaler.
+  warnings.warn(msg, DataConversionWarning)
+
