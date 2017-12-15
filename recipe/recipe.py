@@ -69,7 +69,7 @@ def export_result(test_result,seed,individual,input_file):
 	with open('results/Result_'+filename+'.csv',"a") as out:
 		out.write(test_result+","+str(seed)+","+individual+"\n")
 
-def save_individuals(individuals,results,generation,input_file,seed):
+def save_individuals(individuals,results,generation,input_file,seed,mutation_rate,crossover_rate):
 
 	indi_list = individuals.split(';')
 	result_list = results.split(';')
@@ -81,7 +81,7 @@ def save_individuals(individuals,results,generation,input_file,seed):
 
 	filename = filename.replace(".csv","")
 
-	with open('individuals/'+filename+'_s'+str(seed)+'.csv',"a+") as out:
+	with open('individuals/'+filename+'_s'+str(seed)+"m"+str(mutation_rate).replace(".","_")+"c"+str(crossover_rate).replace(".","_")+'.csv',"a+") as out:
 		out.write("Generation "+str(generation)+"\n")
 		for index,ind in enumerate(indi_list):
 			out.write(ind+"|"+result_list[index]+"\n")

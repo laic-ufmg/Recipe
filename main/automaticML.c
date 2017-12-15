@@ -327,7 +327,7 @@ static void exportResult(char *test_result, double best, char *individual,char *
     Py_DECREF(pName);
 }
 
-static void trackIndividuals(char *individuals,char *results,int generation,char *dataTraining,int seed){
+static void trackIndividuals(char *individuals,char *results,int generation,char *dataTraining,int seed, double mutation_rate, double crossover_rate){
 
      PyObject *pName, *pModule, *pDict, *pFunc;
 
@@ -352,11 +352,13 @@ static void trackIndividuals(char *individuals,char *results,int generation,char
     pDict = PyModule_GetDict(pModule);
 
     pFunc = PyDict_GetItemString(pDict, "save_individuals");
-    pArgs = PyTuple_Pack(5, PyString_FromString(individuals),
+    pArgs = PyTuple_Pack(7, PyString_FromString(individuals),
                             PyString_FromString(results),
                             PyInt_FromLong(generation),
                             PyString_FromString(dataTraining),
-                            PyInt_FromLong(seed));
+                            PyInt_FromLong(seed),
+                            PyFloat_FromDouble(mutation_rate),
+                            PyFloat_FromDouble(crossover_rate));
 
     if (PyCallable_Check(pFunc)){
          PyObject_CallObject(pFunc, pArgs);
@@ -409,7 +411,7 @@ static  void eval(struct gges_parameters *params, int G, struct gges_individual 
     // evaluate_algorithms(G, individuals, params->dataTraining, params->dataTest, exP);
 
     if(params->track_ind>0)
-        trackIndividuals(individuals,results,G,params->dataTraining,params->seed);
+        trackIndividuals(individuals,results,G,params->dataTraining,params->seed,params->mutation_rate,params->crossover_rate);
 
     char *evaluation;
     evaluation = strtok (results,";");

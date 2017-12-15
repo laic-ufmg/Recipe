@@ -40,7 +40,7 @@ def exec_timeout(func,args,timeout):
         return s
     except mp.TimeoutError:
         pool.terminate()
-        return 0.0
+        return -1.0
 
 
 def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalCV,nCores,timeOut,mutation_rate,crossover_rate,metric):

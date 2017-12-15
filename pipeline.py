@@ -7,8 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 import numpy as np
 import pandas as pd
 
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.svm import NuSVC, SVC
+from sklearn.tree import DecisionTreeClassifier, ExtraTreeClassifier
 
 def pipeline(dataTraining,dataTest):
 
@@ -34,16 +33,15 @@ def pipeline(dataTraining,dataTest):
 	#Validation -- Get a subsample of the training to get information about possible overfitting:
 	X_train, X_validation, y_train, y_validation = train_test_split(train_data, train_target, train_size=0.7, test_size=0.3, random_state=dataSeed, stratify=train_target)
 
-	step0 = MinMaxScaler(copy=True, feature_range=(0, 1))
-
-	step1 = SVC(C=1.0, cache_size=200, class_weight='balanced', coef0=0.0,
-  decision_function_shape='ovr', degree=10, gamma='auto', kernel='sigmoid',
-  max_iter=50000, probability=False, random_state=42, shrinking=True,
-  tol=0.084473, verbose=False)
+	step0 = ExtraTreeClassifier(class_weight=None, criterion='entropy', max_depth=56811,
+          max_features=0.301416, max_leaf_nodes=74383,
+          min_impurity_decrease=0.0, min_impurity_split=None,
+          min_samples_leaf=1, min_samples_split=2,
+          min_weight_fraction_leaf=0.036984, random_state=42,
+          splitter='random')
 
 	methods = []
 	methods.append(step0)
-	methods.append(step1)
 
 	pipeline = make_pipeline(*methods)
 
