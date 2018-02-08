@@ -12,10 +12,6 @@
 
 #define BUFFER_INC BUFSIZ
 
-
-
-
-
 /*******************************************************************************
  * internal helper function prototypes
  ******************************************************************************/
@@ -24,15 +20,6 @@ static struct gges_mapping *create_mapping();
 static void copy_mapping(struct gges_mapping *src, struct gges_mapping *dest);
 
 static void release_mapping(struct gges_mapping *mapping);
-
-
-
-
-
-
-
-
-
 
 /*******************************************************************************
  * Public function implementations
@@ -232,9 +219,6 @@ void gges_breed(struct gges_parameters *params,
     }
 }
 
-
-
-
 void gges_mapping_append_symbol(struct gges_mapping *mapping, char *token)
 {
     int tlen;
@@ -252,15 +236,6 @@ void gges_mapping_append_symbol(struct gges_mapping *mapping, char *token)
     strcat(mapping->buffer, token);
     mapping->l += tlen;
 }
-
-
-
-
-
-
-
-
-
 
 /*******************************************************************************
  * internal helper function implementations

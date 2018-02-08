@@ -409,17 +409,6 @@ struct gges_population *gges_run_system(struct gges_parameters *params,
     struct gges_population *pop, *gen, *tmp;
     int g = 0;
 
-    /* Best fitness over the last five generations
-     * It will be used as a stop criterion.
-     * If the best individual don't change over
-     * five generations, we will stop the gp
-     */
-    // float fitness1 = 0.0;
-    // float fitness2 = 0.0;
-    // float fitness3 = 0.0;
-    // float fitness4 = 0.0;
-    // float fitness5 = 0.0;
-
     /* create initial population */
     pop = create_population(params);
     gen = create_population(params);
@@ -473,18 +462,6 @@ struct gges_population *gges_run_system(struct gges_parameters *params,
         qsort(pop->members, pop->N, sizeof(struct ggen_individual *),
               compare_individuals);
 
-        // //The idea to stop after best individual's convergence:
-        // fitness5 = fitness4;
-        // fitness4 = fitness3;
-        // fitness3 = fitness2;
-        // fitness2 = fitness1;
-        // fitness1 = pop->members[0]->fitness;
-        //
-        // //Stoping when the best individual converged:
-        // if ((fitness1 == fitness2) && (fitness2 == fitness3) && (fitness3 == fitness4) && (fitness4 == fitness5) && (g >= 10)) {
-        //     after_gen(params, g, true, pop->members, pop->N, args);
-        //     break;
-        // }
 
         if (after_gen) after_gen(params, g, false, pop->members, pop->N, args);
 
@@ -564,7 +541,7 @@ struct gges_parameters *gges_default_parameters()
     def->dataTraining = " ";
     def->dataTest = " ";
     //Default seed to use to control the randomic behaviour of the GP:
-    def->seed = 2;
+      def->seed = 2;
     //Default directory for the grammar:
     def->grammarDir = " ";
     //Default seed to control resample over the generations:
@@ -588,6 +565,10 @@ struct gges_parameters *gges_default_parameters()
      *--------------------------------------------------------------------------*
      *--------------------------------------------------------------------------*
      */
+
+     /* initialize random seed: */
+     srand (def->seed);
+
     def->rnd = rnd;
 
     return def;

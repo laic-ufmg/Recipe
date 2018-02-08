@@ -79,8 +79,8 @@ def evaluate_algorithm(mlAlgorithm, dataTraining, seed, dataSeed, internalCV,met
 		try:
 			pipeline=make_pipeline(*pipe)
 		except Exception as exc:
-			warnings.warn(exc, "->", mlAlgorithm,UserWarning)
-			return 0.0
+			warnings.warn("ERROR PIPELINE CREATION: " + mlAlgorithm,UserWarning)
+			return -0.5
 
 		# # To shuffle data in the cv according to the dataSeed:
 		# n_samples = training_data.shape[0]
@@ -103,9 +103,10 @@ def evaluate_algorithm(mlAlgorithm, dataTraining, seed, dataSeed, internalCV,met
 
 		# Get individual pipeline size and normalize
 		ind_size = len(mlAlgorithm.split("#"))
-		tam_ratio = ind_size/21.0
+		tam_ratio = ind_size/22.0
 
-		new_fitness = 0.7* f1Test + 0.3*(1-tam_ratio)
+		# new_fitness = 0.9* f1Test + 0.1*(1-tam_ratio)
+		new_fitness = f1Test
 		result = new_fitness
 
 		# result = f1Test
@@ -114,5 +115,5 @@ def evaluate_algorithm(mlAlgorithm, dataTraining, seed, dataSeed, internalCV,met
 	except (KeyboardInterrupt, SystemExit):
 		return 0.0
 	except Exception as e:
-		warnings.warn("WARNING: "+ str(e) + "->" + mlAlgorithm,UserWarning)
+		warnings.warn("ERROR PIPELINE: "+ str(e) + " -> " + mlAlgorithm,UserWarning)
 		return 0.0

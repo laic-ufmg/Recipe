@@ -7,7 +7,8 @@ from sklearn.preprocessing import LabelEncoder
 import numpy as np
 import pandas as pd
 
-from sklearn.tree import DecisionTreeClassifier, ExtraTreeClassifier
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.ensemble import AdaBoostClassifier
 
 def pipeline(dataTraining,dataTest):
 
@@ -33,15 +34,14 @@ def pipeline(dataTraining,dataTest):
 	#Validation -- Get a subsample of the training to get information about possible overfitting:
 	X_train, X_validation, y_train, y_validation = train_test_split(train_data, train_target, train_size=0.7, test_size=0.3, random_state=dataSeed, stratify=train_target)
 
-	step0 = ExtraTreeClassifier(class_weight=None, criterion='entropy', max_depth=56811,
-          max_features=0.301416, max_leaf_nodes=74383,
-          min_impurity_decrease=0.0, min_impurity_split=None,
-          min_samples_leaf=1, min_samples_split=2,
-          min_weight_fraction_leaf=0.036984, random_state=42,
-          splitter='random')
+	step0 = PolynomialFeatures(degree=3, include_bias=True, interaction_only=True)
+
+	step1 = AdaBoostClassifier(algorithm='SAMME', base_estimator=None,
+          learning_rate=0.87266, n_estimators=35, random_state=42)
 
 	methods = []
 	methods.append(step0)
+	methods.append(step1)
 
 	pipeline = make_pipeline(*methods)
 

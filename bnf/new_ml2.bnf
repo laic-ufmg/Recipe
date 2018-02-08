@@ -1,17 +1,28 @@
 <Start> ::= <preprocessing> '#' 'SA* ' <algorithm> | 'SA* ' <algorithm> | <stacking> | <ensemble>
 
-<ensemble> ::= <preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> #' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
-		<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
-		<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
-		<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
-		<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
-		<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
-		<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' | 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble'
+<ensemble> ::= <preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> #' <algorithm_e> '#' 'Ensemble' |
+	'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	<preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
+	'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble'
 
-<stacking> ::= <preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' 'Stacking' | 'SA* ' <algorithm> '#' <algorithm> '#' 'Stacking' |
-		<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' | 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' |
-		<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' | 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' |
-		<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' | 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking'
+<stacking> ::= <preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' 'Stacking' |
+	'SA* ' <algorithm> '#' <algorithm> '#' 'Stacking' |
+	<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' |
+	'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' |
+	<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' |
+	'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' |
+	<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' |
+	'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking'
 
 ##PREPROCESSING
 
@@ -26,8 +37,11 @@
 
 <binarizer> ::= 'Binarizer' <threshold_bin>
 
-<bounding> ::= 'Normalizer' <norm> | 'MinMaxScaler' | 'MaxAbsScaler' |
-    'RobustScaler' <boolean> <boolean> | 'StandardScaler' <boolean> <boolean>
+<bounding> ::= 'Normalizer' <norm> |
+	'MinMaxScaler' |
+	'MaxAbsScaler' |
+  'RobustScaler' <boolean> <boolean> |
+	'StandardScaler' <boolean> <boolean>
 
 <dimensionality> ::= <feature_selection> | <feature_construction> | <feature_selection> '#' <feature_construction>
 

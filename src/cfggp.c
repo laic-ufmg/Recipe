@@ -57,7 +57,7 @@ static struct gges_cfggp_node *perform_tree_swap(struct gges_cfggp_node **tree,
  * Public function implementations
  ******************************************************************************/
 
- 
+
 void gges_cfggp_release_tree(struct gges_cfggp_node *tree)
 {
     int i;
@@ -277,7 +277,7 @@ void gges_cfggp_mutation(struct gges_bnf_grammar *g,
     int pidx;
     int allowed_depth;
 
-    if (rnd() > mutation_rate) return;
+    // if (rnd() > mutation_rate) return;
 
     /* pick a site in the tree */
     pidx = pick_subtree(&mp, *tree, NULL, node_sel, rnd);
@@ -321,25 +321,49 @@ bool gges_cfggp_breed(struct gges_bnf_grammar *g,
                       double pc, double pm,
                       double (*rnd)(void))
 {
-    double p;
+    // double p;
+    //
+    // p = rnd();
+    // if (p < pc) {
+    //     gges_cfggp_crossover(mother, father, daughter, son, max_depth, node_sel, rnd);
+    //     return false;
+    // } else {
+    //     gges_cfggp_reproduction(mother, daughter);
+    //     gges_cfggp_reproduction(father, son);
+    //
+    //     if (p < (pm + pc)) {
+    //         gges_cfggp_mutation(g, daughter, pm, mut_depth, max_depth, node_sel, rnd);
+    //         gges_cfggp_mutation(g, son, pm, mut_depth, max_depth, node_sel, rnd);
+    //
+    //         return false;
+    //     }
+    //
+    //     return true;
+    // }
+
+    double p, p_m;
+    bool is_cross = false;
 
     p = rnd();
+    p_m = rnd();
+
     if (p < pc) {
         gges_cfggp_crossover(mother, father, daughter, son, max_depth, node_sel, rnd);
-        return false;
-    } else {
-        gges_cfggp_reproduction(mother, daughter);
-        gges_cfggp_reproduction(father, son);
-
-        if (p < (pm + pc)) {
-            gges_cfggp_mutation(g, daughter, pm, mut_depth, max_depth, node_sel, rnd);
-            gges_cfggp_mutation(g, son, pm, mut_depth, max_depth, node_sel, rnd);
-
-            return false;
-        }
-
-        return true;
+        is_cross = true;
     }
+
+    if(!is_cross){
+      gges_cfggp_reproduction(mother, daughter);
+      gges_cfggp_reproduction(father, son);
+    }
+    
+    if (p_m < pm) {
+        gges_cfggp_mutation(g, daughter, pm, mut_depth, max_depth, node_sel, rnd);
+        gges_cfggp_mutation(g, son, pm, mut_depth, max_depth, node_sel, rnd);
+    }
+
+    return false;
+
 }
 
 
@@ -429,7 +453,7 @@ static void map_sequence(struct gges_mapping *m,
         if (t->p->tokens[i].terminal) {
             /* current token is a terminal, and needs to be printed
              * into the destination stream */
-               
+
             if (t->p->tokens[i].data_field) {
                 gges_mapping_append_symbol(m, t->data_fields[i]);
                 gges_mapping_append_symbol(m, " ");
@@ -504,14 +528,14 @@ static void calculate_depths(struct gges_cfggp_node *t)
 }
 
 /**
- * 
+ *
  * @param p - the production to process
  * @param rnd - a pseudo aleatory number, that could be an integer or a real number
  * @return a producton with the terminal RANDINT(min, max) replaced by a integer
- *         number between min and max 
- *          OR 
+ *         number between min and max
+ *          OR
  *          a producton with the terminal RANDFLOAT(min, max) replaced by a real
- *          number between min and max 
+ *          number between min and max
  */
 static struct gges_bnf_production *random_number(struct gges_bnf_production *p,
                                                 double (*rnd)(void), char *tag) {
@@ -523,39 +547,39 @@ static struct gges_bnf_production *random_number(struct gges_bnf_production *p,
     char *substr = "";
 
 
-    
+
     if(strcmp(tag, "integer")==0){
         //Define the interval to apply the rand considering the terminal RANDINT(min, max)
-        len_substr = strlen(p->tokens->symbol) - 9;    
+        len_substr = strlen(p->tokens->symbol) - 9;
         substr = (char*) malloc(sizeof (char)*len_substr + 1);
         strcpy(substr, "");
         strncpy(substr, p->tokens->symbol + 8, len_substr);
         substr[len_substr] = '\0';
-        
-        
+
+
         //Set the max and the min given the rand string:
         minInt = atoi(strtok(substr, ","));
-        maxstr = strtok(NULL, ","); 
+        maxstr = strtok(NULL, ",");
         maxInt = atoi(maxstr);
-    
+
         //Generate the rand of a integer considering a predefined interval:
         randInt = (maxInt - minInt + 1)*(rnd()) + minInt;
         strRand = (char*) malloc(sizeof (char)*strlen(maxstr) + 1);
         sprintf(strRand, "%d", randInt);
-        
+
     }else if(strcmp(tag, "float")==0){
         //Define the interval to apply the rand considering the terminal RANDFLOAT(min, max)
-        len_substr = strlen(p->tokens->symbol) - 11;    
+        len_substr = strlen(p->tokens->symbol) - 11;
         substr = (char*) malloc(sizeof (char)*len_substr + 1);
         strcpy(substr, "");
         strncpy(substr, p->tokens->symbol + 10, len_substr);
         substr[len_substr] = '\0';
-        
+
         //Set the max and the min given the rand string:
         minDouble = atof(strtok(substr, ","));
-        maxstr = strtok(NULL, ","); 
+        maxstr = strtok(NULL, ",");
         maxDouble = atof(maxstr);
-    
+
         //Generate the rand of a integer considering a predefined interval:
         randDouble = (maxDouble - minDouble)*(rnd()) + minDouble;
         strRand = (char*) malloc(sizeof (char)*strlen(maxstr) + 1);
@@ -569,7 +593,7 @@ static struct gges_bnf_production *random_number(struct gges_bnf_production *p,
     tk->data_field = p->tokens->data_field;
     tk->nt = p->tokens->nt;
     tk->symbol = (char*) malloc(sizeof (char)*(strlen(strRand) + 1));
-    //Save the generated rand in the interval in the tk->symbol, 
+    //Save the generated rand in the interval in the tk->symbol,
     //  which is the symbol of this terminal:
     sprintf(tk->symbol, "%s", strRand);
 
@@ -582,9 +606,9 @@ static struct gges_bnf_production *random_number(struct gges_bnf_production *p,
     prd->nt = p->nt;
     prd->min_depth = p->min_depth;
 
-       
+
   return prd;
-} 
+}
 
 
 static bool sensible_init(struct gges_bnf_grammar *g,
@@ -649,26 +673,26 @@ static bool sensible_init(struct gges_bnf_grammar *g,
 
 
         if((p->tokens->terminal)){
-          if(strstr(p->tokens->symbol, "RANDINT")!=NULL){  
+          if(strstr(p->tokens->symbol, "RANDINT")!=NULL){
             p = random_number(p, rnd, "integer");
-           
-          }else if(strstr(p->tokens->symbol, "RANDFLOAT")!=NULL){  
-            p = random_number(p, rnd, "float");          
+
+          }else if(strstr(p->tokens->symbol, "RANDFLOAT")!=NULL){
+            p = random_number(p, rnd, "float");
           }
         }
 
-        *t = create_node(p);          
+        *t = create_node(p);
 
-         
+
         /* now that we have a valid production, scan through all its
          * tokens, and for any non-terminals, recursively call the
          * sensible init function from this point */
         success = true;
         c = 0;
-                   
+
         for (i = 0; i < p->size; ++i) {
           if(strcmp(p->tokens[i].symbol, " ")!=0){
-            if (p->tokens[i].terminal) {                 
+            if (p->tokens[i].terminal) {
                 if (p->tokens[i].data_field) {
 
                     (*t)->data_fields[i] = gges_bnf_init_data_field(g, (*t)->p->tokens[i].symbol, rnd);
@@ -679,7 +703,7 @@ static bool sensible_init(struct gges_bnf_grammar *g,
                                     p->tokens[i].nt,
                                     depth + 1, min_depth, max_depth,
                                     rnd);
-            if (!success){ 
+            if (!success){
             	break;
             }
 
@@ -690,7 +714,7 @@ static bool sensible_init(struct gges_bnf_grammar *g,
 
 
     return success;
-            
+
 
 }
 
