@@ -102,11 +102,17 @@ def evaluate_algorithm(mlAlgorithm, dataTraining, seed, dataSeed, internalCV,met
 		f1Test = metrics.f1_score(expectedTest, predictedTest, average='weighted')
 
 		# Get individual pipeline size and normalize
+		print mlAlgorithm
 		ind_size = len(mlAlgorithm.split("#"))
+		print ind_size
 		tam_ratio = ind_size/22.0
 
-		# new_fitness = 0.9* f1Test + 0.1*(1-tam_ratio)
-		new_fitness = f1Test
+		print tam_ratio
+
+		new_fitness = 0.9* f1Test + 0.1*(1-tam_ratio)
+
+		# print f1Test, new_fitness
+		#new_fitness = f1Test
 		result = new_fitness
 
 		# result = f1Test

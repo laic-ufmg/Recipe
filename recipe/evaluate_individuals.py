@@ -93,7 +93,7 @@ def evaluate_individuals(G, individuals, dataTraining, seed, dataSeed, internalC
                 # result = exec_timeout(func=evaluate.evaluate_algorithm,args=[alg,dataTraining,seed,dataSeed,internalCV,metric],timeout=timeOut)
                 output_training[index] = result
                 fitness_map[alg] = output_training[index]
-            print(index,output_training[index],alg)
+            # print(index,output_training[index],alg)
 
         save_fitness_map(fitness_map,filename_map)
 

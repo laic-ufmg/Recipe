@@ -7,8 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 import numpy as np
 import pandas as pd
 
-from sklearn.preprocessing import PolynomialFeatures
-from sklearn.ensemble import AdaBoostClassifier
+from sklearn.ensemble import GradientBoostingClassifier
 
 def pipeline(dataTraining,dataTest):
 
@@ -34,14 +33,17 @@ def pipeline(dataTraining,dataTest):
 	#Validation -- Get a subsample of the training to get information about possible overfitting:
 	X_train, X_validation, y_train, y_validation = train_test_split(train_data, train_target, train_size=0.7, test_size=0.3, random_state=dataSeed, stratify=train_target)
 
-	step0 = PolynomialFeatures(degree=3, include_bias=True, interaction_only=True)
-
-	step1 = AdaBoostClassifier(algorithm='SAMME', base_estimator=None,
-          learning_rate=0.87266, n_estimators=35, random_state=42)
+	step0 = GradientBoostingClassifier(criterion='friedman_mse', init=None,
+              learning_rate=0.066789, loss='exponential', max_depth=55712,
+              max_features=0.56515, max_leaf_nodes=None,
+              min_impurity_decrease=0.0, min_impurity_split=None,
+              min_samples_leaf=1, min_samples_split=2,
+              min_weight_fraction_leaf=0.093157, n_estimators=35,
+              presort='auto', random_state=42, subsample=0.92525,
+              verbose=0, warm_start=True)
 
 	methods = []
 	methods.append(step0)
-	methods.append(step1)
 
 	pipeline = make_pipeline(*methods)
 
