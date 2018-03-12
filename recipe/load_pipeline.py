@@ -44,6 +44,10 @@ def load_pipeline(mlAlgorithm):
 			steps = steps.replace('SA*','').lstrip()
 			start_alg = True
 			algorithms.append(steps)
+		elif 'SAM*' in steps:
+			steps = steps.replace('SAM*','').lstrip()
+			start_alg = True
+			algorithms.append(steps)
 		else:
 			preprocess.append(steps)
 

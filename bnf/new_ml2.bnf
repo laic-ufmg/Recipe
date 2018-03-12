@@ -1,4 +1,8 @@
-<Start> ::= <preprocessing> '#' 'SA* ' <algorithm> | 'SA* ' <algorithm> | <stacking> | <ensemble>
+#<Start> ::= <preprocessing> '#' 'SA* ' <algorithm> | 'SA* ' <algorithm> | <stacking> | <ensemble>
+
+<Start> ::= <normal> | <normal> | <normal> | <normal> | <normal> | <normal> | <normal> | <normal> | <normal> | <meta>
+
+<normal> ::= <preprocessing> '#' 'SA* ' <algorithm> | 'SA* ' <algorithm> | <stacking> | <ensemble>
 
 <ensemble> ::= <preprocessing> '#' 'SA* ' <algorithm_e> '#' <algorithm_e> #' <algorithm_e> '#' 'Ensemble' |
 	'SA* ' <algorithm_e> '#' <algorithm_e> '#' <algorithm_e> '#' 'Ensemble' |
@@ -23,6 +27,116 @@
 	'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' |
 	<preprocessing> '#' 'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking' |
 	'SA* ' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' <algorithm> '#' 'Stacking'
+
+	<meta> ::= 'SAM*' 'GradientBoostingClassifier' 'deviance'  '0.045388141846341344'  '0.7912571599269661'  <presort> '278'  <boolean> '0.29161769341843435'  '10'  '0.0'  'None' |
+	  'SAM*' 'RandomForestClassifier' 'entropy' 'False False' <class_weight_Trees> '100'  <boolean> '0.7249853037185638'  'None '  '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'entropy' 'True' <boolean> <class_weight_Trees> '100'  <boolean> '0.5'  'None' '0.0'  'None' |
+	  'Imputer' 'most_frequent' '#' 'StandardScaler' 'True' 'True' '#' 'SelectPercentile' '92.63289395179382' 'f_classif' '#' 'SAM*' 'GradientBoostingClassifier' 'deviance'  '0.03474109838999682'  '0.5150113945430513'  <presort> '408'  <boolean> '0.5687034678818491'  '4'  '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini' 'True' <boolean> <class_weight_Trees> '100'  <boolean> '0.5'  'None' '0.0'  'None' |
+	  'Imputer' 'median' '#' 'StandardScaler' 'True' 'True' '#' 'PolynomialFeatures' '2' 'False' 'True' '#' 'SAM*' 'GradientBoostingClassifier' 'deviance'  '0.25109778817567596'  '0.4791732272983235'  <presort> '157' <boolean> '0.35679099363539235' '6' '0.0' 'None' |
+	  'Imputer' 'most_frequent' '#' 'RobustScaler' 'True' 'True' '#' 'PolynomialFeatures' '2' 'True' 'False' '#' 'SAM*' 'AdaBoostClassifier' 'SAMME' '423' '0.28738775989203896' |
+	  'Imputer' 'mean' # 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'False False' <class_weight_Trees> '100' <boolean> '0.7983157215145903'  'None' '0.0' 'None' |
+	  'Imputer' 'most_frequent' '#' 'MinMaxScaler' '#' 'PolynomialFeatures' '2' 'True' 'False' '#' 'SAM*' 'GradientBoostingClassifier' 'deviance' '0.14159526341015916'  '0.8073562440607731'  <presort> '401'  <boolean> '0.8010488230155749'  '7'  '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'FeatureAgglomeration' 'cosine' 'complete' <boolean> '177' '#' 'SAM*' 'SVC' 'rbg'  <degree_1>  '6.58869648864534e-05'  '-1'  'balanced' |
+	  'Imputer' 'mean' '#' 'SelectPercentile' '2.8382117756438676' 'f_classif' '#' 'SAM*' 'RandomForestClassifier' 'entropy'  'False False' <class_weight_Trees> '100' <boolean> '0.5368752992317617' 'None' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'False False' <class_weight_Trees> 100 <boolean> '0.7983157215145903' 'None'  '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True False' <class_weight_Trees> 100 <boolean> '0.5' 'None'  '0.0' 'None' |
+	  'Imputer' 'most_frequent' '#' 'StandardScaler' 'True' 'True' '#' 'SelectFdr' '0.18788055192455086' 'chi2' '#' 'SAM*' 'RandomForestClassifier' 'entropy' 'True False" <class_weight_Trees> '100' <boolean> '0.4044792917812593' 'None' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True False' <class_weight_Trees> 100 <boolean> '0.5' 'None' '0.0' 'None' |
+	  'Imputer' 'most_frequent' # 'RobustScaler' 'True' 'True' '#' 'FastICA' 'deflation' 'cube' '100' <tol> 'False' '3' '#' 'SAM*' 'ExtraTreesClassifier' 'entropy' 'False False' <class_weight_Trees> '100'  <boolean> '0.9455638720565651' 'None' '0.0' 'None' |
+	  'Imputer' 'mean' # 'MinMaxScaler' '#' 'FeatureAgglomeration' 'manhattan' 'complete' <boolean> '195' '#' 'SAM*' 'ExtraTreesClassifier' 'gini' 'False False' <class_weight_Trees> '100'  <boolean> '0.9094110110427254' 'None' '0.0' 'None' |
+	  'Imputer' 'mean' # 'StandardScaler' 'True' 'True' '#' 'SAM*' 'ExtraTreesClassifier' 'gini' 'False False' <class_weight_Trees> '100'  <boolean> '0.6682079659377479' 'None' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True False' <class_weight_Trees> 100 <boolean> '0.5' 'None' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'RobustScaler' 'True' 'True' '#' 'SelectFwe' '0.0614425536709615' 'f_classif' '#' 'SAM*' GradientBoostingClassifier' 'deviance' '0.053517066400173056' '0.7398539900055563' <presort> '233' <boolean> '0.542144980834302' '10' '0.0' 'None' |
+	  'Imputer' 'most_frequent' '#' 'PolynomialFeatures' '3' 'True' 'False' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True False' <class_weight_Trees> 100 <boolean> '0.8149627329153046' 'None' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True False' <class_weight_Trees> 100 <boolean> '0.5' 'None'  '0.0' 'None' |
+	  'Imputer' 'median' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True True' <class_weight_Trees> 100 <boolean> '0.7974565919616314' 'None'  '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'Normalizer' 'l1' '#' 'SAM*' 'SVC' 'rbf'  <degree_1>  '2.402997750662158e-05'  '-1'  'balanced' |
+	  'Imputer' 'median' '#' 'PolynomialFeatures' '2' 'True' 'False' '#' 'SAM*' 'GradientBoostingClassifier' 'deviance'  '0.1958974686405233'  '0.9448890820738562'  <presort> '125'  <boolean> '0.33885235607979314'  '5'  '0.0'  'None' |
+	  'Imputer' 'median' '#' 'Nystroem' <kernel> <gamma_kernelApprox> <degree_1>  <coef0> '8532' '#' 'SAM*' 'PassiveAggressive ' 'True' <n_iter> <boolean> 'hinge' <boolean> 'None' |
+	  'Imputer' 'most_frequent' '#' 'Normalizer' 'l1' '#' 'SAM*' 'SVC' 'poly' '5' '0.024555010060043934' '-1' 'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'GradientBoostingClassifier' 'deviance'  '0.051832615669195795' '0.7314831276137047'  <presort> '366' <boolean> '0.8807456180216267' '6' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'SAM*' 'ExtraTreesClassifier' 'gini' 'False False' <class_weight_Trees> '100'  <boolean> '0.5' 'None' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'RobustScaler' 'True' 'True' '#' 'FastICA' 'deflation' 'cube' '100' <tol> 'False' '3' '#' 'SAM*' 'AdaBoostClassifier' 'SAMME' '386' '0.4391375941344922' |
+	  'Imputer' 'mean' '#' 'FeatureAgglomeration' 'euclidean' <boolean> '51' '#' 'SAM*' 'SVC' 'poly' '3' '0.010632086351533367' '-1' 'None' |
+	  'Imputer' 'mean' '#' 'SAM*' 'RandomForestClassifier' 'gini' 'True False' <class_weight_Trees> '100'  <boolean> '0.5240592829918601'  'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini' 'True False' <class_weight_Trees> '100'  <boolean> '0.5'  'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini' 'True False' <class_weight_Trees> '100'  <boolean> '0.5'  'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'SelectFpr' '0.1' 'chi2' '#' 'SAM*' 'AdaBoostClassifier' 'SAMME' '50' '0.10000000000000002' |
+	  'Imputer' 'mean' '#' 'Normalizer' 'l1' '#' 'TraditionalPCA' 'False' '1198' '#' 'SAM*' 'SVC' 'poly' '3' '3.535379282685604e-05' '-1' 'None' |
+	  'Imputer' 'mean' '#' 'MinMaxScaler' '#' 'SAM*' 'DecisionTreeClassifier' 'entropy' 'best' 'None' <presort> '1..0' '0.24229264852063404' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'RobustScaler' 'True' 'True' '#' 'SelectPercentile' '58.88123233170863' 'chi2' '#' 'SAM*' 'GradientBoostingClassifier' 'deviance' '0.02102683283349326' '0.5778972273820631' <presort> '480' <boolean> '0.2797288369369436' '10' '0.0' 'None' |
+	  'Imputer' 'most_frequent' '#' 'SAM*' 'ExtraTreesClassifier' 'entropy' 'False False' <class_weight_Trees> '100'  <boolean> '0.9541039630394388' 'None' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'FastICA' 'parallel' 'chi2' <max_iter_fastica> <tol> 'False' <featuresToSelect> '#' 'SAM*' 'GradientBoostingClassifier' 'deviance' '0.2155613360930585' '0.28870176110739404' <presort> '275' <boolean> '0.31988031161984326' '4' '0.0' 'None' |
+	  'Imputer' 'most_frequent' '#' 'RobustScaler' 'True' 'True' '#' 'FastICA' 'parallel' 'chi2' <max_iter_fastica> <tol> 'False' 100 '#' 'SAM*' 'ExtraTreesClassifier' 'entropy' 'True False' <class_weight_Trees> '100'  <boolean> '0.7062102387181676' 'None' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'SelectFpr' '0.045742431094098604' 'chi2' '#' 'SAM*' 'PassiveAggressive' 'True' <n_iter> 'True' 'squared_hinge' <boolean> 'None' |
+	  'Imputer' 'most_frequent' '#' 'SelectFwe' '0.2573946506994812' 'f_classif' '#' 'SAM*' 'GradientBoostingClassifier' 'deviance' '0.3795924768593385' '0.7716323242090217' <presort> '451' <boolean> '0.33708497069988536'  '2'  '0.0'  'None' |
+	  'Imputer' 'most_frequent' '#' 'RobustScaler' 'True' 'True' '#' 'FastICA' 'parallel' 'cube' '2000' <tol> 'False' '3' '#' 'SAM*' 'ExtraTreesClassifier' 'gini' 'False False' <class_weight_Trees> '100'  <boolean> '0.609975998293528' 'None' '0.0' 'None' |
+	  'Imputer' 'most_frequent' '#' 'RobustScaler' 'True' 'True' '#' 'SAM*' 'ExtraTreesClassifier' 'entropy' 'False False' <class_weight_Trees> '100'  <boolean> '0.39536192447534535' 'None' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True True' <class_weight_Trees> 100 <boolean> '0.5' 'None'  '0.0' 'None' |
+	  'Imputer' 'median' '#' 'MinMaxScaler' '#' 'SAM*' 'KNeighborsClassifier' '2' 'uniform' 'auto' <leaf_size>  '2' 'euclidean' |
+	  'Imputer' 'median' '#' 'StandardScaler' 'True' 'True' '#' 'SelectFdr' '0.4608103694360143' 'chi2' '#' 'SAM*' 'SVC' 'poly' '3' '2.4851608604406576e-05'  -1  'balanced' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini' 'True' <boolean> <class_weight_Trees> '100'  <boolean> '0.5'  'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'Normalizer' 'l1' '#' 'TraditionalPCA' 'True' '1754' '#' 'SAM*' 'SVC' 'rbf'  <degree_1>  '0.00090919103756734'  '-1'  'balanced' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'MinMaxScaler' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.9260795160807372' 'None' '0.0'  'None' |
+	  'Imputer' 'most_frequent' '#' 'RobustScaler' 'True' 'True' '#' 'SAM*' 'GradientBoostingClassifier' 'deviance'  '0.059656714779183606'  '0.5726186552917335'  <presort> '480'  <boolean> '0.4858133247974158'  '8'  '0.0'  'None' |
+	  'Imputer' 'median' '#' 'RobustScaler' 'True' 'True' '#' 'SelectFwe' '0.39376071555683756' 'chi2' '#' 'SAM*' 'SVC' 'rbf' '3' '2.3839685780861314e-05'  -1  'balanced' |
+	  'Imputer' 'most_frequent' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'SVC' 'rbf' '3' '2.006345264381097e-05'  -1  'balanced' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini' 'True' <boolean> <class_weight_Trees> '100'  <boolean> '0.5'  'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini' 'True' <boolean> <class_weight_Trees> '100'  <boolean> '0.5'  'None' '0.0'  'None' |
+	  'Imputer' 'most_frequent' '#' 'MinMaxScaler' '#' 'SelectPercentile' '54.275042925685625' 'f_classif' '#' 'SAM*' 'RandomForestClassifier' 'gini' 'True' <boolean> <class_weight_Trees> '100'  <boolean> '0.8138233157708883'  'None' '0.0'  'None' |
+	  'Imputer' 'median' '#' 'SAM*' 'PassiveAggressive' 'True' <n_iter> 'True' 'squared_hinge' <boolean> 'None' |
+	  'Imputer' 'median' '#' 'RobustScaler' 'True' 'True' '#' 'SAM*' 'GaussianNB' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'PolynomialFeatures' '2' 'True' 'False' '#' 'SAM*' 'ExtraTreesClassifier' 'entropy' 'False False' <class_weight_Trees> '100'  <boolean> '0.9439080311935253' 'None' '0.0' 'None' |
+	  'Imputer' 'most_frequent' '#' 'MinMaxScaler' '#' 'SAM*' 'LinearDiscriminantAnalysis' 'svd' '0.0053894830448103555'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'Normalizer' 'l1' '#' 'SelectFpr' '0.1' 'chi2' '#' 'SAM*' 'KNeighborsClassifier' '2' 'uniform' 'auto' <leaf_size>  '2' 'euclidean' |
+	  'Imputer' 'mean' '#' 'SelectFwe' '0.06544340428506021' 'f_classif' '#' 'SAM*' 'QuadraticDiscriminantAnalysis' '0.6396026761675004' <tol>  <boolean> |
+	  'Imputer' 'mean' '#' 'Normalizer' 'l1' '#' 'SAM*' 'SVC' 'rbf' '3' '0.00017919875199222518'  -1  'balanced' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'most_frequent' '#' 'MinMaxScaler' '#' 'PolynomialFeatures' '2' 'False' 'True' '#' 'SAM*' 'GradientBoostingClassifier' 'deviance'  '0.018356703878357986'  '0.3870344708308441'  <presort> '234'  <boolean> '0.9690352514774068'  '3'  '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'most_frequent' '#' 'Normalizer' 'l1' '#' 'TraditionalPCA' 'False' '1198' '#' 'SAM*' 'KNeighborsClassifier' '1' 'uniform' 'auto' <leaf_size>  '1' 'euclidean' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'median' '#' 'MinMaxScaler' '#' 'PolynomialFeatures' '3' 'True' 'False' '#' 'SAM*' 'ExtraTreesClassifier' 'gini' 'False False' <class_weight_Trees> '100'  <boolean> '0.5670424455696162' 'None' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'most_frequent' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'ExtraTreesClassifier' 'gini' 'False False' <class_weight_Trees> '100'  <boolean> '0.6025857717358056' 'None' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'RobustScaler' 'True' 'True' '#' 'FastICA' 'deflation' 'exp' '100' <tol> 'False' '1793' '#' 'SAM*' 'ExtraTreesClassifier' 'entropy' 'False False' <class_weight_Trees> '100'  <boolean> '0.799803680241154' 'None' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'SelectFpr' '0.41656327663888065' 'chi2' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.35533396539961937' 'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'FastICA' 'deflation' 'cube' '100' <tol> 'False' '100' '#' 'SAM*' 'LinearDiscriminantAnalysis' 'svd' '0.00019873338528715893'  'None' |
+	  'Imputer' 'most_frequent' '#' 'SelectPercentile' '11.628430584359224' 'chi2' '#' 'SAM*' 'PassiveAggressive ' 'True' <n_iter> <boolean> 'hinge' <boolean> 'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'most_frequent' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5686453602598863' 'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'Normalizer' 'l1' '#' 'PolynomialFeatures' '3' 'True' 'False' '#' 'SAM*' 'GradientBoostingClassifier' 'deviance'  '0.26362013742534607'  '0.7517549950523315'  <presort> '298'  <boolean> '0.8344964130784466'  '7'  '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'KNeighborsClassifier' '2' 'uniform' 'auto' <leaf_size>  '1' 'euclidean' |
+	  'Imputer' 'mean' '#' 'PolynomialFeatures' '2' 'True' 'False' '#' 'SAM*' 'GradientBoostingClassifier' 'deviance'  '0.07463196642416368'  '0.8447665577491962'  <presort> '298'  <boolean> '0.8603242247379981'  '7'  '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'RobustScaler' 'True' 'True' '#' 'PolynomialFeatures' '2' 'False' 'True' '#' 'SAM*' 'GradientBoostingClassifier' 'deviance'  '0.0433556140045585'  '0.8291104221904706'  <presort> '388'  <boolean> '0.33000096635982235'  '10'  '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'median' '#' 'FastICA' 'deflation' 'logcosh' '100' <tol> 'False' '100' '#' 'SAM*' 'ExtraTreesClassifier' 'gini' 'False False' <class_weight_Trees> '100'  <boolean> '0.9457745734341919' 'None' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'PolynomialFeatures' '3' 'False' 'True' '#' 'SAM*' 'ExtraTreesClassifier' 'gini' 'False False' <class_weight_Trees> '100'  <boolean> '0.5' 'None' '0.0' 'None' |
+	  'Imputer' 'most_frequent' '#' 'RobustScaler' 'True' 'True' '#' 'FeatureAgglomeration' 'cosine' 'complete' <boolean> '173' '# 'SAM*' 'RandomForestClassifier' 'entropy'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5565918060287016' 'None' '0.0'  'None' |
+	  'Imputer' 'most_frequent' '#' 'StandardScaler' 'True' 'True' '#' 'SelectFwe' '0.0903354518102121' 'f_classif' '#' 'SAM*' 'KNeighborsClassifier' '1' 'uniform' 'auto' <leaf_size>  '2' 'euclidean' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'most_frequent' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.7884268823432835' 'None' '0.0'  'None' |
+	  'Imputer' 'most_frequent' '#' 'RobustScaler' 'True' 'True' '#' 'PolynomialFeatures' '2' 'True' 'False' '#' 'SAM*' 'SVC' 'rbf' '3' '0.00196831255706268'  -1  'balanced' |
+	  'Imputer' 'median' '#' 'FeatureAgglomeration' 'euclidean' 'complete' <boolean> '332' '#' 'SAM*' 'GradientBoostingClassifier' 'deviance'  '0.24729845478857812'  '0.8082564085714649'  <presort> '220'  <boolean> '0.6564306719064884' '3' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'median' '#' 'FeatureAgglomeration' 'cosine' 'complete' <boolean> '164' '#' 'SAM*' 'QuadraticDiscriminantAnalysis' '0.6396026761675004' <tol>  <boolean> |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'median' '#' 'MinMaxScaler' '#' 'PolynomialFeatures' '3' 'True' 'False' '#' 'SAM*' 'GradientBoostingClassifier' 'deviance'  '0.19998727075532635' '0.6062346326014357'  <presort> '214' <boolean> '0.9377656718112951' '7' '0.0' 'None' |
+	  'Imputer' 'mean' '#' 'StandardScaler' 'True' 'True' '#' 'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.5' 'None' '0.0'  'None' |
+	  'Imputer' 'median' '#' 'FastICA' 'deflation' 'exp' '100' <tol> 'True' '100' '#' 'SAM*' 'ExtraTreesClassifier' 'gini' 'False False' <class_weight_Trees> '100'  <boolean> '0.5765793990908161' 'None' '0.0' 'None' |
+	  'Imputer' 'most_frequent' '#'  'SAM*' 'RandomForestClassifier' 'gini'  'True' <boolean> <class_weight_Trees> '100' <boolean> '0.7945458151995424' 'None' '0.0'  'None'
 
 ##PREPROCESSING
 
