@@ -21,14 +21,14 @@ A Makefile is included to build the base library and application. A call to:
   make 
 should compile the project without any problems, and the resulting binaries should appear in the bin directory. 
  
-More detailed information can be found at : [Installation](https://recipeml.github.io/Recipe/installation/) 
+More detailed information can be found at : [Installation](https://laic-ufmg.github.io/Recipe/docs/installation/) 
  
 Documentation 
 ------------- 
  
 Documentation for the project can be found in the following link: 
  
-[RecipeDoc](https://recipeml.github.io/Recipe/docs) 
+[RecipeDoc](https://laic-ufmg.github.io/Recipe/docs) 
  
 License 
 ------- 
