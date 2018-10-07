@@ -15,8 +15,6 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 """
 
-from sklearn.tree import DecisionTreeClassifier, ExtraTreeClassifier
-
 def load_imports(_method):
 
     if((_method == "DecisionTreeClassifier") or (_method == "ExtraTreeClassifier")):
@@ -120,4 +118,3 @@ def load_imports(_method):
 
     elif(_method == "PolynomialFeatures"):
         return "from sklearn.preprocessing import PolynomialFeatures"
-            

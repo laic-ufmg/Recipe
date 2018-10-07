@@ -15,4 +15,4 @@ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more de
 
 """
 
-__version__ = '0.4.1'
+__version__ = '0.5.1'

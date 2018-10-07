@@ -27,6 +27,9 @@ def export_pipe(_filename,pipeline):
 	imports.append("from sklearn.pipeline import make_pipeline\n")
 
 	imports.append("from sklearn.preprocessing import LabelEncoder\n")
+	imports.append("from sklearn.ensemble import VotingClassifier\n")
+	imports.append("from sklearn.pipeline import make_union\n")
+	imports.append("from sklearn.preprocessing import FunctionTransformer\n")
 
 	imports.append("import numpy as np")
 	imports.append("import pandas as pd\n")

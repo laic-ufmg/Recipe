@@ -28,8 +28,6 @@ from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import train_test_split
 from sklearn import metrics
 
-import resource
-
 def evaluate_algorithm(mlAlgorithm, dataTraining, seed, dataSeed, internalCV,metric):
 
 	"""Evaluate a single algorithm
@@ -53,9 +51,6 @@ def evaluate_algorithm(mlAlgorithm, dataTraining, seed, dataSeed, internalCV,met
         The number of folds in the internal cross-validation procedure.
 
     """
-
-	# soft, hard = 2147483648, 2147483648
-	# resource.setrlimit(resource.RLIMIT_AS,(soft, hard))
 
 	try:
 		#Load the dataset:
@@ -101,21 +96,7 @@ def evaluate_algorithm(mlAlgorithm, dataTraining, seed, dataSeed, internalCV,met
 
 		f1Test = metrics.f1_score(expectedTest, predictedTest, average='weighted')
 
-		# Get individual pipeline size and normalize
-		print mlAlgorithm
-		ind_size = len(mlAlgorithm.split("#"))
-		print ind_size
-		tam_ratio = ind_size/22.0
-
-		print tam_ratio
-
-		new_fitness = 0.9* f1Test + 0.1*(1-tam_ratio)
-
-		# print f1Test, new_fitness
-		#new_fitness = f1Test
-		result = new_fitness
-
-		# result = f1Test
+		result = f1Test
 
 		return result
 	except (KeyboardInterrupt, SystemExit):
