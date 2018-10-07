@@ -51,7 +51,7 @@ $(OBJDIR)/%.o : $(DEMDIR)/%.c $(wildcard $(DEMDIR)/*.h) $(INC)
 	@$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@
 
 clean:
-	@rm -rf $(OBJDIR) $(RESDIR) $(INDDIR) $(MAPDIR) $(EVODIR) $(BINDIR)/automaticML
+	@rm -rf $(OBJDIR) $(RESDIR) $(INDDIR) $(MAPDIR) $(EVODIR) $(BINDIR)/automaticML log.txt
 
 nuke: clean
 	@rm -rf $(INCDIR) $(BINDIR) $(LIBDIR)

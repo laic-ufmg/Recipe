@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <float.h>
 #include <math.h>
+#include <time.h>
 
 #include "gges.h"
 #include "individual.h"
@@ -409,6 +410,13 @@ struct gges_population *gges_run_system(struct gges_parameters *params,
     struct gges_population *pop, *gen, *tmp;
     int g = 0;
 
+    //time variables
+    time_t start_t, end_t;
+    //get start time
+    time(&start_t);
+
+    double diff_t;
+
     /* create initial population */
     pop = create_population(params);
     gen = create_population(params);
@@ -462,10 +470,17 @@ struct gges_population *gges_run_system(struct gges_parameters *params,
         qsort(pop->members, pop->N, sizeof(struct ggen_individual *),
               compare_individuals);
 
+        // get current execution time and difference from beggin
+        time(&end_t);
+        diff_t = difftime(end_t, start_t);
+        bool stop_criterion = false;
+        if(diff_t>params->full_time)
+          stop_criterion=true;
 
-        if (after_gen) after_gen(params, g, false, pop->members, pop->N, args);
+        if (after_gen) after_gen(params, g, stop_criterion, pop->members, pop->N, args);
 
-
+        if(stop_criterion)
+          break;
     }
 
     gges_release_population(gen);
@@ -560,7 +575,8 @@ struct gges_parameters *gges_default_parameters()
     def->track_ind = 1;
     //Default metric to be used by the GGP
     def->metric = "f1_weighted";
-
+    //Default full execution time used by the code
+    def->full_time = DBL_MAX;
     /**
      *--------------------------------------------------------------------------*
      *--------------------------------------------------------------------------*

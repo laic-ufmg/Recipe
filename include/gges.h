@@ -100,7 +100,8 @@ extern "C" {
         int track_ind;
         //Metric to be used by the GGP
         char *metric;
-
+        //Maximum execution time full GGP
+        double full_time;
         /**
 	 *--------------------------------------------------------------------------*
 	 *--------------------------------------------------------------------------*

@@ -491,7 +491,7 @@ static void report(struct gges_parameters *params, int G, bool stop_criterion,  
     }
 
     if(stop_criterion){
-        printf("\nStop criterion - Best Individual converged\n");
+        printf("\nStop criterion - Timeout GGP\n");
     }
 
     //Save the reports in a file:
@@ -551,6 +551,7 @@ int main(int argc, char **argv){
     params->generation_count = atoi(argv[13]);
     params->metric = argv[14];
     params->grammarDir = argv[15];
+    params->full_time = atof(argv[16]);
 
     //Load the grammar, which its grammar directory is defined by a parameter:
     G = gges_load_bnf(params->grammarDir);

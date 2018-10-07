@@ -90,7 +90,7 @@ def main(args):
 
 	cmd = './bin/automaticML '+args.config+" "+str(args.seed)+" "+args.dataTrain+" "+args.dataTest+"\
 	 "+str(args.nCores)+" "+str(args.timeout)+" "+args.export_name+" "+str(args.verbosity)+" "+str(args.track_ind)+" "+str(args.mutation_rate)+"\
-	  "+str(args.crossover_rate)+" "+str(args.population_size)+" "+str(args.generation_count)+" "+args.metric+" "+args.grammar
+	  "+str(args.crossover_rate)+" "+str(args.population_size)+" "+str(args.generation_count)+" "+args.metric+" "+args.grammar+" "+str(args.full_time)
 	call(cmd,shell=True)
 
 if __name__ == "__main__":
@@ -113,6 +113,7 @@ if __name__ == "__main__":
 		parser.add_argument('-gc','--generation_count',help="define the generation count for the algorithm",default=100,required=False)
 		parser.add_argument('-mt','--metric',help='define the metric to be used by RECIPE',default='f1_weighted',required=False)
 		parser.add_argument('-gr','--grammar',help="define the grammar file that will be used",default="bnf/new_ml.bnf",required=False)
+		parser.add_argument('-ft','--full_time',help="define the maximum time the GGP will run in seconds",default=86400,required=False)
 
 		args = parser.parse_args()
 
