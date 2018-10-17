@@ -474,7 +474,7 @@ struct gges_population *gges_run_system(struct gges_parameters *params,
         time(&end_t);
         diff_t = difftime(end_t, start_t);
         bool stop_criterion = false;
-        if(diff_t>params->full_time)
+        if(diff_t>params->full_time && params->full_time>0)
           stop_criterion=true;
 
         if (after_gen) after_gen(params, g, stop_criterion, pop->members, pop->N, args);

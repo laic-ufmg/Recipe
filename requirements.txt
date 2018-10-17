@@ -4,3 +4,4 @@ pandas
 numpy
 update_checker
 tqdm
+setuptools
