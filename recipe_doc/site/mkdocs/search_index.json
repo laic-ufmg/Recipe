@@ -1,0 +1,84 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "RECIPE \n \n\n\n \n  REsilient ClassifIcation Pipeline Evolution \n\n\n\n\nRECIPE is a framework based on a grammar-based genetic programming algorithm that builds customized classification pipelines. \n\n\nThe framework is flexible enough to receive different grammars and can be easily extended to other machine learning tasks. It overcomes the drawbacks of previous evolutionary-based frameworks, such as generating invalid individuals, and organizes a high number of possible suitable data pre-processing and classification methods into a grammar.\n\n\nCode\n\n\nThe source code can be dowloand at \nsource code\n.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#code", 
+            "text": "The source code can be dowloand at  source code .", 
+            "title": "Code"
+        }, 
+        {
+            "location": "/installation/", 
+            "text": "RECIPE \n \n\n\n \n  REsilient ClassifIcation Pipeline Evolution \n\n\n\n\nDependencies\n\n\nTo execute RECIPE is necessary to install the following packages:\n\n\n1\npython2.x python-dev scikit-learn scipy pandas numpy\n\n\n\n\n\n\n\n\nAttention\n\n\nIf you get C related erros, is possible that the installation of the following packages solves your problem: libblas-dev liblapack-dev gfortran\n\n\n\n\nCONDA users\n\n\nOne alternative is to use Anaconda that contains the majoraty of this packages. If you use Anaconda you need to install only the following package using the linux package-manager:\n\n\n1\npython-dev\n\n\n\n\n\n\nAnd update the others via conda. \n\n\nIs necessary to change a line in the Makefile before building. First you need to discover where is your python-2.7 folder on Anaconda. You can use the command:\n\n\n1\nuser@machine:~/Recipe$ python-config --cflags\n\n\n\n\n\n\nThe result will be something like:\n\n\n1\n-I/PATH/include/python2.7 -I/PATH/include/python2.7 ...\n\n\n\n\n\n\nOpen the Makefile and change the line 15 with the previous result:\n\n\n1\nIFLAGS\n:=\n-I\n$(\nINCDIR\n)\n -I/PATH/include/python2.7\n\n\n\n\n\n\nBuilding\n\n\nAfter all the dependencies are installed is necessary to build the algorithm. To accomplish this task, go to the root folder of the project and execute the command:\n\n\n1\npython setup.py build\n\n\n\n\n\n\n\n\nAttention\n\n\nIf you get the error: Unable to find -lpython2.7 one of the possible reasons is the abscense of the python-dev package. Try installing this package and run the build command again.\n\n\n\n\nCleaning\n\n\nIf you want to clean the installation just execute the command:\n\n\n1\npython setup.py clean", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/installation/#dependencies", 
+            "text": "To execute RECIPE is necessary to install the following packages:  1 python2.x python-dev scikit-learn scipy pandas numpy    Attention  If you get C related erros, is possible that the installation of the following packages solves your problem: libblas-dev liblapack-dev gfortran", 
+            "title": "Dependencies"
+        }, 
+        {
+            "location": "/installation/#conda-users", 
+            "text": "One alternative is to use Anaconda that contains the majoraty of this packages. If you use Anaconda you need to install only the following package using the linux package-manager:  1 python-dev   And update the others via conda.   Is necessary to change a line in the Makefile before building. First you need to discover where is your python-2.7 folder on Anaconda. You can use the command:  1 user@machine:~/Recipe$ python-config --cflags   The result will be something like:  1 -I/PATH/include/python2.7 -I/PATH/include/python2.7 ...   Open the Makefile and change the line 15 with the previous result:  1 IFLAGS := -I $( INCDIR )  -I/PATH/include/python2.7", 
+            "title": "CONDA users"
+        }, 
+        {
+            "location": "/installation/#building", 
+            "text": "After all the dependencies are installed is necessary to build the algorithm. To accomplish this task, go to the root folder of the project and execute the command:  1 python setup.py build    Attention  If you get the error: Unable to find -lpython2.7 one of the possible reasons is the abscense of the python-dev package. Try installing this package and run the build command again.", 
+            "title": "Building"
+        }, 
+        {
+            "location": "/installation/#cleaning", 
+            "text": "If you want to clean the installation just execute the command:  1 python setup.py clean", 
+            "title": "Cleaning"
+        }, 
+        {
+            "location": "/usage/", 
+            "text": "RECIPE \n \n\n\n \n  REsilient ClassifIcation Pipeline Evolution \n\n\n\n\nRunning\n\n\nAfter the installation process is complete you can run the algorithm and generate the best pipeline based on the input dataset. To run, execute the following command from the root folder of the source code\n\n\n1\npython exec.py -dTr DATATRAIN -dTe DATATEST\n\n\n\n\n\n\nIn the project you downloaded there is a folder named datasets. An example of how to use de algorithm for the dataset iris is:\n\n\n1\npython exec.py -dTr ./datasets/iris/iris-Training0.csv -dTe ./datasets/iris/iris-Test0.csv\n\n\n\n\n\n\n\n\nNote\n\n\nThe input data must be in .csv form regardless the extension of the file.\n\n\n\n\nRECIPE offers another arguments that can be set by the user.\n\n\n\n\n\n\n\n\nArgument\n\n\nParameter\n\n\nValide Values\n\n\nEffect\n\n\n\n\n\n\n\n\n\n\n\n\n-s or --seed\n\n\nSEED\n\n\nPositive Integer\n\n\nSet the seed of the algorithm for reproducibility\n\n\n\n\n\n\n\n\n-c or --config\n\n\nCONFIG\n\n\nString\n\n\nA string referring to a configuration file that defines the parameters of the GP\n\n\n\n\n\n\n\n\n-dTr\n\n\nDATATRAIN\n\n\nString\n\n\nA string referring to a file containing the data used to train the pipeline methods\n\n\n\n\n\n\n\n\n-dTe\n\n\nDATATEST\n\n\nString\n\n\nA string referring to a file containing the data used to test the pipeline methods\n\n\n\n\n\n\n\n\n-nc\n\n\nNUMBER OF CORES\n\n\nPositive Integer\n\n\nNumber of cores to be used on the algorithm execution\n\n\n\n\n\n\n\n\n-t\n\n\nTIMEOUT\n\n\nPositive Integer\n\n\nTime to execute each individual of the GP on evaluation\n\n\n\n\n\n\n\n\n-en\n\n\nEXPORT_NAME\n\n\nString\n\n\nA string with a file name to export pipeline\n\n\n\n\n\n\n\n\n-v\n\n\nVERBOSITY\n\n\nPositive Integer\n\n\nVerbosity level of the output: (3-Full, 2-Intermediate ,1-Basic)\n\n\n\n\n\n\n\n\n\n\nConfiguring GP\n\n\nThe program comes with a configuration file (folder config) that can be used to set the best parameters to execute the GP.  This file defines the mutation and crossover ratio values, population size, number of generations and elitism.\n\n\nResults\n\n\nThe program generates 3 files:\n\n\n\n\nEvolution-Training : data regarding the evolution of individuals using the training data\n\n\nEvolution-Test : data regarding the evolution of individuals using the test data\n\n\nResults : final file containing the best individual found and the values of the metrics", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/usage/#running", 
+            "text": "After the installation process is complete you can run the algorithm and generate the best pipeline based on the input dataset. To run, execute the following command from the root folder of the source code  1 python exec.py -dTr DATATRAIN -dTe DATATEST   In the project you downloaded there is a folder named datasets. An example of how to use de algorithm for the dataset iris is:  1 python exec.py -dTr ./datasets/iris/iris-Training0.csv -dTe ./datasets/iris/iris-Test0.csv    Note  The input data must be in .csv form regardless the extension of the file.   RECIPE offers another arguments that can be set by the user.     Argument  Parameter  Valide Values  Effect       -s or --seed  SEED  Positive Integer  Set the seed of the algorithm for reproducibility     -c or --config  CONFIG  String  A string referring to a configuration file that defines the parameters of the GP     -dTr  DATATRAIN  String  A string referring to a file containing the data used to train the pipeline methods     -dTe  DATATEST  String  A string referring to a file containing the data used to test the pipeline methods     -nc  NUMBER OF CORES  Positive Integer  Number of cores to be used on the algorithm execution     -t  TIMEOUT  Positive Integer  Time to execute each individual of the GP on evaluation     -en  EXPORT_NAME  String  A string with a file name to export pipeline     -v  VERBOSITY  Positive Integer  Verbosity level of the output: (3-Full, 2-Intermediate ,1-Basic)", 
+            "title": "Running"
+        }, 
+        {
+            "location": "/usage/#configuring-gp", 
+            "text": "The program comes with a configuration file (folder config) that can be used to set the best parameters to execute the GP.  This file defines the mutation and crossover ratio values, population size, number of generations and elitism.", 
+            "title": "Configuring GP"
+        }, 
+        {
+            "location": "/usage/#results", 
+            "text": "The program generates 3 files:   Evolution-Training : data regarding the evolution of individuals using the training data  Evolution-Test : data regarding the evolution of individuals using the test data  Results : final file containing the best individual found and the values of the metrics", 
+            "title": "Results"
+        }, 
+        {
+            "location": "/about/", 
+            "text": "RECIPE \n \n\n\n \n  REsilient ClassifIcation Pipeline Evolution \n\n\n\n\nHow it works?\n\n\n\n\nRECIPE receives as input a dataset and a grammar, which is used to initialize the population. Each individual is represented by a derivation-tree built from the context-free grammar (CFG), which encompasses all the knowledge gathered from specialists on how to generate an effective classification pipeline. The individuals are mapped into pipelines implemented by the SciKit-Learn library, which are executed into a data sample from the application being solved and evaluated according to a metric of accuracy. Crossover and mutation operators are applied after a tournament selection, and guarantee that the new individuals generated also respect the production rules of the grammar. Elitism is also used, and evolution goes on until a maximum number of generations is reached or the best individual does not improve after a predefined number of generations. \n\n\nRECIPE was implemented using the library Libgges.\n\n\nGrammar\n\n\nIn RECIPE, the grammar represents a set of pipelines that can be used to solve a classification problem. Previously proposed systems have divided the pipelines into three main steps: data pre-processing, data processing and data post-process. We also follow this basic framework.\n\n\n\n\nThere is a lot of options of tasks or building blocks that can be considered in this three-step approach, as the area of machine learning is in constant development.\n\n\nIn RECIPE the total number of building blocks are:\n\n\n\n\n\n\n\n\nBuilding Blocks\n\n\nQuantity\n\n\n\n\n\n\n\n\n\n\nPre-Processing\n\n\n33\n\n\n\n\n\n\nProcessing\n\n\n23\n\n\n\n\n\n\n\n\nIndividual Representation\n\n\nIndividuals represent machine learning pipelines focused on the classification task. These individuals are generated from the grammar using a set of derivation steps.", 
+            "title": "About"
+        }, 
+        {
+            "location": "/about/#how-it-works", 
+            "text": "RECIPE receives as input a dataset and a grammar, which is used to initialize the population. Each individual is represented by a derivation-tree built from the context-free grammar (CFG), which encompasses all the knowledge gathered from specialists on how to generate an effective classification pipeline. The individuals are mapped into pipelines implemented by the SciKit-Learn library, which are executed into a data sample from the application being solved and evaluated according to a metric of accuracy. Crossover and mutation operators are applied after a tournament selection, and guarantee that the new individuals generated also respect the production rules of the grammar. Elitism is also used, and evolution goes on until a maximum number of generations is reached or the best individual does not improve after a predefined number of generations.   RECIPE was implemented using the library Libgges.", 
+            "title": "How it works?"
+        }, 
+        {
+            "location": "/about/#grammar", 
+            "text": "In RECIPE, the grammar represents a set of pipelines that can be used to solve a classification problem. Previously proposed systems have divided the pipelines into three main steps: data pre-processing, data processing and data post-process. We also follow this basic framework.   There is a lot of options of tasks or building blocks that can be considered in this three-step approach, as the area of machine learning is in constant development.  In RECIPE the total number of building blocks are:     Building Blocks  Quantity      Pre-Processing  33    Processing  23", 
+            "title": "Grammar"
+        }, 
+        {
+            "location": "/about/#individual-representation", 
+            "text": "Individuals represent machine learning pipelines focused on the classification task. These individuals are generated from the grammar using a set of derivation steps.", 
+            "title": "Individual Representation"
+        }, 
+        {
+            "location": "/authors/", 
+            "text": "RECIPE \n \n\n\n \n  REsilient ClassifIcation Pipeline Evolution \n\n\n\n\nThis project is developed and maintained by:\n\n\n\n\n\n\nWalter Jos\u00e9 : walterjgsp@dcc.ufmg.br\n\n\n\n\n\n\nAlex de S\u00e1 : alexgcsa@dcc.ufmg.br\n\n\n\n\n\n\nGisele L. Pappa : glpappa@dcc.ufmg.br\n\n\n\n\n\n\n\n\nIcons made by \nFreepik\n from \nwww.flaticon.com\n is licensed by \nCC 3.0 BY", 
+            "title": "Authors"
+        }
+    ]
+}

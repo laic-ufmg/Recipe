@@ -1,0 +1,21 @@
+site_name: RecipeDoc
+theme: 'material'
+pages:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - About: about.md
+  - Authors: authors.md
+
+extra:
+  logo: 'img/icon.svg'
+  palette:
+    primary: 'blue'
+    accent: 'teal'
+  social:
+    - type: 'github'
+      link: 'https://github.com/RecipeML/Recipe'
+
+markdown_extensions:
+  - admonition
+  - codehilite(linenums=true)
