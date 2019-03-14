@@ -307,20 +307,23 @@
 </tr>
 </thead>
 <tbody>
+
 <tr>
 <td>-s or --seed</td>
 <td>SEED</td>
 <td>Positive Integer</td>
-<td>Set the seed of the algorithm for reproducibility</td>
+<td>Set the seed of the algorithm for reproducibility. Default: 1</td>
 <td></td>
 </tr>
+
 <tr>
 <td>-c or --config</td>
 <td>CONFIG</td>
 <td>String</td>
-<td>A string referring to a configuration file that defines the parameters of the GP</td>
+<td>A string referring to a configuration file that defines the parameters of the GP. Default: 'config/gecco2015-cfggp.ini'</td>
 <td></td>
 </tr>
+
 <tr>
 <td>-dTr</td>
 <td>DATATRAIN</td>
@@ -328,6 +331,7 @@
 <td>A string referring to a file containing the data used to train the pipeline methods</td>
 <td></td>
 </tr>
+
 <tr>
 <td>-dTe</td>
 <td>DATATEST</td>
@@ -335,34 +339,87 @@
 <td>A string referring to a file containing the data used to test the pipeline methods</td>
 <td></td>
 </tr>
+
 <tr>
 <td>-nc</td>
 <td>NUMBER OF CORES</td>
 <td>Positive Integer</td>
-<td>Number of cores to be used on the algorithm execution</td>
+<td>Number of cores to be used on the algorithm execution. Default: 1</td>
 <td></td>
 </tr>
-<tr>
+
 <tr>
 <td>-ft</td>
 <td>FULL TIMEOUT</td>
 <td>Positive Integer</td>
-<td>Full time (budget) to execute the whole evolutionary process (in seconds)</td>
+<td>Full time (budget) to execute the whole evolutionary process (in seconds). Default: 0 (i.e., it will look only at the generation count)</td>
 <td></td>
 </tr> 
+
+<tr>
 <td>-t</td>
 <td>TIMEOUT</td>
 <td>Positive Integer</td>
-<td>Time (budget) to execute each individual (i..e, a pipeline) of the GP on evaluation (in seconds)</td>
+<td>Time (budget) to execute each individual (i..e, a pipeline) of the GP on evaluation (in seconds). Default: 300</td>
 <td></td>
 </tr>
+
+<tr>
+<td>-ti</td>
+<td>TRACK INDIVIDUALS</td>
+<td>0 or 1</td>
+<td>It creates a file to track the individuals of all generations (1-true|0-false). Default: 0</td>
+<td></td>
+</tr>
+
+<tr>
+<td>-mr</td>
+<td>MUTATION RATE</td>
+<td>Positive Float</td>
+<td>It defines the mutation rate for the evolutionary algorithm (max=1.0). Default: 0.1</td>
+<td></td>
+</tr>
+
+<tr>
+<td>-cr</td>
+<td>CROSSOVER RATE</td>
+<td>Positive Float</td>
+<td>It defines the crossover rate for the evolutionary algorithm (max=1.0). Default: 0.9</td>
+<td></td>
+</tr>
+
+<tr>
+<td>-ps</td>
+<td>POPULATION SIZE</td>
+<td>Positive Integer</td>
+<td>It defines the size for the initial population for the evolutionary algorithm. Default: 30</td>
+<td></td>
+</tr>
+
+<tr>
+<td>-gc</td>
+<td>GENERATION COUNT</td>
+<td>Positive Integer</td>
+<td>It defines the maximum number of generations for the evolutionary algorithm. Default: 100</td>
+<td></td>
+</tr>
+
+<tr>
+<td>-gr</td>
+<td>GRAMMAR</td>
+<td>String</td>
+<td>It defines the grammar to be used by RECIPE during its evolutionary process. Default: 'bnf/new_ml.bnf'</td>
+<td></td>
+</tr>
+
 <tr>
 <td>-en</td>
 <td>EXPORT_NAME</td>
 <td>String</td>
-<td>A string with a file name to export pipeline</td>
+<td>A string with a file name to export pipeline. Default: 'pipeline.py'</td>
 <td></td>
 </tr>
+
 <tr>
 <td>-v</td>
 <td>VERBOSITY</td>
@@ -370,6 +427,7 @@
 <td>Verbosity level of the output: (3-Full, 2-Intermediate ,1-Basic)</td>
 <td></td>
 </tr>
+
 </tbody>
 </table>
 <h2 id="configuring-gp">Configuring GP</h2>
