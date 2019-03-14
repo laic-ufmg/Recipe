@@ -28,7 +28,7 @@ Documentation
  
 Documentation for the project can be found in the following link: 
  
-[RecipeDoc](https://laic-ufmg.github.io/Recipe/docs) 
+[RecipeDoc](https://laic-ufmg.github.io/Recipe/docs/) 
 
 Usage
 -----
