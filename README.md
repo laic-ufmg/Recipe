@@ -9,9 +9,9 @@ If you use this project in your work, please reference the following paper:
  
 RECIPE: A Grammar-based Framework for Automatically Evolving Classification Pipelines, Alex G. C. de Sá, Walter José G. S. Pinto, Luiz Otavio V. B. Oliveira,  Gisele L. Pappa, EuroGP'17  
  
-Note that this project uses/extends the libgges library to implement the Grammar Based GP. The library can be found in the link: 
+Note that this project uses/extends the [libgges library](https://github.com/grantdick/libgges)  to implement the Grammar Based GP. 
  
-[libgges](https://github.com/grantdick/libgges) 
+
  
 Installation 
 ------------ 
