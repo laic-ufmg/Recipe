@@ -34,7 +34,7 @@ def printGeneration(G, seed, output, file_name):
 		file_t = file_name+'_s'+str(seed)+".csv"
 		evolution_file = open('evolution/'+file_t,'a+')
 
-		evolution_file.write(str(G)+';'+str(worst)+';'+str(average)+';'+str(best)+'\n')
+		evolution_file.write(str(G)+','+str(worst)+','+str(average)+','+str(best)+'\n')
 		evolution_file.close()
 	except IOError as e:
 		print "WARNING: ", e
