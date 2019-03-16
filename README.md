@@ -4,7 +4,7 @@
 RECIPE 
 ======================================================================== 
  
-This project presents a framework for automatically evolving machine learning pipelines based on the definition of grammars. 
+This project presents an AutoML framework for automatically evolving machine learning pipelines based on the definition of grammars. 
 If you use this project in your work, please reference the following paper: 
  
 RECIPE: A Grammar-based Framework for Automatically Evolving Classification Pipelines, Alex G. C. de Sá, Walter José G. S. Pinto, Luiz Otavio V. B. Oliveira,  Gisele L. Pappa, EuroGP'17  
